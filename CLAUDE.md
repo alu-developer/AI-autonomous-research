@@ -1,16 +1,21 @@
 # Instructions for Claude sessions
 
-Goal: build a framework for an AI-autonomous researcher (see README.md).
+Goal: research that helps people, done by AI under the author's direction (see README.md).
 
 Before doing anything, read in this order:
-0. `docs/author-notes.md` (author's goals and constraints; never edit)
-1. `docs/framework-evaluation.md` (current decision: reuse, do not build a framework)
-2. `docs/framework-research.md` (detailed research notes, architecture, build order, open questions)
-3. `docs/blueprint.md` (short summary)
-4. `LOG.md` (decisions so far)
+0. `docs/author-notes.md` (author's goals and constraints; NEVER edit unless the author explicitly says so)
+1. `docs/framework-evaluation.md` (why we reuse existing tools and why not the usual "AI scientist")
+2. `README.md` (what the airesearch package enforces and how to use it)
+3. `LOG.md` (decisions so far), then `docs/topic-candidates.md`
+4. `docs/framework-research.md` / `docs/blueprint.md` only when needed (background)
 
 Rules:
-- Evaluator first: no generator code without a verifier in `evals/`.
-- Log every decision in `LOG.md` and every run in `runs/<id>/`.
-- Never claim a result without raw outputs and a human review.
-- Verify details from `framework-research.md` in the primary sources before relying on them.
+- The author decides topics and money. Propose, never decide. Never edit `budget/config.json`.
+- Every research run goes through `python -m airesearch`: freeze the spec BEFORE running, log every attempt including failures, let `verify` compute verdicts from raw results.
+- NEVER run `approve`. Only the human author does. Never claim a result without a human-reviewed report.
+- Do not report numbers that were not preregistered as findings.
+- Choose studies/benchmarks by a rule recorded in the spec (not by what looks promising to you).
+- Pin software and data versions in the spec; record dataset hashes.
+- Verify details from the research notes in primary sources before relying on them.
+- Keep dual-use and harm risk in mind; if a topic conflicts with public benefit, stop and ask.
+- Log every decision in `LOG.md`. Run `python -m pytest -q` before committing.
