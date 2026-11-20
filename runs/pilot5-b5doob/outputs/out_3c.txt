@@ -1,0 +1,1929 @@
+
+Please cite as: 
+
+ Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+Version:  1.40
+Date:     2026-08-24
+Author:   Philip Leifeld (University of Manchester)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation("texreg").
+
+  1   2   3 
+359 406   8 
+
+  0   1 
+406 359 
+
+	Welch Two Sample t-test
+
+data:  bs$age[bs$ccl == 0] and bs$age[bs$ccl == 1]
+t = -0.84283, df = 103.04, p-value = 0.4013
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -4.905074  1.979374
+sample estimates:
+mean of x mean of y 
+ 51.73227  53.19512 
+
+[1] 15.42112
+[1] 14.79192
+
+	Welch Two Sample t-test
+
+data:  bs$college[bs$ccl == 0] and bs$college[bs$ccl == 1]
+t = -1.7896, df = 111.85, p-value = 0.07623
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.128944828  0.006560021
+sample estimates:
+mean of x mean of y 
+0.8523878 0.9135802 
+
+[1] 0.3549721
+[1] 0.2827336
+
+	Welch Two Sample t-test
+
+data:  bs$woman[bs$ccl == 0] and bs$woman[bs$ccl == 1]
+t = -1.2864, df = 101.2, p-value = 0.2012
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.1916337  0.0408641
+sample estimates:
+mean of x mean of y 
+0.4612006 0.5365854 
+
+[1] 0.4988577
+[1] 0.5017284
+
+	Welch Two Sample t-test
+
+data:  bs$econ[bs$ccl == 0] and bs$econ[bs$ccl == 1]
+t = -0.14049, df = 108, p-value = 0.8885
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.1989435  0.1726085
+sample estimates:
+mean of x mean of y 
+ 2.826339  2.839506 
+
+[1] 0.9240433
+[1] 0.7819333
+
+         7         16         24         20         21         11         12 
+0.01298701 0.01948052 0.01948052 0.02077922 0.02467532 0.02857143 0.02987013 
+        22          2         15         13         18          1         17 
+0.02987013 0.03116883 0.03116883 0.03376623 0.03636364 0.03766234 0.03896104 
+         8         23         10          9         19          4          6 
+0.04285714 0.04285714 0.04545455 0.04935065 0.05844156 0.06623377 0.07012987 
+        14          3          5 
+0.07142857 0.07922078 0.07922078 
+
+	Welch Two Sample t-test
+
+data:  bs$largefreg[bs$ccl == 0] and bs$largefreg[bs$ccl == 1]
+t = -1.2772, df = 93.534, p-value = 0.2047
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.12299753  0.02670724
+sample estimates:
+ mean of x  mean of y 
+0.07380608 0.12195122 
+
+[1] 0.2616444
+[1] 0.3292432
+
+	Welch Two Sample t-test
+
+data:  bs$ccl[bs$ccl_invite == 0] and bs$ccl[bs$ccl_invite == 1]
+t = 0.043845, df = 766.15, p-value = 0.965
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.0424596  0.0443996
+sample estimates:
+mean of x mean of y 
+0.1055276 0.1045576 
+
+[1] 0.3076188
+[1] 0.3063936
+
+	Welch Two Sample t-test
+
+data:  bs$age[bs$ccl_invite == 0] and bs$age[bs$ccl_invite == 1]
+t = -2.8627, df = 754.94, p-value = 0.004317
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -5.3311598 -0.9938029
+sample estimates:
+mean of x mean of y 
+ 50.34422  53.50670 
+
+[1] 14.75218
+[1] 15.85089
+
+	Welch Two Sample t-test
+
+data:  bs$college[bs$ccl_invite == 0] and bs$college[bs$ccl_invite == 1]
+t = 0.67402, df = 758.97, p-value = 0.5005
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.03245175  0.06638819
+sample estimates:
+mean of x mean of y 
+0.8668342 0.8498660 
+
+[1] 0.3401815
+[1] 0.3576826
+
+	Welch Two Sample t-test
+
+data:  bs$woman[bs$ccl_invite == 0] and bs$woman[bs$ccl_invite == 1]
+t = 2.4246, df = 758.8, p-value = 0.01556
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.01663467 0.15814144
+sample estimates:
+mean of x mean of y 
+0.5101523 0.4227642 
+
+[1] 0.5005325
+[1] 0.4946694
+
+	Welch Two Sample t-test
+
+data:  bs$econ[bs$ccl_invite == 0] and bs$econ[bs$ccl_invite == 1]
+t = -1.1347, df = 762.31, p-value = 0.2569
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.20337208  0.05438317
+sample estimates:
+mean of x mean of y 
+ 2.791457  2.865952 
+
+[1] 0.8973666
+[1] 0.9235532
+
+	Welch Two Sample t-test
+
+data:  bs$largefreg[bs$ccl_invite == 0] and bs$largefreg[bs$ccl_invite == 1]
+t = 2.8468, df = 720.02, p-value = 0.004542
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 0.01694179 0.09223681
+sample estimates:
+ mean of x  mean of y 
+0.10552764 0.05093834 
+
+[1] 0.3076188
+[1] 0.3292432
+[1] NA
+
+Welch Two Sample t-test
+
+The equivalence test was significant, t(101.2) = 1.884, p = 3.12e-02
+The null hypothesis test was non-significant, t(101.2) = -1.199, p = 2.33e-01
+NHST: don't reject null significance hypothesis that the effect is equal to zero 
+TOST: reject null equivalence hypothesis
+
+TOST Results 
+                t    df p.value
+t-test     -1.199 101.2   0.233
+TOST Lower  1.884 101.2   0.031
+TOST Upper -4.281 101.2 < 0.001
+
+Effect Sizes 
+               Estimate     SE              C.I. Conf. Level
+Raw             -0.0700 0.0584 [-0.1669, 0.0269]         0.9
+Hedges's g(av)  -0.1396 0.1176 [-0.3314, 0.0523]         0.9
+Note: SMD confidence intervals are an approximation. See vignette("SMD_calcs").
+[1] 5.527042
+
+Welch Two Sample t-test
+
+The equivalence test was significant, t(102.95) = 2.319, p = 1.12e-02
+The null hypothesis test was non-significant, t(102.95) = -0.864, p = 3.9e-01
+NHST: don't reject null significance hypothesis that the effect is equal to zero 
+TOST: reject null equivalence hypothesis
+
+TOST Results 
+                 t  df p.value
+t-test     -0.8639 103    0.39
+TOST Lower  2.3194 103   0.011
+TOST Upper -4.0473 103 < 0.001
+
+Effect Sizes 
+               Estimate     SE              C.I. Conf. Level
+Raw            -1.50000 1.7362 [-4.3817, 1.3817]         0.9
+Hedges's g(av) -0.09908 0.1157 [-0.2877, 0.0897]         0.9
+Note: SMD confidence intervals are an approximation. See vignette("SMD_calcs").
+[1] 0.1254402
+[1] 0.3549721
+[1] 0.2827336
+[1] 691
+[1] 81
+
+Welch Two Sample t-test
+
+The equivalence test was significant, t(111.56) = 4.002, p = 5.66e-05
+The null hypothesis test was non-significant, t(111.56) = 0.296, p = 7.68e-01
+NHST: don't reject null significance hypothesis that the effect is equal to zero 
+TOST: reject null equivalence hypothesis
+
+TOST Results 
+                   t    df p.value
+t-test        0.2955 111.6   0.768
+TOST Lower    4.0023 111.6 < 0.001
+TOST Upper -163.0307 111.6 < 0.001
+
+Effect Sizes 
+               Estimate      SE              C.I. Conf. Level
+Raw             0.01000 0.03384 [-0.0461, 0.0661]         0.9
+Hedges's g(av)  0.03149 0.10735 [-0.1438, 0.2068]         0.9
+Note: SMD confidence intervals are an approximation. See vignette("SMD_calcs").
+
+	Welch Two Sample t-test
+
+data:  bs$econ[bs$ccl == 0] and bs$econ[bs$ccl == 1]
+t = -0.14049, df = 108, p-value = 0.8885
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.1989435  0.1726085
+sample estimates:
+mean of x mean of y 
+ 2.826339  2.839506 
+
+[1] 0.9240433
+[1] 0.7819333
+[1] 691
+[1] 81
+
+Welch Two Sample t-test
+
+The equivalence test was significant, t(107.89) = 3.397, p = 4.78e-04
+The null hypothesis test was non-significant, t(107.89) = -0.107, p = 9.15e-01
+NHST: don't reject null significance hypothesis that the effect is equal to zero 
+TOST: reject null equivalence hypothesis
+
+TOST Results 
+                t    df p.value
+t-test     -0.107 107.9   0.915
+TOST Lower  3.397 107.9 < 0.001
+TOST Upper -3.611 107.9 < 0.001
+
+Effect Sizes 
+               Estimate      SE              C.I. Conf. Level
+Raw             -0.0100 0.09347 [-0.1651, 0.1451]         0.9
+Hedges's g(av)  -0.0117 0.11019 [-0.1916, 0.1682]         0.9
+Note: SMD confidence intervals are an approximation. See vignette("SMD_calcs").
+
+	Welch Two Sample t-test
+
+data:  bs$largefreg[bs$ccl == 0] and bs$largefreg[bs$ccl == 1]
+t = -1.2772, df = 93.534, p-value = 0.2047
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.12299753  0.02670724
+sample estimates:
+ mean of x  mean of y 
+0.07380608 0.12195122 
+
+[1] 0.2616444
+[1] 0.3292432
+[1] 691
+[1] 82
+
+Welch Two Sample t-test
+
+The equivalence test was significant, t(102.86) = -2.857, p = 2.59e-03
+The null hypothesis test was non-significant, t(102.86) = 0.328, p = 7.44e-01
+NHST: don't reject null significance hypothesis that the effect is equal to zero 
+TOST: reject null equivalence hypothesis
+
+TOST Results 
+                 t    df p.value
+t-test      0.3279 102.9   0.744
+TOST Lower  3.5128 102.9 < 0.001
+TOST Upper -2.8569 102.9   0.003
+
+Effect Sizes 
+               Estimate      SE              C.I. Conf. Level
+Raw             0.01000 0.03049 [-0.0406, 0.0606]         0.9
+Hedges's g(av)  0.03764 0.11570 [-0.1512, 0.2264]         0.9
+Note: SMD confidence intervals are an approximation. See vignette("SMD_calcs").
+
+Call:
+lm(formula = PK_scale ~ ccl + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.5117 -0.5737  0.1277  0.6593  1.9351 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -0.19820    0.10917  -1.815   0.0699 .
+ccl          0.25156    0.11749   2.141   0.0326 *
+wave         0.13083    0.07884   1.659   0.0974 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9961 on 750 degrees of freedom
+  (20 observations deleted due to missingness)
+Multiple R-squared:  0.01044,	Adjusted R-squared:  0.007802 
+F-statistic: 3.957 on 2 and 750 DF,  p-value: 0.01953
+
+
+Call:
+lm(formula = PK_scale ~ ccl + educ + econ + woman + age + as.factor(freg) + 
+    wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.7181 -0.5501  0.1160  0.6822  2.1203 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)   
+(Intercept)       -0.492474   0.308220  -1.598  0.11053   
+ccl                0.251002   0.119402   2.102  0.03589 * 
+educ              -0.037776   0.042356  -0.892  0.37276   
+econ               0.015625   0.041952   0.372  0.70967   
+woman              0.042707   0.075293   0.567  0.57075   
+age                0.001531   0.002452   0.625  0.53246   
+as.factor(freg)2  -0.341820   0.288632  -1.184  0.23670   
+as.factor(freg)3   0.556072   0.224960   2.472  0.01367 * 
+as.factor(freg)4   0.399784   0.233087   1.715  0.08675 . 
+as.factor(freg)5   0.560552   0.224294   2.499  0.01267 * 
+as.factor(freg)6   0.254593   0.228783   1.113  0.26616   
+as.factor(freg)7   0.081386   0.363123   0.224  0.82272   
+as.factor(freg)8   0.505736   0.258704   1.955  0.05099 . 
+as.factor(freg)9   0.506478   0.244323   2.073  0.03853 * 
+as.factor(freg)10  0.239274   0.253827   0.943  0.34617   
+as.factor(freg)11  0.120834   0.280448   0.431  0.66670   
+as.factor(freg)12  0.414302   0.276797   1.497  0.13490   
+as.factor(freg)13  0.007843   0.269174   0.029  0.97676   
+as.factor(freg)14 -0.006827   0.229760  -0.030  0.97630   
+as.factor(freg)15  0.043422   0.277135   0.157  0.87554   
+as.factor(freg)16  0.860955   0.314707   2.736  0.00638 **
+as.factor(freg)17  0.376226   0.261809   1.437  0.15115   
+as.factor(freg)18  0.368597   0.269538   1.368  0.17190   
+as.factor(freg)19  0.530627   0.238885   2.221  0.02665 * 
+as.factor(freg)20  0.047580   0.308762   0.154  0.87758   
+as.factor(freg)21  0.326645   0.309462   1.056  0.29154   
+as.factor(freg)22  0.410088   0.277811   1.476  0.14035   
+as.factor(freg)23  0.397554   0.252275   1.576  0.11550   
+as.factor(freg)24  0.574156   0.318891   1.800  0.07221 . 
+wave               0.120352   0.080372   1.497  0.13472   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9875 on 712 degrees of freedom
+  (31 observations deleted due to missingness)
+Multiple R-squared:  0.06805,	Adjusted R-squared:  0.0301 
+F-statistic: 1.793 on 29 and 712 DF,  p-value: 0.006813
+
+
+Call:
+lm(formula = placebo_PK_scale ~ ccl + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.0394 -0.5402  0.1801  0.6626  1.8124 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  0.32441    0.10908   2.974  0.00303 **
+ccl          0.05304    0.11732   0.452  0.65130   
+wave        -0.25254    0.07884  -3.203  0.00142 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9945 on 749 degrees of freedom
+  (21 observations deleted due to missingness)
+Multiple R-squared:  0.01357,	Adjusted R-squared:  0.01094 
+F-statistic: 5.153 on 2 and 749 DF,  p-value: 0.00599
+
+
+Call:
+lm(formula = placebo_PK_scale ~ ccl + educ + econ + woman + age + 
+    as.factor(freg) + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1132 -0.5798  0.1628  0.6914  2.0127 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        0.0493866  0.3083375   0.160 0.872792    
+ccl                0.0620194  0.1194524   0.519 0.603785    
+educ               0.0276578  0.0423868   0.653 0.514284    
+econ               0.0314589  0.0420927   0.747 0.455086    
+woman              0.0069703  0.0753670   0.092 0.926339    
+age               -0.0006634  0.0024526  -0.270 0.786870    
+as.factor(freg)2  -0.4349638  0.2887146  -1.507 0.132369    
+as.factor(freg)3   0.3335508  0.2250249   1.482 0.138708    
+as.factor(freg)4   0.2132941  0.2331540   0.915 0.360596    
+as.factor(freg)5   0.5147683  0.2243580   2.294 0.022058 *  
+as.factor(freg)6   0.1574894  0.2288514   0.688 0.491568    
+as.factor(freg)7  -0.1420560  0.3632265  -0.391 0.695844    
+as.factor(freg)8   0.1600170  0.2587777   0.618 0.536538    
+as.factor(freg)9   0.1391376  0.2443947   0.569 0.569322    
+as.factor(freg)10  0.0071825  0.2539001   0.028 0.977440    
+as.factor(freg)11 -0.0339537  0.2805311  -0.121 0.903699    
+as.factor(freg)12  0.4186741  0.2768763   1.512 0.130944    
+as.factor(freg)13 -0.2371976  0.2692536  -0.881 0.378645    
+as.factor(freg)14 -0.0343201  0.2305819  -0.149 0.881721    
+as.factor(freg)15 -0.2412209  0.2772168  -0.870 0.384511    
+as.factor(freg)16  0.2753850  0.3147971   0.875 0.381977    
+as.factor(freg)17  0.0001114  0.2618841   0.000 0.999661    
+as.factor(freg)18  0.2958757  0.2696177   1.097 0.272842    
+as.factor(freg)19  0.2616961  0.2389569   1.095 0.273817    
+as.factor(freg)20  0.0836265  0.3088502   0.271 0.786649    
+as.factor(freg)21  0.0478737  0.3095504   0.155 0.877137    
+as.factor(freg)22  0.2281272  0.2778900   0.821 0.411963    
+as.factor(freg)23  0.0129081  0.2523477   0.051 0.959219    
+as.factor(freg)24  0.2022415  0.3189821   0.634 0.526271    
+wave              -0.2862487  0.0805388  -3.554 0.000404 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9877 on 711 degrees of freedom
+  (32 observations deleted due to missingness)
+Multiple R-squared:  0.06363,	Adjusted R-squared:  0.02544 
+F-statistic: 1.666 on 29 and 711 DF,  p-value: 0.01607
+
+
+Call:
+lm(formula = issue_salience ~ ccl + wave, data = bs)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-2.236 -0.342 -0.342  1.167  1.721 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.68478    0.10413   6.576 8.89e-11 ***
+ccl          0.38455    0.11282   3.409 0.000687 ***
+wave        -0.55367    0.07509  -7.374 4.29e-13 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.963 on 770 degrees of freedom
+Multiple R-squared:  0.07504,	Adjusted R-squared:  0.07264 
+F-statistic: 31.24 on 2 and 770 DF,  p-value: 9.057e-14
+
+
+Call:
+lm(formula = issue_salience ~ ccl + educ + econ + woman + age + 
+    as.factor(freg) + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.2527 -0.4594 -0.2154  0.9697  2.0674 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        0.472282   0.299915   1.575  0.11575    
+ccl                0.383484   0.116306   3.297  0.00102 ** 
+educ              -0.028928   0.041059  -0.705  0.48132    
+econ               0.053802   0.040364   1.333  0.18297    
+woman             -0.070810   0.072803  -0.973  0.33106    
+age                0.001756   0.002371   0.740  0.45928    
+as.factor(freg)2  -0.267268   0.275695  -0.969  0.33265    
+as.factor(freg)3   0.019964   0.219565   0.091  0.92758    
+as.factor(freg)4   0.075390   0.227706   0.331  0.74067    
+as.factor(freg)5   0.122724   0.219641   0.559  0.57650    
+as.factor(freg)6   0.161100   0.224571   0.717  0.47337    
+as.factor(freg)7   0.227942   0.356485   0.639  0.52275    
+as.factor(freg)8   0.193175   0.248239   0.778  0.43671    
+as.factor(freg)9   0.056029   0.239847   0.234  0.81536    
+as.factor(freg)10  0.160700   0.245847   0.654  0.51354    
+as.factor(freg)11 -0.025925   0.275319  -0.094  0.92501    
+as.factor(freg)12  0.048136   0.271718   0.177  0.85944    
+as.factor(freg)13  0.012861   0.264215   0.049  0.96119    
+as.factor(freg)14  0.155060   0.224061   0.692  0.48913    
+as.factor(freg)15  0.374784   0.268823   1.394  0.16369    
+as.factor(freg)16  0.231725   0.308962   0.750  0.45349    
+as.factor(freg)17  0.301338   0.252645   1.193  0.23336    
+as.factor(freg)18  0.231083   0.262144   0.882  0.37833    
+as.factor(freg)19  0.359129   0.234495   1.532  0.12608    
+as.factor(freg)20 -0.143621   0.303119  -0.474  0.63578    
+as.factor(freg)21 -0.002395   0.288023  -0.008  0.99337    
+as.factor(freg)22  0.082182   0.272669   0.301  0.76320    
+as.factor(freg)23  0.348723   0.247645   1.408  0.15951    
+as.factor(freg)24  0.087239   0.312872   0.279  0.78045    
+wave              -0.548043   0.077794  -7.045 4.29e-12 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9695 on 732 degrees of freedom
+  (11 observations deleted due to missingness)
+Multiple R-squared:  0.09409,	Adjusted R-squared:  0.0582 
+F-statistic: 2.622 on 29 and 732 DF,  p-value: 9.443e-06
+
+
+Call:
+lm(formula = ipe_scale ~ ccl + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1232 -0.3295  0.4123  0.8490  1.0060 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -0.24633    0.10951  -2.249   0.0248 *
+ccl         -0.15698    0.11820  -1.328   0.1846  
+wave         0.20083    0.07898   2.543   0.0112 *
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9962 on 745 degrees of freedom
+  (25 observations deleted due to missingness)
+Multiple R-squared:  0.01031,	Adjusted R-squared:  0.00765 
+F-statistic: 3.879 on 2 and 745 DF,  p-value: 0.02108
+
+
+Call:
+lm(formula = ipe_scale ~ ccl + educ + econ + woman + age + as.factor(freg) + 
+    wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.3604 -0.3321  0.3161  0.7095  1.3158 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)   
+(Intercept)       -0.530140   0.309850  -1.711  0.08753 . 
+ccl               -0.129289   0.120696  -1.071  0.28445   
+educ               0.120131   0.042545   2.824  0.00488 **
+econ               0.036637   0.042129   0.870  0.38480   
+woman             -0.105615   0.075693  -1.395  0.16336   
+age               -0.003622   0.002476  -1.463  0.14403   
+as.factor(freg)2  -0.056088   0.289832  -0.194  0.84661   
+as.factor(freg)3  -0.042759   0.225898  -0.189  0.84992   
+as.factor(freg)4  -0.095699   0.234056  -0.409  0.68276   
+as.factor(freg)5   0.173399   0.225867   0.768  0.44292   
+as.factor(freg)6  -0.080014   0.230425  -0.347  0.72851   
+as.factor(freg)7  -0.582967   0.364630  -1.599  0.11031   
+as.factor(freg)8   0.048315   0.259783   0.186  0.85251   
+as.factor(freg)9  -0.203972   0.245338  -0.831  0.40603   
+as.factor(freg)10 -0.103018   0.254898  -0.404  0.68622   
+as.factor(freg)11  0.024568   0.281624   0.087  0.93051   
+as.factor(freg)12  0.029927   0.281714   0.106  0.91543   
+as.factor(freg)13  0.064184   0.270328   0.237  0.81239   
+as.factor(freg)14 -0.064168   0.230722  -0.278  0.78100   
+as.factor(freg)15 -0.073978   0.278286  -0.266  0.79045   
+as.factor(freg)16  0.294315   0.316018   0.931  0.35200   
+as.factor(freg)17  0.047347   0.262893   0.180  0.85713   
+as.factor(freg)18 -0.076102   0.270666  -0.281  0.77866   
+as.factor(freg)19 -0.106525   0.241090  -0.442  0.65874   
+as.factor(freg)20 -0.294498   0.310058  -0.950  0.34253   
+as.factor(freg)21  0.046407   0.310150   0.150  0.88110   
+as.factor(freg)22 -0.504325   0.282575  -1.785  0.07473 . 
+as.factor(freg)23 -0.267791   0.253326  -1.057  0.29083   
+as.factor(freg)24  0.176946   0.320203   0.553  0.58071   
+wave               0.155546   0.080915   1.922  0.05497 . 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9915 on 707 degrees of freedom
+  (36 observations deleted due to missingness)
+Multiple R-squared:  0.05111,	Adjusted R-squared:  0.01219 
+F-statistic: 1.313 on 29 and 707 DF,  p-value: 0.127
+
+
+Call:
+lm(formula = epe_scale ~ ccl + wave, data = bs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.06261 -0.58224  0.02686  0.68061  2.55255 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.20311    0.10888   1.865 0.062508 .  
+ccl          0.40568    0.11752   3.452 0.000588 ***
+wave        -0.18814    0.07852  -2.396 0.016816 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9904 on 745 degrees of freedom
+  (25 observations deleted due to missingness)
+Multiple R-squared:  0.02165,	Adjusted R-squared:  0.01902 
+F-statistic: 8.243 on 2 and 745 DF,  p-value: 0.0002877
+
+
+Call:
+lm(formula = epe_scale ~ ccl + educ + econ + woman + age + as.factor(freg) + 
+    wave, data = bs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.14226 -0.63532  0.02783  0.62474  2.50702 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.2683002  0.3040327  -0.882  0.37782    
+ccl                0.3738698  0.1184301   3.157  0.00166 ** 
+educ              -0.0775803  0.0417458  -1.858  0.06353 .  
+econ               0.1690243  0.0413384   4.089 4.83e-05 ***
+woman             -0.0293605  0.0742716  -0.395  0.69273    
+age                0.0043338  0.0024298   1.784  0.07492 .  
+as.factor(freg)2  -0.0508929  0.2843905  -0.179  0.85802    
+as.factor(freg)3   0.1839768  0.2216570   0.830  0.40682    
+as.factor(freg)4   0.1726975  0.2296620   0.752  0.45232    
+as.factor(freg)5  -0.0001372  0.2216267  -0.001  0.99951    
+as.factor(freg)6   0.1667782  0.2260984   0.738  0.46098    
+as.factor(freg)7  -0.1114605  0.3577844  -0.312  0.75549    
+as.factor(freg)8   0.1954529  0.2549052   0.767  0.44348    
+as.factor(freg)9   0.2525461  0.2407318   1.049  0.29450    
+as.factor(freg)10  0.0708426  0.2501125   0.283  0.77707    
+as.factor(freg)11  0.2460811  0.2763364   0.891  0.37349    
+as.factor(freg)12  0.2074154  0.2764249   0.750  0.45329    
+as.factor(freg)13  0.1096589  0.2652521   0.413  0.67943    
+as.factor(freg)14  0.2170510  0.2263897   0.959  0.33801    
+as.factor(freg)15  0.3851646  0.2730608   1.411  0.15882    
+as.factor(freg)16  0.1259044  0.3100850   0.406  0.68484    
+as.factor(freg)17  0.4532125  0.2579574   1.757  0.07936 .  
+as.factor(freg)18  0.2373426  0.2655841   0.894  0.37181    
+as.factor(freg)19  0.1958928  0.2365639   0.828  0.40791    
+as.factor(freg)20  0.2762414  0.3042362   0.908  0.36420    
+as.factor(freg)21 -0.5398096  0.3043274  -1.774  0.07653 .  
+as.factor(freg)22  0.2150554  0.2772695   0.776  0.43823    
+as.factor(freg)23  0.4830155  0.2485697   1.943  0.05239 .  
+as.factor(freg)24 -0.2731480  0.3141911  -0.869  0.38494    
+wave              -0.2093851  0.0793961  -2.637  0.00854 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9729 on 707 degrees of freedom
+  (36 observations deleted due to missingness)
+Multiple R-squared:  0.08164,	Adjusted R-squared:  0.04397 
+F-statistic: 2.167 on 29 and 707 DF,  p-value: 0.000418
+
+
+Call:
+lm(formula = gl_scale ~ ccl + wave, data = bs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-3.03204 -0.85745 -0.00532  0.84682  1.27289 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) -0.06627    0.11002  -0.602    0.547
+ccl          0.07762    0.11875   0.654    0.514
+wave         0.04425    0.07934   0.558    0.577
+
+Residual standard error: 1.001 on 745 degrees of freedom
+  (25 observations deleted due to missingness)
+Multiple R-squared:  0.001071,	Adjusted R-squared:  -0.001611 
+F-statistic: 0.3994 on 2 and 745 DF,  p-value: 0.6709
+
+
+Call:
+lm(formula = gl_scale ~ ccl + educ + econ + woman + age + as.factor(freg) + 
+    wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.2157 -0.6506  0.1319  0.7604  1.6114 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)        0.170347   0.311425   0.547   0.5846  
+ccl                0.097009   0.121310   0.800   0.4242  
+educ              -0.071358   0.042761  -1.669   0.0956 .
+econ              -0.107291   0.042344  -2.534   0.0115 *
+woman              0.030585   0.076077   0.402   0.6878  
+age                0.004697   0.002489   1.887   0.0596 .
+as.factor(freg)2   0.107030   0.291305   0.367   0.7134  
+as.factor(freg)3   0.151196   0.227046   0.666   0.5057  
+as.factor(freg)4  -0.050984   0.235246  -0.217   0.8285  
+as.factor(freg)5  -0.065280   0.227015  -0.288   0.7738  
+as.factor(freg)6   0.035155   0.231596   0.152   0.8794  
+as.factor(freg)7   0.218525   0.366483   0.596   0.5512  
+as.factor(freg)8   0.252863   0.261103   0.968   0.3332  
+as.factor(freg)9   0.085295   0.246585   0.346   0.7295  
+as.factor(freg)10 -0.074452   0.256194  -0.291   0.7714  
+as.factor(freg)11 -0.171807   0.283055  -0.607   0.5441  
+as.factor(freg)12  0.200589   0.283146   0.708   0.4789  
+as.factor(freg)13  0.096294   0.271701   0.354   0.7231  
+as.factor(freg)14  0.132255   0.231894   0.570   0.5686  
+as.factor(freg)15  0.145689   0.279700   0.521   0.6026  
+as.factor(freg)16  0.060851   0.317624   0.192   0.8481  
+as.factor(freg)17  0.373538   0.264229   1.414   0.1579  
+as.factor(freg)18  0.276422   0.272041   1.016   0.3099  
+as.factor(freg)19  0.007804   0.242316   0.032   0.9743  
+as.factor(freg)20 -0.152630   0.311633  -0.490   0.6244  
+as.factor(freg)21  0.349538   0.311727   1.121   0.2625  
+as.factor(freg)22  0.027463   0.284011   0.097   0.9230  
+as.factor(freg)23 -0.075963   0.254613  -0.298   0.7655  
+as.factor(freg)24  0.343499   0.321830   1.067   0.2862  
+wave               0.080591   0.081327   0.991   0.3220  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9966 on 707 degrees of freedom
+  (36 observations deleted due to missingness)
+Multiple R-squared:  0.04211,	Adjusted R-squared:  0.002818 
+F-statistic: 1.072 on 29 and 707 DF,  p-value: 0.3658
+
+
+Call:
+lm(formula = scale(TRST_cm) ~ ccl + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.3599 -0.6653  0.1820  0.7166  1.9876 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  0.12087    0.10984   1.100   0.2715  
+ccl          0.22779    0.11842   1.924   0.0548 .
+wave        -0.11094    0.07925  -1.400   0.1620  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9978 on 743 degrees of freedom
+  (27 observations deleted due to missingness)
+Multiple R-squared:  0.007051,	Adjusted R-squared:  0.004378 
+F-statistic: 2.638 on 2 and 743 DF,  p-value: 0.07218
+
+
+Call:
+lm(formula = scale(TRST_p) ~ ccl + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0992 -0.6367  0.2432  0.7366  2.4965 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) -0.08527    0.11008  -0.775    0.439
+ccl          0.14261    0.11868   1.202    0.230
+wave         0.05343    0.07942   0.673    0.501
+
+Residual standard error: 1 on 743 degrees of freedom
+  (27 observations deleted due to missingness)
+Multiple R-squared:  0.002729,	Adjusted R-squared:  4.475e-05 
+F-statistic: 1.017 on 2 and 743 DF,  p-value: 0.3623
+
+
+Call:
+lm(formula = scale(TRST_pp) ~ ccl + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0075 -0.5990  0.2085  0.7552  2.4788 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept) -0.09304    0.11011  -0.845    0.398
+ccl          0.11580    0.11871   0.976    0.330
+wave         0.06156    0.07944   0.775    0.439
+
+Residual standard error: 1 on 743 degrees of freedom
+  (27 observations deleted due to missingness)
+Multiple R-squared:  0.002254,	Adjusted R-squared:  -0.0004315 
+F-statistic: 0.8393 on 2 and 743 DF,  p-value: 0.4324
+
+
+Call:
+lm(formula = trust ~ ccl + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.3592 -0.6910  0.1424  0.6432  2.6445 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)
+(Intercept) -0.0207497  0.1100425  -0.189    0.850
+ccl          0.1885509  0.1186380   1.589    0.112
+wave         0.0004045  0.0793956   0.005    0.996
+
+Residual standard error: 0.9996 on 743 degrees of freedom
+  (27 observations deleted due to missingness)
+Multiple R-squared:  0.00341,	Adjusted R-squared:  0.0007273 
+F-statistic: 1.271 on 2 and 743 DF,  p-value: 0.2811
+
+
+Call:
+lm(formula = trust ~ ccl + educ + econ + woman + age + as.factor(freg) + 
+    wave, data = bs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.68034 -0.60651  0.06576  0.67241  2.82575 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       -0.2734239  0.3094859  -0.883   0.3773    
+ccl                0.1882752  0.1202689   1.565   0.1179    
+educ              -0.0762246  0.0424959  -1.794   0.0733 .  
+econ               0.2002921  0.0419846   4.771 2.23e-06 ***
+woman             -0.1340364  0.0754874  -1.776   0.0762 .  
+age                0.0003732  0.0024703   0.151   0.8800    
+as.factor(freg)2  -0.0337109  0.2886979  -0.117   0.9071    
+as.factor(freg)3   0.1728893  0.2250195   0.768   0.4425    
+as.factor(freg)4   0.0902778  0.2338904   0.386   0.6996    
+as.factor(freg)5   0.1805942  0.2257002   0.800   0.4239    
+as.factor(freg)6   0.2969647  0.2295315   1.294   0.1962    
+as.factor(freg)7   0.0289282  0.3632021   0.080   0.9365    
+as.factor(freg)8   0.0739228  0.2587672   0.286   0.7752    
+as.factor(freg)9   0.0557401  0.2443781   0.228   0.8196    
+as.factor(freg)10 -0.0327415  0.2539071  -0.129   0.8974    
+as.factor(freg)11  0.2323852  0.2805234   0.828   0.4077    
+as.factor(freg)12  0.0152501  0.2806175   0.054   0.9567    
+as.factor(freg)13  0.0355273  0.2692784   0.132   0.8951    
+as.factor(freg)14  0.1252922  0.2298229   0.545   0.5858    
+as.factor(freg)15 -0.0859927  0.2771973  -0.310   0.7565    
+as.factor(freg)16 -0.1452816  0.3147810  -0.462   0.6446    
+as.factor(freg)17  0.0686573  0.2618636   0.262   0.7933    
+as.factor(freg)18  0.2820593  0.2696076   1.046   0.2958    
+as.factor(freg)19  0.0245603  0.2401507   0.102   0.9186    
+as.factor(freg)20  0.2450936  0.3088450   0.794   0.4277    
+as.factor(freg)21  0.0024424  0.3089361   0.008   0.9937    
+as.factor(freg)22 -0.0928667  0.2814704  -0.330   0.7415    
+as.factor(freg)23  0.4029281  0.2523374   1.597   0.1108    
+as.factor(freg)24  0.1868971  0.3189611   0.586   0.5581    
+wave              -0.0335309  0.0806907  -0.416   0.6779    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9877 on 705 degrees of freedom
+  (38 observations deleted due to missingness)
+Multiple R-squared:  0.05989,	Adjusted R-squared:  0.02122 
+F-statistic: 1.549 on 29 and 705 DF,  p-value: 0.03388
+
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Fri, Nov 20, 2026 - 17:27:29
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & issue\_salience & PK\_scale & placebo\_PK\_scale \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ ccl & 0.385$^{***}$ & 0.252$^{**}$ & 0.053 \\ 
+  & (0.113) & (0.117) & (0.117) \\ 
+  wave & $-$0.554$^{***}$ & 0.131$^{*}$ & $-$0.253$^{***}$ \\ 
+  & (0.075) & (0.079) & (0.079) \\ 
+  Constant & 0.685$^{***}$ & $-$0.198$^{*}$ & 0.324$^{***}$ \\ 
+  & (0.104) & (0.109) & (0.109) \\ 
+ \hline \\[-1.8ex] 
+Observations & 773 & 753 & 752 \\ 
+R$^{2}$ & 0.075 & 0.010 & 0.014 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Fri, Nov 20, 2026 - 17:27:29
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & issue\_salience & PK\_scale & placebo\_PK\_scale \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ ccl & 0.383$^{***}$ & 0.251$^{**}$ & 0.062 \\ 
+  & (0.116) & (0.119) & (0.119) \\ 
+  educ & $-$0.029 & $-$0.038 & 0.028 \\ 
+  & (0.041) & (0.042) & (0.042) \\ 
+  econ & 0.054 & 0.016 & 0.031 \\ 
+  & (0.040) & (0.042) & (0.042) \\ 
+  woman & $-$0.071 & 0.043 & 0.007 \\ 
+  & (0.073) & (0.075) & (0.075) \\ 
+  age & 0.002 & 0.002 & $-$0.001 \\ 
+  & (0.002) & (0.002) & (0.002) \\ 
+  as.factor(freg)2 & $-$0.267 & $-$0.342 & $-$0.435 \\ 
+  & (0.276) & (0.289) & (0.289) \\ 
+  as.factor(freg)3 & 0.020 & 0.556$^{**}$ & 0.334 \\ 
+  & (0.220) & (0.225) & (0.225) \\ 
+  as.factor(freg)4 & 0.075 & 0.400$^{*}$ & 0.213 \\ 
+  & (0.228) & (0.233) & (0.233) \\ 
+  as.factor(freg)5 & 0.123 & 0.561$^{**}$ & 0.515$^{**}$ \\ 
+  & (0.220) & (0.224) & (0.224) \\ 
+  as.factor(freg)6 & 0.161 & 0.255 & 0.157 \\ 
+  & (0.225) & (0.229) & (0.229) \\ 
+  as.factor(freg)7 & 0.228 & 0.081 & $-$0.142 \\ 
+  & (0.356) & (0.363) & (0.363) \\ 
+  as.factor(freg)8 & 0.193 & 0.506$^{*}$ & 0.160 \\ 
+  & (0.248) & (0.259) & (0.259) \\ 
+  as.factor(freg)9 & 0.056 & 0.506$^{**}$ & 0.139 \\ 
+  & (0.240) & (0.244) & (0.244) \\ 
+  as.factor(freg)10 & 0.161 & 0.239 & 0.007 \\ 
+  & (0.246) & (0.254) & (0.254) \\ 
+  as.factor(freg)11 & $-$0.026 & 0.121 & $-$0.034 \\ 
+  & (0.275) & (0.280) & (0.281) \\ 
+  as.factor(freg)12 & 0.048 & 0.414 & 0.419 \\ 
+  & (0.272) & (0.277) & (0.277) \\ 
+  as.factor(freg)13 & 0.013 & 0.008 & $-$0.237 \\ 
+  & (0.264) & (0.269) & (0.269) \\ 
+  as.factor(freg)14 & 0.155 & $-$0.007 & $-$0.034 \\ 
+  & (0.224) & (0.230) & (0.231) \\ 
+  as.factor(freg)15 & 0.375 & 0.043 & $-$0.241 \\ 
+  & (0.269) & (0.277) & (0.277) \\ 
+  as.factor(freg)16 & 0.232 & 0.861$^{***}$ & 0.275 \\ 
+  & (0.309) & (0.315) & (0.315) \\ 
+  as.factor(freg)17 & 0.301 & 0.376 & 0.0001 \\ 
+  & (0.253) & (0.262) & (0.262) \\ 
+  as.factor(freg)18 & 0.231 & 0.369 & 0.296 \\ 
+  & (0.262) & (0.270) & (0.270) \\ 
+  as.factor(freg)19 & 0.359 & 0.531$^{**}$ & 0.262 \\ 
+  & (0.234) & (0.239) & (0.239) \\ 
+  as.factor(freg)20 & $-$0.144 & 0.048 & 0.084 \\ 
+  & (0.303) & (0.309) & (0.309) \\ 
+  as.factor(freg)21 & $-$0.002 & 0.327 & 0.048 \\ 
+  & (0.288) & (0.309) & (0.310) \\ 
+  as.factor(freg)22 & 0.082 & 0.410 & 0.228 \\ 
+  & (0.273) & (0.278) & (0.278) \\ 
+  as.factor(freg)23 & 0.349 & 0.398 & 0.013 \\ 
+  & (0.248) & (0.252) & (0.252) \\ 
+  as.factor(freg)24 & 0.087 & 0.574$^{*}$ & 0.202 \\ 
+  & (0.313) & (0.319) & (0.319) \\ 
+  wave & $-$0.548$^{***}$ & 0.120 & $-$0.286$^{***}$ \\ 
+  & (0.078) & (0.080) & (0.081) \\ 
+  Constant & 0.472 & $-$0.492 & 0.049 \\ 
+  & (0.300) & (0.308) & (0.308) \\ 
+ \hline \\[-1.8ex] 
+Observations & 762 & 742 & 741 \\ 
+R$^{2}$ & 0.094 & 0.068 & 0.064 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Fri, Nov 20, 2026 - 17:27:30
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & ipe\_scale & epe\_scale & gl\_scale & trust \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ ccl & $-$0.157 & 0.406$^{***}$ & 0.078 & 0.189 \\ 
+  & (0.118) & (0.118) & (0.119) & (0.119) \\ 
+  wave & 0.201$^{**}$ & $-$0.188$^{**}$ & 0.044 & 0.0004 \\ 
+  & (0.079) & (0.079) & (0.079) & (0.079) \\ 
+  Constant & $-$0.246$^{**}$ & 0.203$^{*}$ & $-$0.066 & $-$0.021 \\ 
+  & (0.110) & (0.109) & (0.110) & (0.110) \\ 
+ \hline \\[-1.8ex] 
+Observations & 748 & 748 & 748 & 746 \\ 
+R$^{2}$ & 0.010 & 0.022 & 0.001 & 0.003 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Fri, Nov 20, 2026 - 17:27:30
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & ipe\_scale & epe\_scale & gl\_scale & trust \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ ccl & $-$0.129 & 0.374$^{***}$ & 0.097 & 0.188 \\ 
+  & (0.121) & (0.118) & (0.121) & (0.120) \\ 
+  educ & 0.120$^{***}$ & $-$0.078$^{*}$ & $-$0.071$^{*}$ & $-$0.076$^{*}$ \\ 
+  & (0.043) & (0.042) & (0.043) & (0.042) \\ 
+  econ & 0.037 & 0.169$^{***}$ & $-$0.107$^{**}$ & 0.200$^{***}$ \\ 
+  & (0.042) & (0.041) & (0.042) & (0.042) \\ 
+  woman & $-$0.106 & $-$0.029 & 0.031 & $-$0.134$^{*}$ \\ 
+  & (0.076) & (0.074) & (0.076) & (0.075) \\ 
+  age & $-$0.004 & 0.004$^{*}$ & 0.005$^{*}$ & 0.0004 \\ 
+  & (0.002) & (0.002) & (0.002) & (0.002) \\ 
+  as.factor(freg)2 & $-$0.056 & $-$0.051 & 0.107 & $-$0.034 \\ 
+  & (0.290) & (0.284) & (0.291) & (0.289) \\ 
+  as.factor(freg)3 & $-$0.043 & 0.184 & 0.151 & 0.173 \\ 
+  & (0.226) & (0.222) & (0.227) & (0.225) \\ 
+  as.factor(freg)4 & $-$0.096 & 0.173 & $-$0.051 & 0.090 \\ 
+  & (0.234) & (0.230) & (0.235) & (0.234) \\ 
+  as.factor(freg)5 & 0.173 & $-$0.0001 & $-$0.065 & 0.181 \\ 
+  & (0.226) & (0.222) & (0.227) & (0.226) \\ 
+  as.factor(freg)6 & $-$0.080 & 0.167 & 0.035 & 0.297 \\ 
+  & (0.230) & (0.226) & (0.232) & (0.230) \\ 
+  as.factor(freg)7 & $-$0.583 & $-$0.111 & 0.219 & 0.029 \\ 
+  & (0.365) & (0.358) & (0.366) & (0.363) \\ 
+  as.factor(freg)8 & 0.048 & 0.195 & 0.253 & 0.074 \\ 
+  & (0.260) & (0.255) & (0.261) & (0.259) \\ 
+  as.factor(freg)9 & $-$0.204 & 0.253 & 0.085 & 0.056 \\ 
+  & (0.245) & (0.241) & (0.247) & (0.244) \\ 
+  as.factor(freg)10 & $-$0.103 & 0.071 & $-$0.074 & $-$0.033 \\ 
+  & (0.255) & (0.250) & (0.256) & (0.254) \\ 
+  as.factor(freg)11 & 0.025 & 0.246 & $-$0.172 & 0.232 \\ 
+  & (0.282) & (0.276) & (0.283) & (0.281) \\ 
+  as.factor(freg)12 & 0.030 & 0.207 & 0.201 & 0.015 \\ 
+  & (0.282) & (0.276) & (0.283) & (0.281) \\ 
+  as.factor(freg)13 & 0.064 & 0.110 & 0.096 & 0.036 \\ 
+  & (0.270) & (0.265) & (0.272) & (0.269) \\ 
+  as.factor(freg)14 & $-$0.064 & 0.217 & 0.132 & 0.125 \\ 
+  & (0.231) & (0.226) & (0.232) & (0.230) \\ 
+  as.factor(freg)15 & $-$0.074 & 0.385 & 0.146 & $-$0.086 \\ 
+  & (0.278) & (0.273) & (0.280) & (0.277) \\ 
+  as.factor(freg)16 & 0.294 & 0.126 & 0.061 & $-$0.145 \\ 
+  & (0.316) & (0.310) & (0.318) & (0.315) \\ 
+  as.factor(freg)17 & 0.047 & 0.453$^{*}$ & 0.374 & 0.069 \\ 
+  & (0.263) & (0.258) & (0.264) & (0.262) \\ 
+  as.factor(freg)18 & $-$0.076 & 0.237 & 0.276 & 0.282 \\ 
+  & (0.271) & (0.266) & (0.272) & (0.270) \\ 
+  as.factor(freg)19 & $-$0.107 & 0.196 & 0.008 & 0.025 \\ 
+  & (0.241) & (0.237) & (0.242) & (0.240) \\ 
+  as.factor(freg)20 & $-$0.294 & 0.276 & $-$0.153 & 0.245 \\ 
+  & (0.310) & (0.304) & (0.312) & (0.309) \\ 
+  as.factor(freg)21 & 0.046 & $-$0.540$^{*}$ & 0.350 & 0.002 \\ 
+  & (0.310) & (0.304) & (0.312) & (0.309) \\ 
+  as.factor(freg)22 & $-$0.504$^{*}$ & 0.215 & 0.027 & $-$0.093 \\ 
+  & (0.283) & (0.277) & (0.284) & (0.281) \\ 
+  as.factor(freg)23 & $-$0.268 & 0.483$^{*}$ & $-$0.076 & 0.403 \\ 
+  & (0.253) & (0.249) & (0.255) & (0.252) \\ 
+  as.factor(freg)24 & 0.177 & $-$0.273 & 0.343 & 0.187 \\ 
+  & (0.320) & (0.314) & (0.322) & (0.319) \\ 
+  wave & 0.156$^{*}$ & $-$0.209$^{***}$ & 0.081 & $-$0.034 \\ 
+  & (0.081) & (0.079) & (0.081) & (0.081) \\ 
+  Constant & $-$0.530$^{*}$ & $-$0.268 & 0.170 & $-$0.273 \\ 
+  & (0.310) & (0.304) & (0.311) & (0.309) \\ 
+ \hline \\[-1.8ex] 
+Observations & 737 & 737 & 737 & 735 \\ 
+R$^{2}$ & 0.051 & 0.082 & 0.042 & 0.060 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Fri, Nov 20, 2026 - 17:27:31
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & scale(TRST\_cm) & scale(TRST\_p) & scale(TRST\_pp) \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ ccl & 0.228$^{*}$ & 0.143 & 0.116 \\ 
+  & (0.118) & (0.119) & (0.119) \\ 
+  wave & $-$0.111 & 0.053 & 0.062 \\ 
+  & (0.079) & (0.079) & (0.079) \\ 
+  Constant & 0.121 & $-$0.085 & $-$0.093 \\ 
+  & (0.110) & (0.110) & (0.110) \\ 
+ \hline \\[-1.8ex] 
+Observations & 746 & 746 & 746 \\ 
+R$^{2}$ & 0.007 & 0.003 & 0.002 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+Call:
+lm(formula = PK_scale ~ ccl * ccl_invite + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.5437 -0.5711  0.1234  0.6839  1.9597 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)    -0.25059    0.13044  -1.921   0.0551 .
+ccl             0.13599    0.16550   0.822   0.4115  
+ccl_invite      0.02887    0.08018   0.360   0.7189  
+wave            0.15861    0.08353   1.899   0.0580 .
+ccl:ccl_invite  0.24381    0.23644   1.031   0.3028  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9957 on 746 degrees of freedom
+  (22 observations deleted due to missingness)
+Multiple R-squared:  0.01294,	Adjusted R-squared:  0.007647 
+F-statistic: 2.445 on 4 and 746 DF,  p-value: 0.04525
+
+
+Call:
+lm(formula = issue_salience ~ ccl * ccl_invite + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.9842 -0.3681 -0.3289  1.1412  1.7521 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     0.68982    0.12421   5.554 3.86e-08 ***
+ccl             0.62722    0.15805   3.968 7.91e-05 ***
+ccl_invite      0.03917    0.07623   0.514   0.6075    
+wave           -0.57177    0.07938  -7.203 1.41e-12 ***
+ccl:ccl_invite -0.52035    0.22691  -2.293   0.0221 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9617 on 766 degrees of freedom
+  (2 observations deleted due to missingness)
+Multiple R-squared:  0.08026,	Adjusted R-squared:  0.07546 
+F-statistic: 16.71 on 4 and 766 DF,  p-value: 3.847e-13
+
+
+Call:
+lm(formula = ipe_scale ~ ccl * ccl_invite + wave, data = bs)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1967 -0.3723  0.3394  0.7886  1.0174 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)    -0.14319    0.13023  -1.100   0.2719  
+ccl            -0.10121    0.16485  -0.614   0.5394  
+ccl_invite     -0.10175    0.08001  -1.272   0.2039  
+wave            0.15813    0.08322   1.900   0.0578 .
+ccl:ccl_invite -0.02584    0.23685  -0.109   0.9131  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9913 on 741 degrees of freedom
+  (27 observations deleted due to missingness)
+Multiple R-squared:  0.01153,	Adjusted R-squared:  0.00619 
+F-statistic:  2.16 on 4 and 741 DF,  p-value: 0.07186
+
+
+Call:
+lm(formula = epe_scale ~ ccl * ccl_invite + wave, data = bs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1.95654 -0.66291  0.07127  0.59993  2.59696 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)    -0.01103    0.12907  -0.085  0.93193   
+ccl             0.34401    0.16339   2.106  0.03558 * 
+ccl_invite      0.20995    0.07930   2.648  0.00828 **
+wave           -0.10328    0.08249  -1.252  0.21095   
+ccl:ccl_invite  0.06175    0.23475   0.263  0.79258   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9825 on 741 degrees of freedom
+  (27 observations deleted due to missingness)
+Multiple R-squared:  0.03011,	Adjusted R-squared:  0.02488 
+F-statistic: 5.752 on 4 and 741 DF,  p-value: 0.0001462
+
+
+Call:
+lm(formula = gl_scale ~ ccl * ccl_invite + wave, data = bs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-3.05925 -0.82133  0.03081  0.81054  1.30901 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)
+(Intercept)    -0.02091    0.13131  -0.159    0.874
+ccl            -0.04398    0.16622  -0.265    0.791
+ccl_invite     -0.07241    0.08068  -0.897    0.370
+wave            0.03517    0.08392   0.419    0.675
+ccl:ccl_invite  0.30469    0.23882   1.276    0.202
+
+Residual standard error: 0.9995 on 741 degrees of freedom
+  (27 observations deleted due to missingness)
+Multiple R-squared:  0.004044,	Adjusted R-squared:  -0.001332 
+F-statistic: 0.7522 on 4 and 741 DF,  p-value: 0.5567
+
+
+Call:
+lm(formula = trust ~ ccl * ccl_invite + wave, data = bs)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.51202 -0.63311  0.05385  0.70358  2.76663 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)    -0.20676    0.13076  -1.581  0.11424   
+ccl             0.27965    0.16529   1.692  0.09110 . 
+ccl_invite      0.21116    0.08030   2.630  0.00873 **
+wave            0.06426    0.08357   0.769  0.44219   
+ccl:ccl_invite -0.26227    0.23744  -1.105  0.26970   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9936 on 739 degrees of freedom
+  (29 observations deleted due to missingness)
+Multiple R-squared:  0.01191,	Adjusted R-squared:  0.006559 
+F-statistic: 2.226 on 4 and 739 DF,  p-value: 0.06459
+
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Fri, Nov 20, 2026 - 17:27:31
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{6}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-7} 
+\\[-1.8ex] & PK\_scale & issue\_salience & ipe\_scale & epe\_scale & gl\_scale & trust \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4) & (5) & (6)\\ 
+\hline \\[-1.8ex] 
+ ccl & 0.136 & 0.627$^{***}$ & $-$0.101 & 0.344$^{**}$ & $-$0.044 & 0.280$^{*}$ \\ 
+  & (0.165) & (0.158) & (0.165) & (0.163) & (0.166) & (0.165) \\ 
+  ccl\_invite & 0.029 & 0.039 & $-$0.102 & 0.210$^{***}$ & $-$0.072 & 0.211$^{***}$ \\ 
+  & (0.080) & (0.076) & (0.080) & (0.079) & (0.081) & (0.080) \\ 
+  wave & 0.159$^{*}$ & $-$0.572$^{***}$ & 0.158$^{*}$ & $-$0.103 & 0.035 & 0.064 \\ 
+  & (0.084) & (0.079) & (0.083) & (0.082) & (0.084) & (0.084) \\ 
+  ccl:ccl\_invite & 0.244 & $-$0.520$^{**}$ & $-$0.026 & 0.062 & 0.305 & $-$0.262 \\ 
+  & (0.236) & (0.227) & (0.237) & (0.235) & (0.239) & (0.237) \\ 
+  Constant & $-$0.251$^{*}$ & 0.690$^{***}$ & $-$0.143 & $-$0.011 & $-$0.021 & $-$0.207 \\ 
+  & (0.130) & (0.124) & (0.130) & (0.129) & (0.131) & (0.131) \\ 
+ \hline \\[-1.8ex] 
+Observations & 751 & 771 & 746 & 746 & 746 & 744 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{6}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+Call:
+lm_robust(formula = PK_scale ~ time + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  CI Lower CI Upper    DF
+(Intercept)  -0.1729    0.31824 -0.5433  0.58860 -0.807163   0.4614 72.79
+time          0.1966    0.09581  2.0519  0.04346  0.005916   0.3873 79.74
+wave          0.0531    0.19992  0.2656  0.79131 -0.345577   0.4518 70.55
+
+Multiple R-squared:  0.01037 ,	Adjusted R-squared:  -0.002152 
+F-statistic: 2.133 on 2 and 80 DF,  p-value: 0.1252
+
+Call:
+lm_robust(formula = PK_scale ~ time + educ + econ + woman + age + 
+    as.factor(freg) + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+                    Estimate Std. Error   t value  Pr(>|t|)   CI Lower CI Upper
+(Intercept)       -0.0421258   0.942582 -0.044692 9.649e-01 -2.0329027  1.94865
+time               0.1911963   0.095789  1.996015 4.935e-02  0.0005538  0.38184
+educ              -0.0004486   0.126335 -0.003551 9.972e-01 -0.2673294  0.26643
+econ              -0.0017093   0.126858 -0.013474 9.894e-01 -0.2644682  0.26105
+woman             -0.1590059   0.271396 -0.585881 5.624e-01 -0.7137715  0.39576
+age                0.0130623   0.008084  1.615851 1.205e-01 -0.0037140  0.02984
+as.factor(freg)2  -2.3561653   0.784588 -3.003061 7.760e-02 -5.2784666  0.56614
+as.factor(freg)3  -0.7066741   0.388720 -1.817953 1.017e-01 -1.5830749  0.16973
+as.factor(freg)4  -0.8244376   0.569924 -1.446574 1.812e-01 -2.1096258  0.46075
+as.factor(freg)5  -0.0876549   0.410145 -0.213717 8.353e-01 -1.0094001  0.83409
+as.factor(freg)6  -1.4002868   0.624774 -2.241271 5.786e-02 -2.8609147  0.06034
+as.factor(freg)7  -1.1593837   0.480299 -2.413881 1.005e-01 -2.7484198  0.42965
+as.factor(freg)8  -1.4262172   0.370474 -3.849709 4.024e-02 -2.7213833 -0.13105
+as.factor(freg)9  -0.5476149   0.511598 -1.070400 3.093e-01 -1.6858469  0.59062
+as.factor(freg)11 -0.8257478   0.588385 -1.403415 2.710e-01 -2.9162513  1.26476
+as.factor(freg)12 -0.7704311   0.298512 -2.580907 1.188e-01 -2.0133952  0.47253
+as.factor(freg)13 -0.5211470   0.417757 -1.247490 2.448e-01 -1.4715313  0.42924
+as.factor(freg)14 -0.5984273   0.576788 -1.037516 3.349e-01 -1.9698547  0.77300
+as.factor(freg)15 -0.3687836   0.380756 -0.968555 3.766e-01 -1.3428251  0.60526
+as.factor(freg)16 -0.7127100   0.542328 -1.314168 2.452e-01 -2.1021608  0.67674
+as.factor(freg)17 -0.4641530   0.614833 -0.754925 4.697e-01 -1.8562575  0.92795
+as.factor(freg)18 -2.6726339   0.400544 -6.672517 4.873e-05 -3.5618686 -1.78340
+as.factor(freg)19 -0.2291560   0.385842 -0.593911 5.705e-01 -1.1339236  0.67561
+as.factor(freg)20 -1.0717770   0.519560 -2.062856 1.625e-01 -3.1093955  0.96584
+as.factor(freg)21 -0.7757642   0.364813 -2.126473 6.096e-02 -1.5951195  0.04359
+as.factor(freg)22 -0.1940828   0.315765 -0.614643 5.972e-01 -1.4581461  1.06998
+as.factor(freg)23 -0.0163120   0.552841 -0.029506 9.791e-01 -2.3447840  2.31216
+as.factor(freg)24 -0.6513650   0.381818 -1.705956 1.211e-01 -1.5109368  0.20821
+wave              -0.0235629   0.239797 -0.098262 9.223e-01 -0.5121612  0.46504
+                      DF
+(Intercept)       16.768
+time              79.557
+educ              16.722
+econ              22.485
+woman             29.368
+age               21.744
+as.factor(freg)2   2.365
+as.factor(freg)3   9.203
+as.factor(freg)4   9.191
+as.factor(freg)5   9.406
+as.factor(freg)6   7.418
+as.factor(freg)7   2.809
+as.factor(freg)8   2.581
+as.factor(freg)9  10.110
+as.factor(freg)11  2.521
+as.factor(freg)12  2.071
+as.factor(freg)13  8.679
+as.factor(freg)14  6.815
+as.factor(freg)15  5.082
+as.factor(freg)16  5.056
+as.factor(freg)17  8.947
+as.factor(freg)18 10.275
+as.factor(freg)19  7.302
+as.factor(freg)20  2.218
+as.factor(freg)21  9.447
+as.factor(freg)22  2.165
+as.factor(freg)23  2.046
+as.factor(freg)24  9.295
+wave              31.754
+
+Multiple R-squared:  0.3074 ,	Adjusted R-squared:  0.1605 
+F-statistic:    NA on 28 and 80 DF,  p-value: NA
+
+Call:
+lm_robust(formula = placebo_PK_scale ~ time + wave, data = ws, 
+    clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+             Estimate Std. Error  t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept)  0.515797     0.2910  1.77239  0.08051 -0.06423   1.0958 72.79
+time        -0.006132     0.1130 -0.05427  0.95686 -0.23101   0.2187 79.74
+wave        -0.362073     0.1919 -1.88682  0.06330 -0.74475   0.0206 70.55
+
+Multiple R-squared:  0.03205 ,	Adjusted R-squared:  0.0198 
+F-statistic: 1.794 on 2 and 80 DF,  p-value: 0.173
+
+Call:
+lm_robust(formula = placebo_PK_scale ~ time + educ + econ + woman + 
+    age + as.factor(freg) + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+                   Estimate Std. Error  t value  Pr(>|t|) CI Lower   CI Upper
+(Intercept)        1.662275   0.861148  1.93030 0.0706614 -0.15651  3.4810584
+time              -0.002299   0.113152 -0.02032 0.9838375 -0.22750  0.2228991
+educ              -0.119643   0.116014 -1.03128 0.3170946 -0.36472  0.1254355
+econ              -0.050206   0.148856 -0.33728 0.7390332 -0.35853  0.2581165
+woman             -0.028620   0.248061 -0.11537 0.9089344 -0.53568  0.4784450
+age                0.004260   0.007475  0.56986 0.5746109 -0.01125  0.0197719
+as.factor(freg)2  -2.483842   0.560755 -4.42946 0.0345443 -4.57245 -0.3952363
+as.factor(freg)3  -0.825177   0.280086 -2.94615 0.0159438 -1.45665 -0.1936990
+as.factor(freg)4  -0.608424   0.410863 -1.48084 0.1720945 -1.53493  0.3180788
+as.factor(freg)5  -0.419355   0.350031 -1.19805 0.2602136 -1.20600  0.3672931
+as.factor(freg)6  -0.870739   0.603596 -1.44259 0.1899948 -2.28186  0.5403793
+as.factor(freg)7  -1.188667   0.536075 -2.21735 0.1193743 -2.96224  0.5849025
+as.factor(freg)8  -1.442723   0.412836 -3.49466 0.0500417 -2.88599  0.0005405
+as.factor(freg)9  -0.452620   0.471019 -0.96094 0.3590026 -1.50057  0.5953304
+as.factor(freg)11 -1.354689   0.469923 -2.88279 0.0779800 -3.02430  0.3149244
+as.factor(freg)12 -0.334444   0.742080 -0.45068 0.6950185 -3.42437  2.7554818
+as.factor(freg)13 -0.395984   0.336337 -1.17734 0.2703346 -1.16114  0.3691729
+as.factor(freg)14 -0.848686   0.448400 -1.89270 0.1014145 -1.91485  0.2174740
+as.factor(freg)15 -1.126902   0.542638 -2.07671 0.0915453 -2.51507  0.2612614
+as.factor(freg)16 -1.753910   0.472247 -3.71397 0.0135224 -2.96381 -0.5440076
+as.factor(freg)17 -1.316614   0.517504 -2.54416 0.0316350 -2.48835 -0.1448818
+as.factor(freg)18 -2.185759   0.360591 -6.06161 0.0001087 -2.98630 -1.3852232
+as.factor(freg)19 -0.914374   0.397111 -2.30256 0.0532814 -1.84557  0.0168182
+as.factor(freg)20 -1.187012   0.671183 -1.76854 0.2064859 -3.81927  1.4452442
+as.factor(freg)21  0.573471   0.370463  1.54798 0.1544437 -0.25858  1.4055170
+as.factor(freg)22 -0.995469   0.373329 -2.66647 0.1072933 -2.48997  0.4990317
+as.factor(freg)23  0.109672   0.269808  0.40648 0.7229791 -1.02671  1.2460584
+as.factor(freg)24 -0.975892   0.339567 -2.87393 0.0177795 -1.74035 -0.2114381
+wave              -0.281568   0.208573 -1.34997 0.1865704 -0.70655  0.1434109
+                      DF
+(Intercept)       16.768
+time              79.557
+educ              16.722
+econ              22.485
+woman             29.368
+age               21.744
+as.factor(freg)2   2.365
+as.factor(freg)3   9.203
+as.factor(freg)4   9.191
+as.factor(freg)5   9.406
+as.factor(freg)6   7.418
+as.factor(freg)7   2.809
+as.factor(freg)8   2.581
+as.factor(freg)9  10.110
+as.factor(freg)11  2.521
+as.factor(freg)12  2.071
+as.factor(freg)13  8.679
+as.factor(freg)14  6.815
+as.factor(freg)15  5.082
+as.factor(freg)16  5.056
+as.factor(freg)17  8.947
+as.factor(freg)18 10.275
+as.factor(freg)19  7.302
+as.factor(freg)20  2.218
+as.factor(freg)21  9.447
+as.factor(freg)22  2.165
+as.factor(freg)23  2.046
+as.factor(freg)24  9.295
+wave              31.754
+
+Multiple R-squared:  0.329 ,	Adjusted R-squared:  0.1867 
+F-statistic:    NA on 28 and 80 DF,  p-value: NA
+
+Call:
+lm_robust(formula = issue_salience ~ time + wave, data = ws, 
+    clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   CI Lower CI Upper    DF
+(Intercept)   0.5161     0.2742   1.882  0.06380 -0.0303950   1.0625 72.85
+time          0.2183     0.1102   1.982  0.05097 -0.0009425   0.4376 80.00
+wave         -0.4404     0.1987  -2.216  0.02987 -0.8365700  -0.0442 71.26
+
+Multiple R-squared:  0.05952 ,	Adjusted R-squared:  0.04769 
+F-statistic: 4.153 on 2 and 80 DF,  p-value: 0.01923
+
+Call:
+lm_robust(formula = issue_salience ~ time + educ + econ + woman + 
+    age + as.factor(freg) + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+                   Estimate Std. Error  t value Pr(>|t|)   CI Lower CI Upper
+(Intercept)       -0.723307   1.431589 -0.50525  0.61994 -3.7460395  2.29943
+time               0.218339   0.110188  1.98151  0.05097 -0.0009425  0.43762
+educ              -0.025580   0.185392 -0.13798  0.89188 -0.4167530  0.36559
+econ               0.269431   0.163797  1.64490  0.11388 -0.0698161  0.60868
+woman              0.123628   0.277645  0.44527  0.65940 -0.4439996  0.69126
+age                0.004497   0.006413  0.70133  0.49050 -0.0088074  0.01780
+as.factor(freg)2  -0.331150   0.709321 -0.46685  0.68020 -2.9765071  2.31421
+as.factor(freg)3   0.082827   0.720717  0.11492  0.91097 -1.5420111  1.70766
+as.factor(freg)4   0.391171   0.662045  0.59085  0.56882 -1.1010426  1.88338
+as.factor(freg)5   0.519911   0.650237  0.79957  0.44369 -0.9415325  1.98135
+as.factor(freg)6   0.221277   0.676789  0.32695  0.75274 -1.3610008  1.80356
+as.factor(freg)7   0.885575   0.825083  1.07332  0.36659 -1.8444876  3.61564
+as.factor(freg)8   0.540436   0.818166  0.66054  0.56384 -2.3523838  3.43325
+as.factor(freg)9   0.584570   0.699210  0.83604  0.42255 -0.9721292  2.14127
+as.factor(freg)11  0.667128   1.555217  0.42896  0.70190 -4.8582562  6.19251
+as.factor(freg)12  0.047850   0.607815  0.07872  0.94421 -2.4864722  2.58217
+as.factor(freg)13  0.214658   0.719678  0.29827  0.77255 -1.4237802  1.85310
+as.factor(freg)14  0.766217   0.943058  0.81248  0.44397 -1.4761089  3.00854
+as.factor(freg)15  0.817076   0.887347  0.92081  0.39876 -1.4529373  3.08709
+as.factor(freg)16  0.019396   0.936790  0.02071  0.98427 -2.3814458  2.42024
+as.factor(freg)17  0.516254   0.700085  0.73742  0.47978 -1.0691077  2.10162
+as.factor(freg)18  0.856333   0.686420  1.24754  0.24000 -0.6684622  2.38113
+as.factor(freg)19  0.918481   0.756411  1.21426  0.26244 -0.8550927  2.69205
+as.factor(freg)20 -0.194808   0.783890 -0.24851  0.82497 -3.2813249  2.89171
+as.factor(freg)21 -0.537618   0.771720 -0.69665  0.50292 -2.2726865  1.19745
+as.factor(freg)22  0.213724   0.979774  0.21814  0.84625 -3.7229045  4.15035
+as.factor(freg)23  0.061342   0.748561  0.08195  0.94201 -3.0946386  3.21732
+as.factor(freg)24  0.919296   0.684628  1.34277  0.21124 -0.6221736  2.46077
+wave              -0.509054   0.235991 -2.15709  0.03870 -0.9899533 -0.02816
+                      DF
+(Intercept)       16.829
+time              80.000
+educ              16.983
+econ              22.513
+woman             29.262
+age               21.830
+as.factor(freg)2   2.361
+as.factor(freg)3   9.206
+as.factor(freg)4   9.220
+as.factor(freg)5   9.400
+as.factor(freg)6   7.417
+as.factor(freg)7   2.808
+as.factor(freg)8   2.539
+as.factor(freg)9  10.059
+as.factor(freg)11  2.522
+as.factor(freg)12  2.068
+as.factor(freg)13  8.640
+as.factor(freg)14  6.815
+as.factor(freg)15  5.082
+as.factor(freg)16  5.051
+as.factor(freg)17  8.939
+as.factor(freg)18 10.230
+as.factor(freg)19  7.306
+as.factor(freg)20  2.207
+as.factor(freg)21  9.379
+as.factor(freg)22  2.156
+as.factor(freg)23  2.043
+as.factor(freg)24  9.287
+wave              31.662
+
+Multiple R-squared:  0.2231 ,	Adjusted R-squared:  0.05957 
+F-statistic:    NA on 28 and 80 DF,  p-value: NA
+
+Call:
+lm_robust(formula = ipe_scale ~ time + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept) -0.18432     0.2905 -0.6345   0.5277  -0.7633   0.3947 72.55
+time         0.09866     0.1258  0.7845   0.4351  -0.1516   0.3490 79.48
+wave         0.09558     0.1872  0.5105   0.6113  -0.2778   0.4690 70.68
+
+Multiple R-squared:  0.004676 ,	Adjusted R-squared:  -0.008003 
+F-statistic: 0.4661 on 2 and 80 DF,  p-value: 0.6292
+
+Call:
+lm_robust(formula = ipe_scale ~ time + educ + econ + woman + 
+    age + as.factor(freg) + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+                   Estimate Std. Error  t value  Pr(>|t|) CI Lower CI Upper
+(Intercept)        0.628810   0.915830  0.68660 0.5018277 -1.30721  2.56483
+time               0.092770   0.126972  0.73063 0.4671613 -0.15995  0.34549
+educ              -0.011370   0.137557 -0.08266 0.9351132 -0.30212  0.27938
+econ               0.117045   0.161048  0.72677 0.4747824 -0.21632  0.45041
+woman              0.174770   0.244328  0.71531 0.4800695 -0.32467  0.67421
+age               -0.005065   0.008551 -0.59232 0.5597998 -0.02282  0.01269
+as.factor(freg)2  -1.841231   0.600820 -3.06453 0.0743552 -4.07575  0.39329
+as.factor(freg)3  -0.595864   0.561727 -1.06077 0.3158499 -1.86240  0.67068
+as.factor(freg)4  -1.222325   0.368799 -3.31434 0.0087652 -2.05397 -0.39068
+as.factor(freg)5  -0.596881   0.347161 -1.71932 0.1182347 -1.37713  0.18337
+as.factor(freg)6  -1.069132   0.542077 -1.97229 0.0868381 -2.33624  0.19798
+as.factor(freg)7  -1.407425   0.990349 -1.42114 0.2560421 -4.68054  1.86569
+as.factor(freg)8  -1.022906   1.214712 -0.84210 0.4705233 -5.26710  3.22129
+as.factor(freg)9  -0.619333   0.313409 -1.97612 0.0760519 -1.31662  0.07796
+as.factor(freg)11 -1.298396   1.047376 -1.23967 0.3179868 -5.01977  2.42298
+as.factor(freg)12 -0.683011   0.881440 -0.77488 0.5170517 -4.35323  2.98721
+as.factor(freg)13 -0.689635   0.532330 -1.29550 0.2285351 -1.90064  0.52137
+as.factor(freg)14 -0.390809   0.369643 -1.05726 0.3264229 -1.26971  0.48809
+as.factor(freg)15 -1.403810   0.592438 -2.36955 0.0631347 -2.91908  0.11146
+as.factor(freg)16 -0.843249   0.455684 -1.85051 0.1228191 -2.01071  0.32422
+as.factor(freg)17 -1.477203   0.492905 -2.99693 0.0151287 -2.59324 -0.36117
+as.factor(freg)18  0.015763   0.347237  0.04540 0.9646622 -0.75513  0.78666
+as.factor(freg)19 -0.912034   0.384122 -2.37434 0.0522831 -1.83620  0.01213
+as.factor(freg)20 -1.363265   0.425832 -3.20141 0.0744327 -3.03344  0.30691
+as.factor(freg)21 -2.710257   0.453516 -5.97610 0.0001705 -3.72857 -1.69194
+as.factor(freg)22 -0.744904   0.297855 -2.50089 0.1199961 -1.93676  0.44695
+as.factor(freg)23 -0.600909   0.817140 -0.73538 0.5371636 -4.04263  2.84082
+as.factor(freg)24 -1.028107   0.339604 -3.02737 0.0137973 -1.79262 -0.26359
+wave               0.057479   0.236753  0.24278 0.8097362 -0.42492  0.53988
+                      DF
+(Intercept)       16.574
+time              79.157
+educ              16.604
+econ              22.741
+woman             29.358
+age               21.547
+as.factor(freg)2   2.370
+as.factor(freg)3   9.199
+as.factor(freg)4   9.191
+as.factor(freg)5   9.401
+as.factor(freg)6   7.424
+as.factor(freg)7   2.814
+as.factor(freg)8   2.583
+as.factor(freg)9  10.110
+as.factor(freg)11  2.521
+as.factor(freg)12  2.071
+as.factor(freg)13  8.681
+as.factor(freg)14  6.815
+as.factor(freg)15  5.085
+as.factor(freg)16  5.056
+as.factor(freg)17  8.947
+as.factor(freg)18 10.275
+as.factor(freg)19  6.452
+as.factor(freg)20  2.218
+as.factor(freg)21  9.464
+as.factor(freg)22  2.166
+as.factor(freg)23  2.046
+as.factor(freg)24  9.297
+wave              31.743
+
+Multiple R-squared:  0.2112 ,	Adjusted R-squared:  0.04264 
+F-statistic:    NA on 28 and 80 DF,  p-value: NA
+
+Call:
+lm_robust(formula = epe_scale ~ time + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept)   0.1114     0.3066  0.3632 0.717535  -0.4998   0.7226 72.55
+time          0.3138     0.1073  2.9250 0.004487   0.1003   0.5274 79.48
+wave         -0.1877     0.1988 -0.9444 0.348185  -0.5841   0.2086 70.68
+
+Multiple R-squared:  0.03347 ,	Adjusted R-squared:  0.02115 
+F-statistic:  5.27 on 2 and 80 DF,  p-value: 0.007078
+
+Call:
+lm_robust(formula = epe_scale ~ time + educ + econ + woman + 
+    age + as.factor(freg) + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)   CI Lower CI Upper
+(Intercept)       -2.216735   1.326535 -1.6711 0.113480 -5.0209693  0.58750
+time               0.309044   0.107009  2.8880 0.004998  0.0960544  0.52203
+educ               0.229068   0.170702  1.3419 0.197687 -0.1317380  0.58987
+econ               0.323715   0.150207  2.1551 0.041983  0.0127923  0.63464
+woman             -0.604827   0.210806 -2.8691 0.007554 -1.0357468 -0.17391
+age                0.003716   0.006794  0.5469 0.590041 -0.0103916  0.01782
+as.factor(freg)2   0.449312   0.620672  0.7239 0.533904 -1.8590402  2.75766
+as.factor(freg)3   0.614810   0.715671  0.8591 0.412129 -0.9988297  2.22845
+as.factor(freg)4   1.191324   0.575570  2.0698 0.067743 -0.1065882  2.48924
+as.factor(freg)5   0.700405   0.589693  1.1877 0.264074 -0.6249432  2.02575
+as.factor(freg)6   0.680549   0.631536  1.0776 0.314971 -0.7956678  2.15677
+as.factor(freg)7   1.100741   0.715313  1.5388 0.227315 -1.2633814  3.46486
+as.factor(freg)8   0.197994   1.519210  0.1303 0.905778 -5.1101120  5.50610
+as.factor(freg)9   0.116199   0.620860  0.1872 0.855240 -1.2651260  1.49752
+as.factor(freg)11  0.667083   0.837702  0.7963 0.493940 -2.3093092  3.64348
+as.factor(freg)12  0.971452   0.659793  1.4724 0.274718 -1.7758541  3.71876
+as.factor(freg)13  1.546423   0.679537  2.2757 0.049937  0.0005344  3.09231
+as.factor(freg)14  1.080821   0.690540  1.5652 0.162676 -0.5610819  2.72272
+as.factor(freg)15  1.424112   0.567962  2.5074 0.053192 -0.0285578  2.87678
+as.factor(freg)16  1.423282   0.783997  1.8154 0.128519 -0.5853235  3.43189
+as.factor(freg)17  1.058088   0.630419  1.6784 0.127780 -0.3693038  2.48548
+as.factor(freg)18  1.214112   0.592017  2.0508 0.066672 -0.1002186  2.52844
+as.factor(freg)19  0.985731   0.671885  1.4671 0.189324 -0.6307722  2.60223
+as.factor(freg)20  0.911354   0.623748  1.4611 0.269741 -1.5350793  3.35779
+as.factor(freg)21  1.341526   0.692673  1.9367 0.083168 -0.2137837  2.89684
+as.factor(freg)22  1.878730   0.593100  3.1676 0.078337 -0.4945389  4.25200
+as.factor(freg)23  0.723955   0.582376  1.2431 0.337396 -1.7289651  3.17688
+as.factor(freg)24  0.231556   0.595174  0.3891 0.705996 -1.1082993  1.57141
+wave              -0.425141   0.218446 -1.9462 0.060528 -0.8702426  0.01996
+                      DF
+(Intercept)       16.574
+time              79.157
+educ              16.604
+econ              22.741
+woman             29.358
+age               21.547
+as.factor(freg)2   2.370
+as.factor(freg)3   9.199
+as.factor(freg)4   9.191
+as.factor(freg)5   9.401
+as.factor(freg)6   7.424
+as.factor(freg)7   2.814
+as.factor(freg)8   2.583
+as.factor(freg)9  10.110
+as.factor(freg)11  2.521
+as.factor(freg)12  2.071
+as.factor(freg)13  8.681
+as.factor(freg)14  6.815
+as.factor(freg)15  5.085
+as.factor(freg)16  5.056
+as.factor(freg)17  8.947
+as.factor(freg)18 10.275
+as.factor(freg)19  6.452
+as.factor(freg)20  2.218
+as.factor(freg)21  9.464
+as.factor(freg)22  2.166
+as.factor(freg)23  2.046
+as.factor(freg)24  9.297
+wave              31.743
+
+Multiple R-squared:  0.3353 ,	Adjusted R-squared:  0.1933 
+F-statistic: 1.522e+15 on 28 and 80 DF,  p-value: < 2.2e-16
+
+Call:
+lm_robust(formula = gl_scale ~ time + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept)  0.12046     0.3223  0.3738   0.7097  -0.5219   0.7628 72.55
+time         0.07021     0.1005  0.6985   0.4869  -0.1299   0.2703 79.48
+wave        -0.10934     0.1968 -0.5555   0.5803  -0.5018   0.2832 70.68
+
+Multiple R-squared:  0.004176 ,	Adjusted R-squared:  -0.00851 
+F-statistic: 0.4061 on 2 and 80 DF,  p-value: 0.6676
+
+Call:
+lm_robust(formula = gl_scale ~ time + educ + econ + woman + age + 
+    as.factor(freg) + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+                  Estimate Std. Error  t value Pr(>|t|)  CI Lower CI Upper
+(Intercept)        0.13324   0.916789  0.14533  0.88620 -1.804813  2.07129
+time               0.06903   0.101248  0.68183  0.49734 -0.132489  0.27056
+educ              -0.04187   0.129816 -0.32254  0.75107 -0.316258  0.23252
+econ              -0.09548   0.194657 -0.49049  0.62848 -0.498411  0.30746
+woman              0.04477   0.255316  0.17535  0.86201 -0.477134  0.56667
+age                0.01095   0.006512  1.68233  0.10694 -0.002566  0.02448
+as.factor(freg)2  -0.17500   0.725901 -0.24109  0.82878 -2.874716  2.52471
+as.factor(freg)3   0.26025   0.511866  0.50843  0.62312 -0.893868  1.41437
+as.factor(freg)4  -0.66030   0.534661 -1.23498  0.24747 -1.865961  0.54536
+as.factor(freg)5   0.10857   0.543850  0.19964  0.84602 -1.113744  1.33089
+as.factor(freg)6   0.21751   0.634859  0.34262  0.74138 -1.266470  1.70150
+as.factor(freg)7  -0.38228   0.517076 -0.73931  0.51654 -2.091223  1.32667
+as.factor(freg)8  -1.12638   1.115093 -1.01012  0.39752 -5.022507  2.76974
+as.factor(freg)9  -0.46562   0.659160 -0.70639  0.49590 -1.932159  1.00092
+as.factor(freg)11 -0.04793   0.562769 -0.08516  0.93843 -2.047473  1.95162
+as.factor(freg)12  0.38418   0.451849  0.85023  0.48208 -1.497276  2.26563
+as.factor(freg)13 -0.34322   0.491240 -0.69868  0.50304 -1.460748  0.77431
+as.factor(freg)14 -0.49963   0.661023 -0.75584  0.47506 -2.071346  1.07209
+as.factor(freg)15 -0.81322   0.686693 -1.18426  0.28869 -2.569571  0.94312
+as.factor(freg)16  0.41011   0.825882  0.49657  0.64033 -1.705807  2.52602
+as.factor(freg)17 -0.66784   0.562151 -1.18800  0.26541 -1.940657  0.60498
+as.factor(freg)18  0.99445   0.513833  1.93535  0.08093 -0.146306  2.13520
+as.factor(freg)19  0.27272   0.441728  0.61740  0.55812 -0.790039  1.33549
+as.factor(freg)20 -0.45634   0.476775 -0.95713  0.43088 -2.326317  1.41365
+as.factor(freg)21  0.07384   0.568525  0.12988  0.89938 -1.202709  1.35039
+as.factor(freg)22 -0.94953   1.242512 -0.76420  0.51923 -5.921399  4.02234
+as.factor(freg)23 -0.69123   0.445656 -1.55104  0.25835 -2.568298  1.18583
+as.factor(freg)24  0.40897   0.497938  0.82132  0.43202 -0.711990  1.52993
+wave              -0.08045   0.249087 -0.32298  0.74883 -0.587987  0.42708
+                      DF
+(Intercept)       16.574
+time              79.157
+educ              16.604
+econ              22.741
+woman             29.358
+age               21.547
+as.factor(freg)2   2.370
+as.factor(freg)3   9.199
+as.factor(freg)4   9.191
+as.factor(freg)5   9.401
+as.factor(freg)6   7.424
+as.factor(freg)7   2.814
+as.factor(freg)8   2.583
+as.factor(freg)9  10.110
+as.factor(freg)11  2.521
+as.factor(freg)12  2.071
+as.factor(freg)13  8.681
+as.factor(freg)14  6.815
+as.factor(freg)15  5.085
+as.factor(freg)16  5.056
+as.factor(freg)17  8.947
+as.factor(freg)18 10.275
+as.factor(freg)19  6.452
+as.factor(freg)20  2.218
+as.factor(freg)21  9.464
+as.factor(freg)22  2.166
+as.factor(freg)23  2.046
+as.factor(freg)24  9.297
+wave              31.743
+
+Multiple R-squared:  0.2421 ,	Adjusted R-squared:  0.08014 
+F-statistic:    NA on 28 and 80 DF,  p-value: NA
+
+Call:
+lm_robust(formula = scale(TRST_cm) ~ time + wave, data = ws, 
+    clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept)   0.1181    0.32233  0.3664 0.715128  -0.5244   0.7606 72.55
+time          0.3154    0.09269  3.4030 0.001046   0.1309   0.4999 79.48
+wave         -0.1930    0.19961 -0.9670 0.336846  -0.5911   0.2050 70.68
+
+Multiple R-squared:  0.03421 ,	Adjusted R-squared:  0.02191 
+F-statistic: 6.863 on 2 and 80 DF,  p-value: 0.001775
+
+Call:
+lm_robust(formula = scale(TRST_p) ~ time + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error  t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept) -0.04891    0.31316 -0.15617   0.8763 -0.67310   0.5753 72.55
+time         0.13039    0.09626  1.35462   0.1794 -0.06119   0.3220 79.48
+wave        -0.01091    0.20891 -0.05221   0.9585 -0.42749   0.4057 70.68
+
+Multiple R-squared:  0.004307 ,	Adjusted R-squared:  -0.008377 
+F-statistic: 0.9302 on 2 and 80 DF,  p-value: 0.3987
+
+Call:
+lm_robust(formula = scale(TRST_pp) ~ time + wave, data = ws, 
+    clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept) -0.07247     0.3144 -0.2305   0.8184  -0.6992   0.5542 72.55
+time         0.07149     0.0917  0.7796   0.4379  -0.1110   0.2540 79.48
+wave         0.02620     0.2119  0.1236   0.9020  -0.3964   0.4488 70.68
+
+Multiple R-squared:  0.001452 ,	Adjusted R-squared:  -0.01127 
+F-statistic: 0.3057 on 2 and 80 DF,  p-value: 0.7375
+
+Call:
+lm_robust(formula = trust ~ time + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+             Estimate Std. Error  t value Pr(>|t|) CI Lower CI Upper    DF
+(Intercept) -0.004335    0.32567 -0.01331  0.98942 -0.65347   0.6448 72.55
+time         0.193493    0.08369  2.31194  0.02337  0.02692   0.3601 79.48
+wave        -0.064284    0.20969 -0.30656  0.76008 -0.48243   0.3539 70.68
+
+Multiple R-squared:  0.01044 ,	Adjusted R-squared:  -0.002164 
+F-statistic: 2.814 on 2 and 80 DF,  p-value: 0.06592
+
+Call:
+lm_robust(formula = trust ~ time + educ + econ + woman + age + 
+    as.factor(freg) + wave, data = ws, clusters = merg_v)
+
+Standard error type:  CR2 
+
+Coefficients:
+                   Estimate Std. Error   t value Pr(>|t|) CI Lower CI Upper
+(Intercept)        0.203347   1.489609  0.136510  0.89306 -2.94562  3.35231
+time               0.188713   0.084431  2.235108  0.02823  0.02066  0.35676
+educ              -0.175200   0.198205 -0.883930  0.38935 -0.59414  0.24374
+econ               0.287852   0.169770  1.695542  0.10362 -0.06357  0.63927
+woman             -0.109599   0.262411 -0.417661  0.67923 -0.64601  0.42681
+age                0.001468   0.007762  0.189151  0.85174 -0.01465  0.01758
+as.factor(freg)2  -0.945245   0.958883 -0.985778  0.41394 -4.51144  2.62095
+as.factor(freg)3  -0.230841   0.975428 -0.236656  0.81811 -2.43016  1.96848
+as.factor(freg)4   0.078855   0.893482  0.088255  0.93157 -1.93595  2.09366
+as.factor(freg)5  -0.370907   0.913704 -0.405938  0.69387 -2.42448  1.68266
+as.factor(freg)6  -0.230623   0.959535 -0.240348  0.81656 -2.47354  2.01230
+as.factor(freg)7  -0.370441   1.040392 -0.356059  0.74680 -3.80896  3.06807
+as.factor(freg)8   0.081107   1.160672  0.069880  0.94934 -3.97427  4.13648
+as.factor(freg)9   0.079747   0.875117  0.091127  0.92917 -1.86726  2.02676
+as.factor(freg)11  0.216802   1.326857  0.163395  0.88240 -4.49758  4.93118
+as.factor(freg)12 -0.204052   0.904986 -0.225476  0.84191 -3.97231  3.56421
+as.factor(freg)13  0.119065   1.048997  0.113504  0.91221 -2.26731  2.50544
+as.factor(freg)14  0.131210   0.899460  0.145877  0.88824 -2.00744  2.26986
+as.factor(freg)15 -0.010868   1.087066 -0.009998  0.99240 -2.79124  2.76951
+as.factor(freg)16 -0.301182   0.983125 -0.306351  0.77155 -2.81995  2.21759
+as.factor(freg)17  0.578328   1.007613  0.573959  0.58014 -1.70310  2.85976
+as.factor(freg)18  0.868653   0.895382  0.970147  0.35426 -1.11918  2.85648
+as.factor(freg)19 -0.070090   0.951133 -0.073691  0.94349 -2.35844  2.21826
+as.factor(freg)20  0.796419   0.958218  0.831146  0.48580 -2.96185  4.55469
+as.factor(freg)21  0.091275   1.011101  0.090273  0.92995 -2.17903  2.36158
+as.factor(freg)22  0.692417   0.870341  0.795570  0.50411 -2.79022  4.17506
+as.factor(freg)23  0.452261   0.812496  0.556632  0.63265 -2.96991  3.87443
+as.factor(freg)24  0.423557   0.895072  0.473210  0.64698 -1.59143  2.43854
+wave              -0.249777   0.256105 -0.975290  0.33679 -0.77161  0.27206
+                      DF
+(Intercept)       16.574
+time              79.157
+educ              16.604
+econ              22.741
+woman             29.358
+age               21.547
+as.factor(freg)2   2.370
+as.factor(freg)3   9.199
+as.factor(freg)4   9.191
+as.factor(freg)5   9.401
+as.factor(freg)6   7.424
+as.factor(freg)7   2.814
+as.factor(freg)8   2.583
+as.factor(freg)9  10.110
+as.factor(freg)11  2.521
+as.factor(freg)12  2.071
+as.factor(freg)13  8.681
+as.factor(freg)14  6.815
+as.factor(freg)15  5.085
+as.factor(freg)16  5.056
+as.factor(freg)17  8.947
+as.factor(freg)18 10.275
+as.factor(freg)19  6.452
+as.factor(freg)20  2.218
+as.factor(freg)21  9.464
+as.factor(freg)22  2.166
+as.factor(freg)23  2.046
+as.factor(freg)24  9.297
+wave              31.743
+
+Multiple R-squared:  0.2067 ,	Adjusted R-squared:  0.03717 
+F-statistic:    NA on 28 and 80 DF,  p-value: NA
+The table was written to the file 'TableD6.tex'.
+
+The table was written to the file 'TableD7.tex'.
+
+The table was written to the file 'TableD8.tex'.
+
+The table was written to the file 'TableD9.tex'.
+
+The table was written to the file 'TableD10.tex'.
+
+pdf 
+  2 
+pdf 
+  2 

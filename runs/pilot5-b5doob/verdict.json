@@ -1,0 +1,34 @@
+{
+  "all_reproduced": true,
+  "claims": [
+    {
+      "difference": -0.00045000000000000595,
+      "id": "d1_issue_salience",
+      "published": 0.385,
+      "reproduced": 0.38455,
+      "status": "reproduced"
+    },
+    {
+      "difference": -0.00043999999999999595,
+      "id": "d1_issue_knowledge",
+      "published": 0.252,
+      "reproduced": 0.25156,
+      "status": "reproduced"
+    },
+    {
+      "difference": 3.999999999999837e-05,
+      "id": "d1_knowledge_placebo",
+      "published": 0.053,
+      "reproduced": 0.05304,
+      "status": "reproduced"
+    }
+  ],
+  "counts": {
+    "reproduced": 3
+  },
+  "results_sha256": "423d90380000a6b44b5b080c087f9b2bd6fe319f5eac1ec9eeda713d2d4f559d",
+  "run": "pilot5-b5doob",
+  "spec_sha256": "f2bdc4198fce3448d99a6eb48156fa431a0666a5ab1a184c86f4b66af16dce1e",
+  "unregistered_results": [],
+  "verified_at": "2026-11-20T16:27:50Z"
+}

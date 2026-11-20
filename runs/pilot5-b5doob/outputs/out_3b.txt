@@ -1,0 +1,18 @@
+
+Please cite as: 
+
+ Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+Version:  1.40
+Date:     2026-08-24
+Author:   Philip Leifeld (University of Manchester)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation("texreg").
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'DATA_BS_2W.csv': No such file or directory
+Execution halted

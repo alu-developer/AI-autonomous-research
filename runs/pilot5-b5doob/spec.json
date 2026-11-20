@@ -1,0 +1,51 @@
+{
+  "claims": [
+    {
+      "description": "Appendix Table D1 (between-subjects), column 1 Issue salience: coefficient Citizen Assembly. Code: mod_is, term ccl, script 3. ccl_analyses_24_25.R line 118",
+      "id": "d1_issue_salience",
+      "published": 0.385,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table D1 column 2 Issue knowledge: Citizen Assembly. Code: mod_pk, term ccl",
+      "id": "d1_issue_knowledge",
+      "published": 0.252,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table D1 column 3 Issue knowledge (placebo): Citizen Assembly. Code: mod_pk_placebo, term ccl",
+      "id": "d1_knowledge_placebo",
+      "published": 0.053,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "created": "2026-11-20T16:25:44Z",
+  "id": "pilot5-b5doob",
+  "notes": "Claims = the three Citizen Assembly coefficients of Table D1 (first numeric coefficients of the first appendix results table; the main text reports the same estimates rounded to 2 decimals). Package pipeline order per readme: four data-prep scripts, merge, analysis. Adaptations only: replace the placeholder text INSERT WORKING DIRECTORY HERE by the working directory path in a copy of each script; readme names DATA_*.xlsx but files are CCL_*.xlsx, scripts read the CCL_* names so no change. Analysis code otherwise unchanged.",
+  "pinned": {
+    "files_sha256": {
+      "1. Data_prep_BS_2024.R": "57acd54d4ef4a3afcc8be860a9915a205faf80f895c990b6e5721ffb4db666cb",
+      "1. Data_prep_BS_2025.R": "ec8395b8527a9129407a243f344fc503533ac1f4ce74d9a7b44a9e3aabb36d8c",
+      "1. Data_prep_WS_2024.R": "e30285ab9fed7901d9cdcb9dffc2b6d2315aaaad1fb2051a1ab3df5c5477fd8b",
+      "1. Data_prep_WS_2025.R": "7a4288f705090c2a09a692f36a0a1926051d1cb73e9d1e723cd1816b53adcc72",
+      "2. merge_24_25.R": "81a10b466e13c7735f2213852d0c5a50d33e9d588a37dd659ab4ba5b4aa0155b",
+      "3. ccl_analyses_24_25.R": "32f9256a41679b03aef7cab740419506869677f81d7fa325e74c3c47e857cd04",
+      "CCL_NP_2024.xlsx": "937cc1a386c977f20df5088863fdc0d200fea07c7dd052df92937d775ce868cf",
+      "CCL_NP_2025.xlsx": "2a7cd09238ac1ace023e8a5b982172552f40c14716641925badee447f564d7f3",
+      "CCL_P1_2024.xlsx": "a37ea3adab6627ed9fb3a7ab8dca9c9f80376624e589b21e2dfa6a38a70a8d91",
+      "CCL_P1_2025.xlsx": "ca1cd9c13f255d598c7ace81301685b8ae6705a8b5d3880ba0a258ccdb051b94",
+      "CCL_P2_2024.xlsx": "e9fd6ebb16d628d61983c056925a70a1491fbb1c984057b9bdde1d72b0242180",
+      "CCL_P2_2025.xlsx": "24deb67956c6847ef9d6c92916dc246b26e82f97d9b03e1a17f24735503aca82",
+      "paper.pdf": "8fc707f6b058e53328d6e3f0991c5c22b0c86de60594dacf03f34f9fc8d833f8"
+    },
+    "software": "recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "doi": "doi:10.7910/DVN/B5DOOB",
+    "paper": "Duarte, Fernandes, Pereira 2026, The Effects of Participating in Government-Led Citizens' Assemblies (SocArXiv preprint doi 10.31235/osf.io/ju8r7, PDF fetched from osf.io/download/ju8r7, sha256 8fc707f6b058e53328d6e3f0991c5c22b0c86de60594dacf03f34f9fc8d833f8)",
+    "selection": "seeded random order rank 22 after documented skips; see docs/pilot-selection-log.md"
+  }
+}

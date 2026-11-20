@@ -1,0 +1,3 @@
+Error in bs25 %>% dplyr::rename(PK_1 = PK_mobil, PK_2 = PK_seg, PK_3 = PK_epub,  : 
+  could not find function "%>%"
+Execution halted
