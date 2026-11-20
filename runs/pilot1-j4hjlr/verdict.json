@@ -1,0 +1,34 @@
+{
+  "all_reproduced": false,
+  "claims": [
+    {
+      "difference": -0.007934,
+      "id": "t2_m1_distance",
+      "published": 0.001,
+      "reproduced": -0.006934,
+      "status": "discrepancy"
+    },
+    {
+      "difference": 0.032630000000000006,
+      "id": "t2_m2_distance",
+      "published": -0.096,
+      "reproduced": -0.06337,
+      "status": "discrepancy"
+    },
+    {
+      "difference": -0.04621,
+      "id": "t2_m3_distance",
+      "published": 0.095,
+      "reproduced": 0.04879,
+      "status": "discrepancy"
+    }
+  ],
+  "counts": {
+    "discrepancy": 3
+  },
+  "results_sha256": "af8ed7d80c5058606032a04869c4192bb083b82af06d381623296b9f5d8691a0",
+  "run": "pilot1-j4hjlr",
+  "spec_sha256": "701b473c470e7330b80958af38d9566297cfb88486320a3e6e4f485e7d8909cd",
+  "unregistered_results": [],
+  "verified_at": "2026-11-20T15:48:28Z"
+}

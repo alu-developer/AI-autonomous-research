@@ -1,0 +1,46 @@
+{
+  "claims": [
+    {
+      "description": "Table 2, model 1 (Policy Interest, full sample): coefficient on Distance (100km). Code object p1_ind, term dist_100km",
+      "id": "t2_m1_distance",
+      "published": 0.001,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 2, model 2 (Policy Interest, <=200km): coefficient on Distance (100km). Code object p1c_ind, term dist_100km",
+      "id": "t2_m2_distance",
+      "published": -0.096,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 2, model 3 (Policy Engagement, full sample): coefficient on Distance (100km). Code object p2_ind, term dist_100km",
+      "id": "t2_m3_distance",
+      "published": 0.095,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "created": "2026-11-20T15:38:03Z",
+  "id": "pilot1-j4hjlr",
+  "notes": "Tolerance: 3 units of the last printed digit (0.003) or 1% relative, whichever is larger (protocol rule 4). Known before running: package code for Table 2 includes covariate industry_share_no_construction, which the PDF's Table 2 does not list (possible draft/code version mismatch). Only setwd() is edited to run the unmodified script.",
+  "pinned": {
+    "data_sha256": {
+      "02_study1.R": "bff1d79b58a2bded2d8b0dfaf09152784ea83c892824ee3a0d772ed5ae72cced",
+      "rep_de_data.csv": "7f5dca71dd3129c5bcbb097cab79cbfe84f8f8c232e81fb3a9aeff120f9a8cf1",
+      "rep_uk_data.csv": "30742df985d555f7a90fb574ff4b8d09941244410b5c48afa6f81f3c991533ed",
+      "rep_us_data.csv": "a43444f099d79abdf3531dd0a75b2f6445bb02a2a5f4ee82d881f55fa99ba40c"
+    },
+    "software": {
+      "R": "to be recorded from sessionInfo() at run time",
+      "packages": "Debian r-cran-* versions at run time (recorded in outputs/sessionInfo.txt)"
+    }
+  },
+  "target": {
+    "doi": "doi:10.7910/DVN/J4HJLR (replication data); paper URL https://dcruzd.github.io/papers/paper3/paper3.pdf",
+    "package_url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/J4HJLR",
+    "paper": "Why Are Politicians More Likely to Learn From Neighbors? Behavioral Evidence From Three Advanced Democracies (author-site draft PDF, sha256 7b5339b27af532274e370771787eeff04415a0029752aa639a9dade3a8d7ca32)",
+    "selection": "seeded random order, rank 2 of eligible list; see docs/pilot-protocol.md and docs/pilot-selection-log.md"
+  }
+}

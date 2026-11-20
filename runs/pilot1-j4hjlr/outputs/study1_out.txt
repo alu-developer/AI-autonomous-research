@@ -1,0 +1,816 @@
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+
+Please cite as: 
+
+ Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.
+ R package version 5.2.3. https://CRAN.R-project.org/package=stargazer 
+
+
+===============================================================================================================================================
+                                                                        Dependent variable:                                                    
+                     --------------------------------------------------------------------------------------------------------------------------
+                                    any_clicks                               all_clicks                                 commit                 
+                             (1)                  (2)                 (3)                  (4)                 (5)                  (6)        
+-----------------------------------------------------------------------------------------------------------------------------------------------
+German politician           0.033                0.029               0.031                0.028               -0.001               0.001       
+                           (0.018)              (0.019)             (0.026)              (0.029)             (0.010)              (0.011)      
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Covariate adjustment          No                  Yes                  No                  Yes                  No                  Yes        
+Observations                1,103                 940                1,103                 940                1,103                 940        
+R2                          0.003                0.006               0.001                0.007              0.00002               0.002       
+Adjusted R2                 0.002                0.001               0.0004               0.001               -0.001              -0.003       
+Residual Std. Error   0.293 (df = 1101)    0.293 (df = 934)    0.425 (df = 1101)    0.433 (df = 934)    0.171 (df = 1101)    0.167 (df = 934)  
+F Statistic          3.410 (df = 1; 1101) 1.176 (df = 5; 934) 1.456 (df = 1; 1101) 1.241 (df = 5; 934) 0.021 (df = 1; 1101) 0.389 (df = 5; 934)
+===============================================================================================================================================
+Note:                                                                                                             *p<0.05; **p<0.01; ***p<0.001
+
+==============================================================================================================================================
+                                                                       Dependent variable:                                                    
+                    --------------------------------------------------------------------------------------------------------------------------
+                                   any_clicks                               all_clicks                                 commit                 
+                            (1)                  (2)                 (3)                  (4)                 (5)                  (6)        
+----------------------------------------------------------------------------------------------------------------------------------------------
+de_politician              0.033                0.029               0.031                0.028               -0.001               0.001       
+                          (0.018)              (0.019)             (0.026)              (0.029)             (0.010)              (0.011)      
+long_term                                       0.023                                    0.043                                    0.002       
+                                               (0.020)                                  (0.029)                                  (0.011)      
+green_share                                     0.049                                    0.050                                    0.101       
+                                               (0.165)                                  (0.244)                                  (0.094)      
+copartisan                                      0.028                                    0.051                                   0.0002       
+                                               (0.024)                                  (0.036)                                  (0.014)      
+log(pop)                                        0.011                                    0.019                                   -0.008       
+                                               (0.013)                                  (0.019)                                  (0.007)      
+Constant                  0.080***             -0.086              0.109***             -0.162              0.031***              0.108       
+                          (0.012)              (0.151)             (0.018)              (0.223)             (0.007)              (0.086)      
+----------------------------------------------------------------------------------------------------------------------------------------------
+Observations               1,103                 940                1,103                 940                1,103                 940        
+R2                         0.003                0.006               0.001                0.007              0.00002               0.002       
+Adjusted R2                0.002                0.001               0.0004               0.001               -0.001              -0.003       
+Residual Std. Error  0.293 (df = 1101)    0.293 (df = 934)    0.425 (df = 1101)    0.433 (df = 934)    0.171 (df = 1101)    0.167 (df = 934)  
+F Statistic         3.410 (df = 1; 1101) 1.176 (df = 5; 934) 1.456 (df = 1; 1101) 1.241 (df = 5; 934) 0.021 (df = 1; 1101) 0.389 (df = 5; 934)
+==============================================================================================================================================
+Note:                                                                                                            *p<0.05; **p<0.01; ***p<0.001
+
+Call:
+lm(formula = any_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_no_construction, data = pooled)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.33626 -0.16471 -0.11000 -0.06266  0.98255 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    -0.485071   0.302510  -1.603   0.1093    
+dist_100km                     -0.006934   0.010597  -0.654   0.5131    
+log(pop)                        0.055168   0.023632   2.334   0.0198 *  
+vote_share                     -0.482440   0.121827  -3.960 8.23e-05 ***
+copartisan                      0.027378   0.035245   0.777   0.4375    
+countryuk                       0.186714   0.041925   4.453 9.77e-06 ***
+industry_share_no_construction  0.107945   0.193316   0.558   0.5768    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3445 on 729 degrees of freedom
+  (114 observations deleted due to missingness)
+Multiple R-squared:  0.03868,	Adjusted R-squared:  0.03077 
+F-statistic: 4.889 on 6 and 729 DF,  p-value: 6.525e-05
+
+
+Call:
+lm(formula = all_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_no_construction, data = pooled)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7966 -0.4183 -0.1788 -0.0412  4.3440 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                    -1.48501    0.79805  -1.861 0.063175 .  
+dist_100km                      0.04879    0.02796   1.745 0.081394 .  
+log(pop)                        0.13121    0.06234   2.105 0.035666 *  
+vote_share                     -1.22137    0.32139  -3.800 0.000157 ***
+copartisan                     -0.06190    0.09298  -0.666 0.505768    
+countryuk                       0.70153    0.11060   6.343 3.96e-10 ***
+industry_share_no_construction  0.89255    0.50998   1.750 0.080512 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9089 on 729 degrees of freedom
+  (114 observations deleted due to missingness)
+Multiple R-squared:  0.06106,	Adjusted R-squared:  0.05333 
+F-statistic: 7.901 on 6 and 729 DF,  p-value: 2.887e-08
+
+
+Call:
+lm(formula = commit ~ dist_100km + log(pop) + vote_share + copartisan + 
+    country + industry_share_no_construction, data = pooled)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.06364 -0.03291 -0.01177  0.00049  0.98626 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                    -0.273606   0.110185  -2.483  0.01325 * 
+dist_100km                      0.008969   0.003860   2.324  0.02042 * 
+log(pop)                        0.023174   0.008608   2.692  0.00726 **
+vote_share                     -0.027230   0.044374  -0.614  0.53963   
+copartisan                      0.006365   0.012837   0.496  0.62019   
+countryuk                      -0.007758   0.015271  -0.508  0.61157   
+industry_share_no_construction  0.001145   0.070412   0.016  0.98703   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.1255 on 729 degrees of freedom
+  (114 observations deleted due to missingness)
+Multiple R-squared:  0.02741,	Adjusted R-squared:  0.01941 
+F-statistic: 3.425 on 6 and 729 DF,  p-value: 0.002429
+
+
+Call:
+lm(formula = any_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_no_construction, data = pooled[pooled$dist_100km <= 
+    2, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.35456 -0.21175 -0.15484 -0.03225  1.03928 
+
+Coefficients:
+                                Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                     0.424473   0.609041   0.697  0.48627   
+dist_100km                     -0.063370   0.060685  -1.044  0.29706   
+log(pop)                       -0.007526   0.046049  -0.163  0.87027   
+vote_share                     -0.522943   0.158843  -3.292  0.00109 **
+copartisan                      0.043965   0.052326   0.840  0.40134   
+countryuk                       0.091436   0.071997   1.270  0.20489   
+industry_share_no_construction -0.101420   0.445474  -0.228  0.82003   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3744 on 369 degrees of freedom
+  (51 observations deleted due to missingness)
+Multiple R-squared:  0.04922,	Adjusted R-squared:  0.03376 
+F-statistic: 3.184 on 6 and 369 DF,  p-value: 0.004652
+
+
+Call:
+lm(formula = all_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_no_construction, data = pooled[pooled$dist_100km <= 
+    2, ])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.8392 -0.3717 -0.2149  0.0180  3.6788 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                     3.16137    1.25443   2.520 0.012152 *  
+dist_100km                     -0.28892    0.12499  -2.311 0.021356 *  
+log(pop)                       -0.18426    0.09485  -1.943 0.052809 .  
+vote_share                     -1.11074    0.32717  -3.395 0.000761 ***
+copartisan                     -0.03996    0.10778  -0.371 0.711055    
+countryuk                       0.19190    0.14829   1.294 0.196456    
+industry_share_no_construction -1.26999    0.91754  -1.384 0.167154    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7712 on 369 degrees of freedom
+  (51 observations deleted due to missingness)
+Multiple R-squared:  0.0787,	Adjusted R-squared:  0.06372 
+F-statistic: 5.254 on 6 and 369 DF,  p-value: 3.284e-05
+
+
+Call:
+lm(formula = commit ~ dist_100km + log(pop) + vote_share + copartisan + 
+    country + industry_share_no_construction, data = pooled[pooled$dist_100km <= 
+    2, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.03430 -0.02462 -0.00150  0.00071  0.97675 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)
+(Intercept)                     0.0297701  0.1670507   0.178    0.859
+dist_100km                     -0.0004775  0.0166450  -0.029    0.977
+log(pop)                       -0.0005462  0.0126305  -0.043    0.966
+vote_share                     -0.0040393  0.0435681  -0.093    0.926
+copartisan                      0.0027390  0.0143523   0.191    0.849
+countryuk                      -0.0252482  0.0197478  -1.279    0.202
+industry_share_no_construction  0.0385304  0.1221868   0.315    0.753
+
+Residual standard error: 0.1027 on 369 degrees of freedom
+  (51 observations deleted due to missingness)
+Multiple R-squared:  0.01648,	Adjusted R-squared:  0.0004837 
+F-statistic:  1.03 on 6 and 369 DF,  p-value: 0.4051
+
+
+===================================================================================================================================================================
+                                                                                       Dependent variable:                                                         
+                               ------------------------------------------------------------------------------------------------------------------------------------
+                                                any_clicks                                   all_clicks                                    commit                  
+                                        (1)                    (2)                   (3)                    (4)                    (5)                  (6)        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+dist_100km                             -0.007                -0.063                 0.049                 -0.289*                0.009*               -0.0005      
+                                      (0.011)                (0.061)               (0.028)                (0.125)                (0.004)              (0.017)      
+log(pop)                               0.055*                -0.008                 0.131*                 -0.184                0.023**              -0.001       
+                                      (0.024)                (0.046)               (0.062)                (0.095)                (0.009)              (0.013)      
+vote_share                           -0.482***              -0.523**              -1.221***              -1.111***               -0.027               -0.004       
+                                      (0.122)                (0.159)               (0.321)                (0.327)                (0.044)              (0.044)      
+copartisan                             0.027                  0.044                 -0.062                 -0.040                 0.006                0.003       
+                                      (0.035)                (0.052)               (0.093)                (0.108)                (0.013)              (0.014)      
+countryuk                             0.187***                0.091                0.702***                0.192                 -0.008               -0.025       
+                                      (0.042)                (0.072)               (0.111)                (0.148)                (0.015)              (0.020)      
+industry_share_no_construction         0.108                 -0.101                 0.893                  -1.270                 0.001                0.039       
+                                      (0.193)                (0.445)               (0.510)                (0.918)                (0.070)              (0.122)      
+Constant                               -0.485                 0.424                 -1.485                 3.161*                -0.274*               0.030       
+                                      (0.303)                (0.609)               (0.798)                (1.254)                (0.110)              (0.167)      
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Observations                            736                    376                   736                    376                    736                  376        
+R2                                     0.039                  0.049                 0.061                  0.079                  0.027                0.016       
+Adjusted R2                            0.031                  0.034                 0.053                  0.064                  0.019               0.0005       
+Residual Std. Error               0.345 (df = 729)      0.374 (df = 369)       0.909 (df = 729)       0.771 (df = 369)      0.125 (df = 729)     0.103 (df = 369)  
+F Statistic                    4.889*** (df = 6; 729) 3.184** (df = 6; 369) 7.901*** (df = 6; 729) 5.254*** (df = 6; 369) 3.425** (df = 6; 729) 1.030 (df = 6; 369)
+===================================================================================================================================================================
+Note:                                                                                                                                 *p<0.05; **p<0.01; ***p<0.001
+
+
+|Sample        |Group         |Outcome            |    N|  Mean|    SD| Min| Max|
+|:-------------|:-------------|:------------------|----:|-----:|-----:|---:|---:|
+|Experimental  |All           |Policy Interest    | 1103| 0.095| 0.294|   0|   1|
+|Experimental  |German sender |Policy Interest    |  515| 0.113| 0.316|   0|   1|
+|Experimental  |UK sender     |Policy Interest    |  588| 0.080| 0.271|   0|   1|
+|Experimental  |All           |Policy Engagement  | 1103| 0.123| 0.425|   0|   4|
+|Experimental  |German sender |Policy Engagement  |  515| 0.140| 0.437|   0|   4|
+|Experimental  |UK sender     |Policy Engagement  |  588| 0.109| 0.415|   0|   3|
+|Experimental  |All           |Policy Commitments | 1103| 0.030| 0.170|   0|   1|
+|Experimental  |German sender |Policy Commitments |  515| 0.029| 0.168|   0|   1|
+|Experimental  |UK sender     |Policy Commitments |  588| 0.031| 0.172|   0|   1|
+|Observational |All           |Policy Interest    |  850| 0.139| 0.346|   0|   1|
+|Observational |All           |Policy Engagement  |  850| 0.274| 0.882|   0|   5|
+|Observational |All           |Policy Commitments |  850| 0.018| 0.132|   0|   1|
+
+
+|Variable   |Level                  |   N| Percent|
+|:----------|:----------------------|---:|-------:|
+|Bundesland |Nordrhein-Westfalen    | 159|    31.3|
+|Bundesland |Baden-Württemberg     | 105|    20.7|
+|Bundesland |Bayern                 |  86|    16.9|
+|Bundesland |Hessen                 |  36|     7.1|
+|Bundesland |Rheinland-Pfalz        |  31|     6.1|
+|Bundesland |Niedersachsen          |  30|     5.9|
+|Bundesland |Brandenburg            |  22|     4.3|
+|Bundesland |Schleswig-Holstein     |  19|     3.7|
+|Bundesland |Berlin                 |  10|     2.0|
+|Bundesland |Sachsen                |   4|     0.8|
+|Bundesland |Hamburg                |   2|     0.4|
+|Bundesland |Saarland               |   2|     0.4|
+|Bundesland |Mecklenburg-Vorpommern |   1|     0.2|
+|Bundesland |Sachsen-Anhalt         |   1|     0.2|
+|Gender     |Male                   | 341|    66.2|
+|Gender     |Female                 | 174|    33.8|
+|Party      |SPD                    | 131|    26.3|
+|Party      |Other                  | 118|    23.6|
+|Party      |CDU                    | 103|    20.6|
+|Party      |Grünen                |  88|    17.6|
+|Party      |Linke                  |  34|     6.8|
+|Party      |CSU                    |  23|     4.6|
+|Party      |FDP                    |   2|     0.4|
+
+
+|Variable |Level             |   N| Percent|
+|:--------|:-----------------|---:|-------:|
+|Area     |uk                | 335|   100.0|
+|Gender   |Male              | 214|    63.9|
+|Gender   |Female            | 121|    36.1|
+|Party    |Conservative      | 111|    33.1|
+|Party    |NR/Other          |  75|    22.4|
+|Party    |Labour            |  66|    19.7|
+|Party    |Liberal Democrats |  45|    13.4|
+|Party    |Independent       |  25|     7.5|
+|Party    |Plaid Cymru       |   5|     1.5|
+|Party    |Green Party       |   4|     1.2|
+|Party    |SNP               |   3|     0.9|
+|Party    |Ukip              |   1|     0.3|
+Warning message:
+There was 1 warning in `mutate()`.
+i In argument: `across(c(control_mean, treat_mean, p_value), round, 3)`.
+Caused by warning:
+! The `...` argument of `across()` is deprecated as of dplyr 1.1.0.
+Supply arguments directly to `.fns` through an anonymous function instead.
+
+  # Previously
+  across(a:b, mean, na.rm = TRUE)
+
+  # Now
+  across(a:b, \(x) mean(x, na.rm = TRUE)) 
+
+
+|variable    | control_mean| treat_mean| p_value|
+|:-----------|------------:|----------:|-------:|
+|female      |        0.364|      0.338|   0.365|
+|pop_log     |       12.280|     12.142|   0.037|
+|left        |        0.474|      0.472|   0.930|
+|right       |        0.168|      0.190|   0.345|
+|CDU_share   |        0.346|      0.349|   0.555|
+|green_share |        0.184|      0.194|   0.017|
+|copartisan  |        0.203|      0.176|   0.270|
+
+Call:
+lm(formula = any_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country, data = pooled[pooled$dist_100km <= 
+    1.5, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.37451 -0.23376 -0.17008 -0.02342  1.02065 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  0.37697    0.67219   0.561  0.57531   
+dist_100km   0.07986    0.08732   0.915  0.36111   
+log(pop)    -0.01207    0.05137  -0.235  0.81447   
+vote_share  -0.47085    0.17399  -2.706  0.00716 **
+copartisan   0.05866    0.05664   1.036  0.30106   
+countryuk    0.04877    0.07749   0.629  0.52954   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3948 on 329 degrees of freedom
+  (23 observations deleted due to missingness)
+Multiple R-squared:  0.04331,	Adjusted R-squared:  0.02877 
+F-statistic: 2.979 on 5 and 329 DF,  p-value: 0.01206
+
+
+Call:
+lm(formula = all_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country, data = pooled[pooled$dist_100km <= 
+    1.5, ])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.8523 -0.4182 -0.1909  0.0081  3.6731 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   2.9104     1.3917   2.091  0.03726 * 
+dist_100km   -0.2992     0.1808  -1.655  0.09891 . 
+log(pop)     -0.1741     0.1064  -1.637  0.10258   
+vote_share   -1.1217     0.3602  -3.114  0.00201 **
+copartisan   -0.0294     0.1173  -0.251  0.80215   
+countryuk     0.2361     0.1604   1.472  0.14209   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.8174 on 329 degrees of freedom
+  (23 observations deleted due to missingness)
+Multiple R-squared:  0.06292,	Adjusted R-squared:  0.04868 
+F-statistic: 4.418 on 5 and 329 DF,  p-value: 0.0006576
+
+
+Call:
+lm(formula = commit ~ dist_100km + log(pop) + vote_share + copartisan + 
+    country, data = pooled[pooled$dist_100km <= 1.5, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.03845 -0.02576 -0.00357  0.00009  0.97785 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept)  8.947e-02  1.850e-01   0.484   0.6290  
+dist_100km   9.822e-03  2.403e-02   0.409   0.6830  
+log(pop)    -5.313e-03  1.414e-02  -0.376   0.7073  
+vote_share  -7.629e-05  4.789e-02  -0.002   0.9987  
+copartisan   3.327e-03  1.559e-02   0.213   0.8311  
+countryuk   -3.620e-02  2.133e-02  -1.697   0.0906 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.1087 on 329 degrees of freedom
+  (23 observations deleted due to missingness)
+Multiple R-squared:  0.01719,	Adjusted R-squared:  0.002257 
+F-statistic: 1.151 on 5 and 329 DF,  p-value: 0.3332
+
+
+Call:
+lm(formula = any_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country, data = pooled[pooled$dist_100km <= 
+    2.5, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.34465 -0.18328 -0.11954 -0.05934  1.08146 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  0.10258    0.42374   0.242  0.80882   
+dist_100km  -0.06166    0.03042  -2.027  0.04320 * 
+log(pop)     0.01477    0.03329   0.444  0.65751   
+vote_share  -0.43146    0.13719  -3.145  0.00176 **
+copartisan   0.05825    0.04389   1.327  0.18502   
+countryuk    0.10417    0.04703   2.215  0.02723 * 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3498 on 493 degrees of freedom
+  (41 observations deleted due to missingness)
+Multiple R-squared:  0.05322,	Adjusted R-squared:  0.04362 
+F-statistic: 5.543 on 5 and 493 DF,  p-value: 5.59e-05
+
+
+Call:
+lm(formula = all_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country, data = pooled[pooled$dist_100km <= 
+    2.5, ])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.6772 -0.3225 -0.1681 -0.0423  3.6775 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.403713   0.837700   1.676 0.094436 .  
+dist_100km  -0.201489   0.060139  -3.350 0.000869 ***
+log(pop)    -0.066106   0.065819  -1.004 0.315692    
+vote_share  -0.887237   0.271212  -3.271 0.001145 ** 
+copartisan   0.001856   0.086760   0.021 0.982941    
+countryuk    0.258770   0.092977   2.783 0.005590 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.6916 on 493 degrees of freedom
+  (41 observations deleted due to missingness)
+Multiple R-squared:  0.0704,	Adjusted R-squared:  0.06098 
+F-statistic: 7.468 on 5 and 493 DF,  p-value: 9.068e-07
+
+
+Call:
+lm(formula = commit ~ dist_100km + log(pop) + vote_share + copartisan + 
+    country, data = pooled[pooled$dist_100km <= 2.5, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.02573 -0.01841 -0.00494  0.00028  0.98159 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)
+(Intercept) -0.021065   0.107903  -0.195    0.845
+dist_100km  -0.006345   0.007746  -0.819    0.413
+log(pop)     0.003740   0.008478   0.441    0.659
+vote_share  -0.004994   0.034935  -0.143    0.886
+copartisan   0.001360   0.011175   0.122    0.903
+countryuk   -0.013748   0.011976  -1.148    0.252
+
+Residual standard error: 0.08908 on 493 degrees of freedom
+  (41 observations deleted due to missingness)
+Multiple R-squared:  0.01401,	Adjusted R-squared:  0.004014 
+F-statistic: 1.401 on 5 and 493 DF,  p-value: 0.2222
+
+
+=====================================================================================================================================================
+                                                                           Dependent variable:                                                       
+                    ---------------------------------------------------------------------------------------------------------------------------------
+                         any_clicks            all_clicks             commit              any_clicks             all_clicks             commit       
+                            (1)                   (2)                   (3)                  (4)                    (5)                   (6)        
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+dist_100km                 0.080                 -0.299                0.010               -0.062*               -0.201***              -0.006       
+                          (0.087)               (0.181)               (0.024)              (0.030)                (0.060)               (0.008)      
+log(pop)                   -0.012                -0.174               -0.005                0.015                  -0.066                0.004       
+                          (0.051)               (0.106)               (0.014)              (0.033)                (0.066)               (0.008)      
+vote_share                -0.471**              -1.122**              -0.0001              -0.431**               -0.887**              -0.005       
+                          (0.174)               (0.360)               (0.048)              (0.137)                (0.271)               (0.035)      
+copartisan                 0.059                 -0.029                0.003                0.058                  0.002                 0.001       
+                          (0.057)               (0.117)               (0.016)              (0.044)                (0.087)               (0.011)      
+countryuk                  0.049                 0.236                -0.036                0.104*                0.259**               -0.014       
+                          (0.077)               (0.160)               (0.021)              (0.047)                (0.093)               (0.012)      
+Constant                   0.377                 2.910*                0.089                0.103                  1.404                -0.021       
+                          (0.672)               (1.392)               (0.185)              (0.424)                (0.838)               (0.108)      
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Observations                335                   335                   335                  499                    499                   499        
+R2                         0.043                 0.063                 0.017                0.053                  0.070                 0.014       
+Adjusted R2                0.029                 0.049                 0.002                0.044                  0.061                 0.004       
+Residual Std. Error   0.395 (df = 329)      0.817 (df = 329)     0.109 (df = 329)      0.350 (df = 493)       0.692 (df = 493)     0.089 (df = 493)  
+F Statistic         2.979* (df = 5; 329) 4.418*** (df = 5; 329) 1.151 (df = 5; 329) 5.543*** (df = 5; 493) 7.468*** (df = 5; 493) 1.401 (df = 5; 493)
+=====================================================================================================================================================
+Note:                                                                                                                   *p<0.05; **p<0.01; ***p<0.001
+
+Call:
+lm(formula = any_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_broad, data = pooled)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.34329 -0.17266 -0.10794 -0.07694  0.97759 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          -0.39586    0.31196  -1.269 0.204884    
+dist_100km           -0.00406    0.01081  -0.376 0.707238    
+log(pop)              0.04989    0.02409   2.071 0.038720 *  
+vote_share           -0.48512    0.12441  -3.899 0.000106 ***
+copartisan            0.02693    0.03617   0.745 0.456739    
+countryuk             0.17389    0.04148   4.192 3.11e-05 ***
+industry_share_broad -0.04858    0.18545  -0.262 0.793433    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3481 on 714 degrees of freedom
+  (129 observations deleted due to missingness)
+Multiple R-squared:  0.0357,	Adjusted R-squared:  0.0276 
+F-statistic: 4.406 on 6 and 714 DF,  p-value: 0.0002198
+
+
+Call:
+lm(formula = all_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_broad, data = pooled)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.7963 -0.4312 -0.1918 -0.0515  4.3591 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          -1.38034    0.82395  -1.675  0.09432 .  
+dist_100km            0.05423    0.02854   1.900  0.05783 .  
+log(pop)              0.12427    0.06362   1.953  0.05117 .  
+vote_share           -1.20961    0.32860  -3.681  0.00025 ***
+copartisan           -0.06191    0.09553  -0.648  0.51718    
+countryuk             0.66267    0.10955   6.049 2.35e-09 ***
+industry_share_broad  0.56909    0.48980   1.162  0.24567    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.9193 on 714 degrees of freedom
+  (129 observations deleted due to missingness)
+Multiple R-squared:  0.05723,	Adjusted R-squared:  0.04931 
+F-statistic: 7.224 on 6 and 714 DF,  p-value: 1.681e-07
+
+
+Call:
+lm(formula = commit ~ dist_100km + log(pop) + vote_share + copartisan + 
+    country + industry_share_broad, data = pooled)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.06670 -0.03298 -0.01146  0.00062  0.98634 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)   
+(Intercept)          -0.270052   0.113518  -2.379  0.01762 * 
+dist_100km            0.009812   0.003932   2.495  0.01281 * 
+log(pop)              0.022940   0.008765   2.617  0.00905 **
+vote_share           -0.022401   0.045271  -0.495  0.62088   
+copartisan            0.007000   0.013162   0.532  0.59499   
+countryuk            -0.010443   0.015093  -0.692  0.48923   
+industry_share_broad -0.008738   0.067480  -0.129  0.89700   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.1267 on 714 degrees of freedom
+  (129 observations deleted due to missingness)
+Multiple R-squared:  0.02933,	Adjusted R-squared:  0.02117 
+F-statistic: 3.595 on 6 and 714 DF,  p-value: 0.001613
+
+
+Call:
+lm(formula = any_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_broad, data = pooled[pooled$dist_100km <= 
+    2, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.38855 -0.19338 -0.15671 -0.01936  1.01985 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)           0.81171    0.62083   1.307  0.19187    
+dist_100km           -0.03415    0.05961  -0.573  0.56705    
+log(pop)             -0.03179    0.04645  -0.684  0.49419    
+vote_share           -0.55974    0.15963  -3.506  0.00051 ***
+copartisan            0.03949    0.05215   0.757  0.44941    
+countryuk             0.06312    0.06777   0.931  0.35228    
+industry_share_broad -0.66896    0.39034  -1.714  0.08741 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.373 on 369 degrees of freedom
+  (51 observations deleted due to missingness)
+Multiple R-squared:  0.0566,	Adjusted R-squared:  0.04126 
+F-statistic:  3.69 on 6 and 369 DF,  p-value: 0.001421
+
+
+Call:
+lm(formula = all_clicks ~ dist_100km + log(pop) + vote_share + 
+    copartisan + country + industry_share_broad, data = pooled[pooled$dist_100km <= 
+    2, ])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.8700 -0.3612 -0.2130  0.0556  3.7194 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)           3.92625    1.27493   3.080 0.002228 ** 
+dist_100km           -0.24388    0.12241  -1.992 0.047078 *  
+log(pop)             -0.23087    0.09539  -2.420 0.015992 *  
+vote_share           -1.21131    0.32782  -3.695 0.000253 ***
+copartisan           -0.05767    0.10710  -0.538 0.590594    
+countryuk             0.16866    0.13918   1.212 0.226349    
+industry_share_broad -2.12688    0.80160  -2.653 0.008315 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.766 on 369 degrees of freedom
+  (51 observations deleted due to missingness)
+Multiple R-squared:  0.09126,	Adjusted R-squared:  0.07648 
+F-statistic: 6.176 on 6 and 369 DF,  p-value: 3.447e-06
+
+
+Call:
+lm(formula = commit ~ dist_100km + log(pop) + vote_share + copartisan + 
+    country + industry_share_broad, data = pooled[pooled$dist_100km <= 
+    2, ])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.03405 -0.02460 -0.00178  0.00029  0.97665 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)
+(Intercept)           2.917e-02  1.710e-01   0.171    0.865
+dist_100km           -6.786e-05  1.641e-02  -0.004    0.997
+log(pop)             -5.559e-04  1.279e-02  -0.043    0.965
+vote_share           -2.982e-03  4.396e-02  -0.068    0.946
+copartisan            3.064e-03  1.436e-02   0.213    0.831
+countryuk            -2.638e-02  1.866e-02  -1.413    0.158
+industry_share_broad  2.993e-02  1.075e-01   0.278    0.781
+
+Residual standard error: 0.1027 on 369 degrees of freedom
+  (51 observations deleted due to missingness)
+Multiple R-squared:  0.01642,	Adjusted R-squared:  0.0004244 
+F-statistic: 1.027 on 6 and 369 DF,  p-value: 0.4075
+
+
+=========================================================================================================================================================
+                                                                             Dependent variable:                                                         
+                     ------------------------------------------------------------------------------------------------------------------------------------
+                                      any_clicks                                   all_clicks                                    commit                  
+                              (1)                    (2)                   (3)                    (4)                    (5)                  (6)        
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+dist_100km                   -0.004                -0.034                 0.054                 -0.244*                0.010*               -0.0001      
+                            (0.011)                (0.060)               (0.029)                (0.122)                (0.004)              (0.016)      
+log(pop)                     0.050*                -0.032                 0.124                 -0.231*                0.023**              -0.001       
+                            (0.024)                (0.046)               (0.064)                (0.095)                (0.009)              (0.013)      
+vote_share                 -0.485***              -0.560***             -1.210***              -1.211***               -0.022               -0.003       
+                            (0.124)                (0.160)               (0.329)                (0.328)                (0.045)              (0.044)      
+copartisan                   0.027                  0.039                 -0.062                 -0.058                 0.007                0.003       
+                            (0.036)                (0.052)               (0.096)                (0.107)                (0.013)              (0.014)      
+countryuk                   0.174***                0.063                0.663***                0.169                 -0.010               -0.026       
+                            (0.041)                (0.068)               (0.110)                (0.139)                (0.015)              (0.019)      
+industry_share_broad         -0.049                -0.669                 0.569                 -2.127**               -0.009                0.030       
+                            (0.185)                (0.390)               (0.490)                (0.802)                (0.067)              (0.107)      
+Constant                     -0.396                 0.812                 -1.380                3.926**                -0.270*               0.029       
+                            (0.312)                (0.621)               (0.824)                (1.275)                (0.114)              (0.171)      
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Observations                  721                    376                   721                    376                    721                  376        
+R2                           0.036                  0.057                 0.057                  0.091                  0.029                0.016       
+Adjusted R2                  0.028                  0.041                 0.049                  0.076                  0.021               0.0004       
+Residual Std. Error     0.348 (df = 714)      0.373 (df = 369)       0.919 (df = 714)       0.766 (df = 369)      0.127 (df = 714)     0.103 (df = 369)  
+F Statistic          4.406*** (df = 6; 714) 3.690** (df = 6; 369) 7.224*** (df = 6; 714) 6.176*** (df = 6; 369) 3.595** (df = 6; 714) 1.027 (df = 6; 369)
+=========================================================================================================================================================
+Note:                                                                                                                       *p<0.05; **p<0.01; ***p<0.001
+
+Call:
+lm(formula = any_clicks ~ dist_100km, data = pooled)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.1789 -0.1651 -0.1348 -0.1045  0.9115 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.186407   0.021511   8.666  < 2e-16 ***
+dist_100km  -0.022743   0.008593  -2.647  0.00828 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.3449 on 840 degrees of freedom
+  (8 observations deleted due to missingness)
+Multiple R-squared:  0.00827,	Adjusted R-squared:  0.007089 
+F-statistic: 7.004 on 1 and 840 DF,  p-value: 0.008283
+
+
+Call:
+lm(formula = all_clicks ~ dist_100km, data = pooled)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.3171 -0.2815 -0.2728 -0.2647  4.7134 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 0.260604   0.055288   4.714 2.85e-06 ***
+dist_100km  0.007156   0.022087   0.324    0.746    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.8864 on 840 degrees of freedom
+  (8 observations deleted due to missingness)
+Multiple R-squared:  0.0001249,	Adjusted R-squared:  -0.001065 
+F-statistic: 0.105 on 1 and 840 DF,  p-value: 0.746
+
+
+Call:
+lm(formula = commit ~ dist_100km, data = pooled)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.05085 -0.02326 -0.01704 -0.01094  0.99219 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 0.005940   0.008246   0.720   0.4715  
+dist_100km  0.005692   0.003294   1.728   0.0844 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.1322 on 840 degrees of freedom
+  (8 observations deleted due to missingness)
+Multiple R-squared:  0.003541,	Adjusted R-squared:  0.002355 
+F-statistic: 2.985 on 1 and 840 DF,  p-value: 0.08439
+
+
+==============================================================
+                                     Dependent variable:      
+                               -------------------------------
+                               any_clicks  all_clicks  commit 
+                                   (1)         (2)       (3)  
+--------------------------------------------------------------
+dist_100km                      -0.023**      0.007     0.006 
+                                 (0.009)     (0.022)   (0.003)
+Constant                        0.186***    0.261***    0.006 
+                                 (0.022)     (0.055)   (0.008)
+--------------------------------------------------------------
+Observations                       842         842       842  
+R2                                0.008      0.0001     0.004 
+Adjusted R2                       0.007      -0.001     0.002 
+Residual Std. Error (df = 840)    0.345       0.886     0.132 
+F Statistic (df = 1; 840)        7.004**      0.105     2.985 
+==============================================================
+Note:                            *p<0.05; **p<0.01; ***p<0.001
+
+===============================================================================================================================================
+                                                                        Dependent variable:                                                    
+                    ---------------------------------------------------------------------------------------------------------------------------
+                         any_clicks             all_clicks            commit           any_clicks           all_clicks            commit       
+                             (1)                   (2)                 (3)                (4)                  (5)                  (6)        
+-----------------------------------------------------------------------------------------------------------------------------------------------
+dist_100km                  0.011                 0.142*              0.000             -0.032**             -0.045**              0.011       
+                           (0.017)               (0.055)             (0.000)            (0.012)              (0.016)              (0.006)      
+log(pop)                    0.025                 -0.005              0.000              0.019                0.027                0.010       
+                           (0.048)               (0.158)             (0.000)            (0.020)              (0.028)              (0.011)      
+vote_share                -0.529***              -1.279**             0.000              0.008                0.056               -0.002       
+                           (0.149)               (0.491)             (0.000)            (0.268)              (0.375)              (0.143)      
+Constant                    0.059                 0.756               0.000              -0.054               -0.109              -0.115       
+                           (0.554)               (1.829)             (0.000)            (0.233)              (0.327)              (0.124)      
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Observations                 334                   334                 334                444                  444                  444        
+R2                          0.044                 0.050                                  0.023                0.023                0.008       
+Adjusted R2                 0.035                 0.041                                  0.016                0.016                0.001       
+Residual Std. Error   0.378 (df = 330)       1.246 (df = 330)    0.000 (df = 330)   0.317 (df = 440)     0.444 (df = 440)    0.169 (df = 440)  
+F Statistic         5.050** (df = 3; 330) 5.791*** (df = 3; 330)                  3.436* (df = 3; 440) 3.472* (df = 3; 440) 1.136 (df = 3; 440)
+===============================================================================================================================================
+Note:                                                                                                             *p<0.05; **p<0.01; ***p<0.001
+NOTE: 84 observations removed because of NA values (RHS: 84).
+NOTE: 84 observations removed because of NA values (RHS: 84).
+NOTE: 84 observations removed because of NA values (RHS: 84).
+                      Interest     Engagement           Commit
+Dependent Var.:     any_clicks     all_clicks           commit
+                                                              
+dist_100km      -0.024 (0.014) -0.033 (0.026) 0.029*** (0.006)
+copartisan       0.037 (0.041)  0.042 (0.058)    0.008 (0.023)
+log(pop)        0.029* (0.014) 0.052* (0.023)  0.023** (0.008)
+vote_share      -0.084 (0.111) -0.057 (0.173)    0.075 (0.086)
+Fixed-Effects:  -------------- -------------- ----------------
+region                     Yes            Yes              Yes
+_______________ ______________ ______________ ________________
+S.E.: Clustered    by: cluster    by: cluster      by: cluster
+Observations               431            431              431
+R2                     0.04191        0.04025          0.17246
+Within R2              0.00596        0.00739          0.01900
+---
+Signif. codes: 0 '***' 0.001 '**' 0.01 '*' 0.05 ' ' 1
