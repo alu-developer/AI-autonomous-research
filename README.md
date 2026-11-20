@@ -8,6 +8,8 @@ Early stage. Phase 0: design and blueprint (see `docs/blueprint.md`).
 ## Layout
 - `docs/blueprint.md`: design principles distilled from current research
 - `docs/sources.md`: papers and systems the blueprint is based on
+- `docs/framework-research.md`: detailed research notes, architecture, build order (start here)
+- `CLAUDE.md`: instructions for future Claude sessions
 - `agents/`: agent roles (ideator, critic, experimenter, ranker, supervisor)
 - `evals/`: verifiers and benchmarks (built before the generators)
 - `runs/`: full logs of every research run (one folder per run)
