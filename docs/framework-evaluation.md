@@ -31,3 +31,10 @@ Do not build a general research framework. Reuse, and build only the missing lay
 ## Open items
 - Verify licenses and activity of OpenEvolve, ShinkaEvolve, K-Dense skills, OpenScientist, Agent Laboratory.
 - Decide where unattended runs happen (scheduled cloud sessions vs a small VPS).
+
+## Why not the usual "AI scientist" (short answer)
+1. **Wrong kind of work.** AI Scientist-v2 and Karpathy's autoresearch automate GPU machine-learning experiments (AI Scientist-v2 needs Linux with NVIDIA GPUs and CUDA; autoresearch runs 5-minute GPU training jobs). The high-impact topics found in `topic-candidates.md` are evidence, data and verification work. No GPU is available here either.
+2. **They do not pick the problem.** AI Scientist-v2 needs the user to write a topic description first. A May 2026 position paper (arXiv:2605.08956) argues that problem selection is the unsolved part and that AI pushes toward what is easy to measure.
+3. **Closed or lab-bound.** Kosmos is hosted only on Edison's platform; Robin needs a wet lab.
+4. **They do not solve the trust problem.** The audits in `framework-research.md` (Luo et al. 2025; Trehan and Chopra 2026) show these systems cherry-pick benchmarks, overstate success and drift from the plan. Kosmos reports about 79% of claims supported, so roughly one in five is not. The `airesearch` layer exists to add what is missing: preregistration, independent verification, full logs, a human gate, a budget, and transparent problem ranking.
+5. **What we reuse instead:** coding agents with science skills for the actual work, evolutionary tools (OpenEvolve family) only where a machine-checkable score exists, and open reproduction code from the cited papers.

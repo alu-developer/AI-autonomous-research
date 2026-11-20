@@ -1,0 +1,75 @@
+{
+  "note": "Initial scores are Claude's judgment from docs/topic-candidates.md (2026-11-20), NOT measurements. Factors without sources are capped. The author decides the topic; this ranking is advice. Improve scores by adding sources.",
+  "topics": [
+    {
+      "id": "repro-audits",
+      "title": "Reproduction and robustness audits of studies behind funding decisions",
+      "scores": {"importance": 3, "neglectedness": 4, "tractability_ai": 5, "verifiability": 5, "harm_risk": 1},
+      "sources": {
+        "tractability_ai": ["https://arxiv.org/html/2604.21965v1", "https://economics.mit.edu/sites/default/files/2026-09/metascience.pdf"],
+        "verifiability": ["https://arxiv.org/html/2604.21965v1"],
+        "neglectedness": ["https://www.arxiv.org/pdf/2602.18453"]
+      }
+    },
+    {
+      "id": "cea-gaps",
+      "title": "Evidence-gap checks on cost-effectiveness analyses",
+      "scores": {"importance": 4, "neglectedness": 3, "tractability_ai": 3, "verifiability": 2, "harm_risk": 1},
+      "sources": {
+        "importance": ["https://blog.givewell.org/2024/12/18/research-strategy-cross-cutting/"],
+        "tractability_ai": ["https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/2DACF6D129AA6E46CB8A8740A03D0675/S175928792500016Xa.pdf/generative-artificial-intelligence-use-in-evidence-synthesis-a-systematic-review.pdf"]
+      }
+    },
+    {
+      "id": "rd-target-mapping",
+      "title": "Importance/neglectedness mapping of R&D targets (vaccines, diagnostics, drugs)",
+      "scores": {"importance": 4, "neglectedness": 4, "tractability_ai": 4, "verifiability": 3, "harm_risk": 1},
+      "sources": {
+        "importance": ["https://www.coefficientgiving.org/research/a-quantitative-approach-to-vaccine-funding/"],
+        "neglectedness": ["https://www.coefficientgiving.org/research/a-quantitative-approach-to-vaccine-funding/"]
+      }
+    },
+    {
+      "id": "lead-sources",
+      "title": "Childhood lead exposure: source attribution and evidence gaps",
+      "scores": {"importance": 4, "neglectedness": 5, "tractability_ai": 2, "verifiability": 3, "harm_risk": 1},
+      "sources": {
+        "importance": ["https://www.cgdev.org/node/3132868"],
+        "neglectedness": ["https://www.cgdev.org/node/3132868"],
+        "tractability_ai": ["https://forum.effectivealtruism.org/posts/naTwu3xD3WFWu5fbp"]
+      }
+    },
+    {
+      "id": "amr-sparse-data",
+      "title": "Antimicrobial resistance burden under sparse data",
+      "scores": {"importance": 5, "neglectedness": 3, "tractability_ai": 2, "verifiability": 2, "harm_risk": 2},
+      "sources": {
+        "importance": ["https://ora.ox.ac.uk/objects/uuid:24fcbe42-ff93-4258-b3a5-0fb94e128936/files/rv692t8574"],
+        "tractability_ai": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC7763986"]
+      }
+    },
+    {
+      "id": "global-priorities",
+      "title": "Global priorities research (comparing cause areas rigorously)",
+      "scores": {"importance": 5, "neglectedness": 4, "tractability_ai": 2, "verifiability": 1, "harm_risk": 1},
+      "sources": {
+        "neglectedness": ["https://80000hours.org/topic/career-paths/global-priorities-research-career-paths/"]
+      }
+    },
+    {
+      "id": "math-discovery",
+      "title": "Math and algorithm discovery with machine-checkable scores",
+      "scores": {"importance": 2, "neglectedness": 2, "tractability_ai": 5, "verifiability": 5, "harm_risk": 1},
+      "sources": {
+        "tractability_ai": ["https://arxiv.org/abs/2506.13131"],
+        "verifiability": ["https://arxiv.org/abs/2506.13131"]
+      }
+    },
+    {
+      "id": "ai-safety-by-ai",
+      "title": "AI safety research done by AI",
+      "scores": {"importance": 5, "neglectedness": 3, "tractability_ai": 2, "verifiability": 1, "harm_risk": 4},
+      "sources": {}
+    }
+  ]
+}
