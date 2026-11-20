@@ -1,0 +1,54 @@
+{
+  "claims": [
+    {
+      "description": "Appendix Table 2 (2022 CHIP50 acquaintance items), row 'Currently hold an elected office', column Mean. Table sorted by Mean ascending; output/table02.csv in the package",
+      "id": "t2_mean_elected_office",
+      "published": 0.3,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 2 row 'Ran for office', Mean",
+      "id": "t2_mean_ran_for_office",
+      "published": 0.43,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 2 row 'Muslims', Mean",
+      "id": "t2_mean_muslims",
+      "published": 0.83,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "created": "2026-11-20T16:17:48Z",
+  "id": "pilot3-ar3mte",
+  "notes": "Interpretation of protocol rule 3: paper has no regression tables (descriptives only); the claims are the first three Mean values of Table 2, the first estimated statistics in the sorted table. Published values were read through a fetch tool that summarizes page text, so extraction from the page is second-hand; to be re-checked against the PDF by a human. Adaptations: .tab files copied as .csv into data/, scripts into code/, output/ dir created. Only script 10 is run (it produces Tables 1-7); figures scripts are not part of the claims.",
+  "pinned": {
+    "data_and_code_sha256": {
+      "00_setup.R": "4ffca9305cf7605b38a2985b25b7cb14c872786c3ceb72dfd71a1c817eb8d025",
+      "01_figure1_test_retest_2024.R": "d485520f0c15e9628f2e7bc39719f2387ea7f7c5801a8bf625252a7ca29d4ba2",
+      "02_figure2_core_vs_acquaintance_2022.R": "dc8b15e9d06ef67cf9cfb94b5eb8574a5178f86a2b0538381445fc3e8e6392c1",
+      "03_figure3_thermometers_2018.R": "70a5d755a7a0c0f22318cb5b864869ae7ff21ee77f254968699eb7e58628d4b4",
+      "04_figure4_correlation_grid_2018.R": "cef6e3e2c76ebaf65c9c29ece133c974253684a6da5cb0850884b46fd1332595",
+      "05_figures5_6_thermometers_2022.R": "12e25bd83247144ac0b0f75b87859e52c373eddde99ff6ffd1fdd3e8ebca49c7",
+      "06_figures7_8_county_voteshare_2022.R": "97814a434825b07fac02468c892895373d8f46b84e3edcf4e512caa7d3cf1228",
+      "07_figures9_10_county_race_2022.R": "dff4f2213ebb7289fe1896626024343eb79f1c145a64ebfb647188718d95d264",
+      "08_figure11_test_retest_by_pid_2024.R": "0c5af9f40e7efbb4f547409d4630fea2c005df50ee3cfc65cca8bdd63fc33cb1",
+      "09_figure12_core_vs_acquaintance_by_pid_2022.R": "f20425a950d1ba14bd3917f7aa8c99d8a8cd97cfc5cde650d0656f1fc6aa3e4e",
+      "10_tables1_7_descriptives.R": "952ab7d6f5fb28519ed2320be0ec1b0d37e2c0f09408e21b7e94a4ad21846d02",
+      "README.md": "63be6b475c6e8cc7a10bd30f4a87d6bc6b18c7abf504a9407fce2b117e0b9669",
+      "ces2018.tab": "62a2bfb66928e98ef665cd8dbb3efbf7cfc7d499f6af1f2f9e4c68136420e49b",
+      "ces2024.tab": "09a2c373b53c923b075e6ef9ba21a288d31aeacef270095cca5122326bd6e73d",
+      "chip50_2022.tab": "ddacc59f4b46f29691093af074b557e0aa936c89def99314f4e6e61382b078ae",
+      "run_all.R": "19f0c5439b4f7477813cbe4b837aee39137a4ad939c5bccb2482ef3016badc12"
+    },
+    "software": "recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "doi": "doi:10.7910/DVN/AR3MTE",
+    "paper": "Pietryka & Sokhey 2026, Validating Survey Measures of Acquaintance Networks for Political Behavior Research, Network Science 14:e29 (open access, CC BY 4.0), Appendix B",
+    "selection": "seeded random order, rank 6; see docs/pilot-selection-log.md"
+  }
+}
