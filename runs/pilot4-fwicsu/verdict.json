@@ -1,0 +1,35 @@
+{
+  "all_reproduced": false,
+  "claims": [
+    {
+      "difference": -0.010000000000000009,
+      "id": "t5_wfh_other",
+      "published": 1.05,
+      "reproduced": 1.04,
+      "status": "reproduced"
+    },
+    {
+      "difference": 0.040000000000000036,
+      "id": "t5_wfh_health",
+      "published": 2.25,
+      "reproduced": 2.29,
+      "status": "discrepancy"
+    },
+    {
+      "difference": -0.010000000000000009,
+      "id": "t5_women_other",
+      "published": 0.85,
+      "reproduced": 0.84,
+      "status": "reproduced"
+    }
+  ],
+  "counts": {
+    "discrepancy": 1,
+    "reproduced": 2
+  },
+  "results_sha256": "e24f63bb5161d09472be5a212ee66fb9ca185bd04c61726b1b64f05f6a2d4597",
+  "run": "pilot4-fwicsu",
+  "spec_sha256": "fad66df7a6e390d5d158b163dbb02e3cfe89bbe8c88e0fd207e5c48b9c6055ae",
+  "unregistered_results": [],
+  "verified_at": "2026-11-20T16:24:42Z"
+}

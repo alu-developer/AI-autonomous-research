@@ -1,0 +1,41 @@
+{
+  "claims": [
+    {
+      "description": "Table 5 (adjusted ORs, severe distress): Increased working from home, column Working/other sectors. Code analogue: exp(coef(m1)['workMoreHome'])",
+      "id": "t5_wfh_other",
+      "published": 1.05,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 5: Increased working from home, column health and welfare sector. Code analogue: exp(coef(m2)['workMoreHome'])",
+      "id": "t5_wfh_health",
+      "published": 2.25,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 5: Women, column other sectors. Code analogue: exp(coef(m1)['women'])",
+      "id": "t5_women_other",
+      "published": 0.85,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "created": "2026-11-20T16:21:27Z",
+  "id": "pilot4-fwicsu",
+  "notes": "Claims = first three numbers in Table 5 read row by row (rows: Increased WFH both columns, then Women first column). Known before running: Table 5 says models include survey-month fixed effects and education dummies; the package code m1/m2 has neither and the data file has no education variable, so Table 5 cannot be exactly reproduced from the package as shipped. Run is still performed with the shipped code unchanged (only setwd and .tab->.csv copy).",
+  "pinned": {
+    "files_sha256": {
+      "paper.pdf": "c0946d269e385fab42b773d2bda430dc033b6cf939e2e697c7cf04b629d8cd5d",
+      "replication_code.r": "36cc3c1de8f800d7b237bbac5399bfc87d28bfe09c06a0ad3fe26d89e1453f4f",
+      "replication_data.tab": "a44b3d655329b385153125abf38fe4174890b50cc469a5a9067b50c4eb339a83"
+    },
+    "software": "recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "doi": "doi:10.7910/DVN/FWICSU",
+    "paper": "Pickering et al. 2026, Increased working from home and severe psychological distress in Japan, Journal of Affective Disorders Reports 26:101215 (CC BY 4.0; accepted manuscript PDF from bura.brunel.ac.uk/handle/2438/34165)",
+    "selection": "seeded random order rank 19 after documented skips of ranks 9-18; see docs/pilot-selection-log.md"
+  }
+}
