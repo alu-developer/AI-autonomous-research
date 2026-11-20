@@ -35,4 +35,4 @@ python -m pytest -q                            # tests
 - `LOG.md`: decision log, newest first. `CLAUDE.md`: rules for Claude sessions
 
 ## Status
-Framework v0.1 built and tested. Next: pilot (topic 1: reproduction audits). Nothing here has produced a research result yet.
+Framework v0.1 built and tested. Pilot 1 done (see docs/pilot-1-results.md). Nothing here has produced a research result yet.
