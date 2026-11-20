@@ -1,0 +1,34 @@
+{
+  "all_reproduced": true,
+  "claims": [
+    {
+      "difference": 0.000136000000000025,
+      "id": "t3_intercept",
+      "published": -0.808,
+      "reproduced": -0.807864,
+      "status": "reproduced"
+    },
+    {
+      "difference": 0.00041999999999999676,
+      "id": "t3_soil_test_rate",
+      "published": 0.033,
+      "reproduced": 0.03342,
+      "status": "reproduced"
+    },
+    {
+      "difference": 6.500000000003725e-05,
+      "id": "t3_irrig_share",
+      "published": -0.34,
+      "reproduced": -0.339935,
+      "status": "reproduced"
+    }
+  ],
+  "counts": {
+    "reproduced": 3
+  },
+  "results_sha256": "7f80891d45503deaaf6900f43c1634c7964654dcc4c9b397fa3cd99490de4705",
+  "run": "pilot2-qpaw2h",
+  "spec_sha256": "d2a3fccdc1e49d255ffba964cc4669e9ec3acb135ecf3924032a9bbd24229c69",
+  "unregistered_results": [],
+  "verified_at": "2026-11-20T16:08:31Z"
+}

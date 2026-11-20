@@ -1,0 +1,56 @@
+{
+  "claims": [
+    {
+      "description": "Table 3 (OLS, N_dominance, n=34): Intercept. Code: reg_ndom in analysis.R",
+      "id": "t3_intercept",
+      "published": -0.808,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 3: coefficient soil_test_rate (reg_ndom)",
+      "id": "t3_soil_test_rate",
+      "published": 0.033,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 3: coefficient irrig_share (reg_ndom)",
+      "id": "t3_irrig_share",
+      "published": -0.34,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "created": "2026-11-20T16:07:53Z",
+  "id": "pilot2-qpaw2h",
+  "notes": "Protocol rules apply (first 3 numeric coefficients of main results table; tolerance 1% or 3 units of last digit, larger). Needed non-analytical adaptation: Dataverse files named .tab are CSV content; copied into data/ as .csv and setwd set. Analysis code unchanged. Package vars installed from CRAN.",
+  "pinned": {
+    "data_and_code_sha256": {
+      "R10_regression_results.txt": "bfa5759e07856ae86d721cfafb3aad6a451e56dca6a2e1ef5aa53a7a74f2a4ed",
+      "R1_snsi_national_district.tab": "5b11b354bcb48d3083f26b319e8b58cb6f9f1a02ca9878c60c67e09f9dfb0c59",
+      "R2_snsi_national_state_summary.tab": "070421cc83373504d5867e285c7159b2ae3633d442c1b8e38106902d24d6ce4f",
+      "R3_snsi_state_change.tab": "e430c0caaf89de0ccebf7c57ceb7f76d60173bba40febd9668c5b1a709a3e151",
+      "R5_master_analytical_dataset.tab": "0d9c704d8d74c7407854685b13642c99f8bd56af354aa34b37ece1e03e754dc0",
+      "R6_maharashtra_fert_cost_trend.tab": "4ab7cde99966964f97151b6fbe7104a4eb8b680cda5fb2838ed0098ec3768c5b",
+      "R7_crossstate_welfare_snsi.tab": "8a40a904fd41301a5a5107ad2863cdfd8266a470ef13d30ff5477506f63eb9ae",
+      "R8_subsidy_trajectory.tab": "cbc085de229abd2b1a67b2e384e400539bbe943f547c819a64d792d65e58fb72",
+      "R9_compatibility_scores.tab": "7ef83a7ccb89a53d73ab1cb338a8257fee653120e9d3e943c050ea2f3d4b9b47",
+      "README.md": "14099ea4629d42ad21d223789e9f461b654f41ff55a966cddcf0599ed829ca2a",
+      "README_FoodPolicy.md": "8e3081abc54d5c56e231c619190dfdf629558b26f91b32d042c8148193bb3273",
+      "SHA256SUMS": "e29d47e6afef243cc798c1d58df0fa3170f0e50b3ea926abca9be2742da411fd",
+      "analysis.R": "f82f5210714e7627bc9feacc611fedb30eb5b6192ac7c4a78baa16c60e42ac7c",
+      "analysis_FoodPolicy.R": "748082e25564ff23a94a659520a246042a293945ae034ade400044eca1ce1889",
+      "cluster_profiles.tab": "2e69061739cfa182037e420320aa335b2b157351d4a71aebdeb34463056afec5",
+      "master_v3_rainfall.tab": "8f596c34b8a5b6aea3a0809e315073c89ea75938b40bfe887883a9b4bc3d126e",
+      "pc_scores.tab": "37424f8d3f2a8ba3c6b677b6288386de61a389b1cc60ba04187a4e8de06e7870",
+      "snsi_final.tab": "cdb8f7d9905b3c937ee351334241a7458658247815c0d85b66501a727b6c5915"
+    },
+    "software": "R and package versions recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "doi": "doi:10.7910/DVN/QPAW2H",
+    "paper": "Soil Nutrient Stress, Crop System Composition, and Agro-Climatic Confounding: A District-Level Analysis of Maharashtra's Agricultural Soils (Research Square preprint rs-10250021, HTML sha256 3d9a29f40a4369cc8a8a4cdcbc72d6ac0e0ad3a8c6a68af0f41c082624f60a93)",
+    "selection": "seeded random order, rank 4; see docs/pilot-selection-log.md"
+  }
+}

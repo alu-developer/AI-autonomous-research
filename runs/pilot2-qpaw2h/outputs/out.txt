@@ -1,0 +1,81 @@
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: SparseM
+
+Attaching package: 'SparseM'
+
+The following object is masked from 'package:base':
+
+    backsolve
+
+Loading required package: MASS
+
+Attaching package: 'MASS'
+
+The following object is masked from 'package:dplyr':
+
+    select
+
+Loading required package: strucchange
+Loading required package: zoo
+
+Attaching package: 'zoo'
+
+The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric
+
+Loading required package: sandwich
+Loading required package: urca
+Loading required package: lmtest
+Linking to GEOS 3.12.1, GDAL 3.8.4, PROJ 9.4.0; sf_use_s2() is TRUE
+Data loaded:
+  snsi_final: 68 rows (34 districts x 2 cycles)
+  master_v3: 34 rows (34 districts, full predictor set)
+  pc_scores: 34 rows
+  cluster_profiles: 2 rows
+
+=== TABLE 1: SNSI stress category distribution ===
+# A tibble: 8 x 4
+  year    stress_category     n mean_SNSI
+  <chr>   <chr>           <int>     <dbl>
+1 2023-24 Severe              1     0.739
+2 2023-24 High               12     0.521
+3 2023-24 Moderate           16     0.373
+4 2023-24 Low                 5     0.231
+5 2024-25 Severe              1     0.665
+6 2024-25 High               15     0.515
+7 2024-25 Moderate           15     0.381
+8 2024-25 Low                 3     0.213
+
+Overall mean SNSI by cycle:
+# A tibble: 2 x 2
+  year    mean_SNSI
+  <chr>       <dbl>
+1 2023-24     0.415
+2 2024-25     0.434
+
+Nitrogen deficiency summary statistics (2023-24):
+  Mean def_N: 0.807 
+  Median def_N: 0.922 
+  Mean def_OC: 0.522 
+  Mean def_K: 0.049 
+  Mean def_Zn: 0.487 
+
+Districts worsening 2023-24 to 2024-25:
+   22 of 34 districts worsened
+
+=== TABLE 2: PCA component loadings ===
+Error in select(., def_N, def_P, def_K, def_OC, def_Zn) : 
+  unused arguments (def_N, def_P, def_K, def_OC, def_Zn)
+Calls: %>% -> scale
+Execution halted
