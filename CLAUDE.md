@@ -3,9 +3,11 @@
 Goal: build a framework for an AI-autonomous researcher (see README.md).
 
 Before doing anything, read in this order:
-1. `docs/framework-research.md` (detailed research notes, architecture, build order, open questions)
-2. `docs/blueprint.md` (short summary)
-3. `LOG.md` (decisions so far)
+0. `docs/author-notes.md` (author's goals and constraints; never edit)
+1. `docs/framework-evaluation.md` (current decision: reuse, do not build a framework)
+2. `docs/framework-research.md` (detailed research notes, architecture, build order, open questions)
+3. `docs/blueprint.md` (short summary)
+4. `LOG.md` (decisions so far)
 
 Rules:
 - Evaluator first: no generator code without a verifier in `evals/`.
