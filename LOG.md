@@ -1,5 +1,8 @@
 # Decision log (newest first)
 
+## 2026-11-23 (exploratory toy study, outside the pipeline)
+- At the author's request (curiosity, not a research run): built toy money-flow models of the stock market (studies/stock-market-flow-model/: pool model, extensions, portfolio model, cohort model, 3 experiment scripts with self-tests). Not preregistered, not human-reviewed, so NOT a finding. Real-world data points in its README come from web searches and are unverified. Open question recorded there: can credit/money creation supply unlimited inflow (the two models disagree).
+
 ## 2026-11-20 (pilot 1 done)
 - Ran pilot 1 (5 studies, protocol in docs/pilot-protocol.md, results in docs/pilot-1-results.md): 11 of 15 numbers reproduced, 4 discrepancies (both from paper/code version mismatches). Cost 0 EUR. Nothing approved; results stay "machine-verified, unreviewed". Author decided: skip WI07KZ (24-48 h runtime). Open: human-gate policy, independent extraction step.
 
