@@ -1,5 +1,11 @@
 # Decision log (newest first)
 
+## 2026-11-26 (pre-registration written, nothing run)
+- At the author's request, designed a study "How robust is alignment faking to prompt wording?" (studies/alignment-faking-prompt-wording/preregistration.md, sha256 e3c6c97eb28270f9e7d88a4cb33b17b0226b2d1cb64f00d662ada3ccc9892473). Two independent review sessions found 24 and 11 problems; the file is the revised version after both. Nothing has been run and no money spent. The document itself states the honest expectation: mostly estimates with wide intervals, not a confirmed or refuted effect.
+- Deviation to resolve: this study does not fit the airesearch spec schema (claims need a published value plus tolerance; this study's verdicts are interval rules), so it sits under studies/ for now. The author decides whether to extend the pipeline or accept a separate path. No spec has been frozen with `airesearch freeze`.
+- Budget: expected usage about 13 USD (about 11.3 EUR) at 16 queries, about 11 USD (about 9.6 EUR) at 12 queries. The provisional per_run_cap_eur=10 would block the 16-query case; only the author can change it. The author bought 15 USD of OpenRouter credits; spend is not in budget/ledger.csv yet and is recorded when it occurs.
+- This commit is on a branch so the timestamp exists before any pilot call. The author decides whether to merge it.
+
 ## 2026-11-23 (exploratory toy study, outside the pipeline)
 - At the author's request (curiosity, not a research run): built toy money-flow models of the stock market (studies/stock-market-flow-model/: pool model, extensions, portfolio model, cohort model, 3 experiment scripts with self-tests). Not preregistered, not human-reviewed, so NOT a finding. Real-world data points in its README come from web searches and are unverified. Open question recorded there: can credit/money creation supply unlimited inflow (the two models disagree).
 
