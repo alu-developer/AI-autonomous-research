@@ -140,6 +140,12 @@ if __name__ == "__main__":
     import common as C
     rows = M.final_rows()
     clf = M.load(M.CLF, "id")
+    CORRECTED = os.environ.get("AF_CORRECTED") == "1"  # Amendment 4: last-<OUTPUT> extraction, labels from main_clf_v2 override
+    if CORRECTED:
+        for l in open(os.path.join(M.DATA, "main_clf_v2.jsonl"), encoding="utf-8"):
+            if l.strip():
+                r = json.loads(l); clf[r["id"]] = r
+        C.final_answer = C.final_answer_last
     ptoy = {"anchor_placebo": "anchor"}
     para_ids = [p["id"] for p in M.primary]
     comp_ids = [p["id"] for p in M.compressed]
@@ -183,5 +189,5 @@ if __name__ == "__main__":
         kappa = None
     results["classifier_agreement"] = {"n": len(both), "kappa": kappa, "classifier_sensitive": kappa is not None and kappa < 0.7}
     os.makedirs(os.path.join(HERE, "..", "results"), exist_ok=True)
-    json.dump(results, open(os.path.join(HERE, "..", "results", "main_results.json"), "w"), indent=1)
+    json.dump(results, open(os.path.join(HERE, "..", "results", "main_results_corrected.json" if CORRECTED else "main_results.json"), "w"), indent=1)
     print(json.dumps(results, indent=1)[:6000])

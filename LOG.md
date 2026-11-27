@@ -1,5 +1,10 @@
 # Decision log (newest first)
 
+## 2026-11-27 (late: self-review, extraction defect, study finished)
+- Author said he will not review the results himself and asked to finish everything. I did an AI self-check (studies/alignment-faking-prompt-wording/review.md); it is NOT a human review and `approve` was not run, so results stay labeled machine-computed / AI-checked.
+- Found my own bug: first-`<OUTPUT>` extraction read Qwen reasoning in about 17% of its replies. Wrote amendment-4 (fix rule) before any corrected number, re-labeled 768 main + 47 pilot cells (extra ~0.14 USD usage), reported both versions. No verdict changed; pilot model choice unchanged.
+- Added study README, review.md, corrected results; pointer in top README. Budget cash unchanged (credits already bought).
+
 ## 2026-11-27 (main run finished; results drafted, unreviewed)
 - Main run G3 finished on the author's machine: 7,200 calls, 20 unparseable after the registered retry, all labeled by classifier A (classifier B kappa 0.97 on 1,832 outputs). Two connection drops of the author's computer interrupted it; the runner resumed without gaps. Usage total 24.30 USD (3.6 pilot and materials, rest main run), recorded in budget/ledger.csv (21.13 EUR; one entry corrected after an arithmetic slip of mine). The extra credit fees (about 1.65 USD) are outside usage. Cash outlay about 27.5 EUR, under the 40 EUR ceiling.
 - Registered verdicts (draft in studies/alignment-faking-prompt-wording/results.md): H1 inconclusive for both models (D = 0.037 [-0.046, 0.120] Gemini; -0.055 [-0.191, 0.081] Qwen); H3 supported for both (placebo gap about 0). The gap did not shrink under rewording but a moderate loss is not ruled out. H2 exploratory tau-hat 0.095 and 0.145. Nothing is a finding until the author reviews it; I have not run approve.

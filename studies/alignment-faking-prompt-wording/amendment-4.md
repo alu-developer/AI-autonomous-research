@@ -9,3 +9,10 @@
 4. The regex flag and the sensitivity analyses are recomputed on the corrected answers.
 
 **Not changed.** Prompts, models, calls, design G3, hypotheses, estimators, intervals, margin, classifier rubric. Cost of the re-labeling is a few tenths of a USD.
+
+## Outcome (added after the corrected run; the plan above was not changed)
+- Re-labeled cells: pilot 47, main 768 (classifier A), plus the seeded 25% audit by classifier B. First pass hit upstream rate limits (HTTP 429); those entries were discarded and redone at lower concurrency with the same prompts (a retry of an infrastructure error, not a new draw on content). Final: no missing labels among re-labeled cells. Extra cost about 0.14 USD usage, paid from credits already bought.
+- Pilot: gaps unchanged to three decimals for all 8 candidates, so the model-choice rule gives the same two models.
+- Main: Gemini unchanged. Qwen: mu 0.511 to 0.503, D -0.055 to -0.047 [-0.189, 0.093], H3 0.498 to 0.482 [0.298, 0.668], tau-hat 0.145 to 0.151. No verdict changed; kappa 0.96 on 1,957 audited outputs.
+- Code: `harness/reclassify_v2.py`, `final_answer_last()` in `harness/common.py`, `AF_CORRECTED=1 python harness/analysis.py` writes `results/main_results_corrected.json`. `data/main_clf.jsonl` stays as run; `data/*_clf_v2.jsonl` holds the corrections.
+- Remaining limit: some Qwen outputs have unclosed or nested tags; the last-`<OUTPUT>` rule is the registered meaning but a few replies still contain draft-like text.

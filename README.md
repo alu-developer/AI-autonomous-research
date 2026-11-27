@@ -31,7 +31,7 @@ python -m pytest -q                            # tests
 - `topics/candidates.json`: scored candidate topics; `budget/`: caps (author-owned) and ledger
 - `runs/<id>/`: one folder per run (spec, lock, log, outputs, verdict, review)
 - `agents/`: role prompts for sessions (reproducer, critic); `evals/`: reserved for domain verifiers and benchmarks
-- `studies/`: exploratory side studies outside the pipeline (not results), e.g. `studies/stock-market-flow-model/`
+- `studies/`: exploratory side studies outside the pipeline (not results), e.g. `studies/stock-market-flow-model/`, and `studies/alignment-faking-prompt-wording/` (pre-registered AI-alignment study, finished, machine-checked, not human-approved)
 - `docs/`: `author-notes.md` (author's words), `framework-evaluation.md` (why reuse + why not the usual AI scientist), `topic-candidates.md`, `framework-research.md`, `blueprint.md`, `sources.md`
 - `LOG.md`: decision log, newest first. `CLAUDE.md`: rules for Claude sessions
 
