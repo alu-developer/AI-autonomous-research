@@ -1,0 +1,19 @@
+--- orig/study3a.R	2026-11-27 20:24:02.576225443 +0100
++++ study3a.R	2026-11-27 20:24:02.591588164 +0100
+@@ -7,6 +7,7 @@
+ library(yarrr)
+ library(DescTools)
+ library(crank)
++library(lsr)  # audit: cohensD() is used but no library() call loads it
+ 
+ revscore <- function(x) {
+   rx <- 1:7
+@@ -181,3 +182,8 @@
+ 
+ 
+ 
++
++## --- appended by reproduction audit: write preregistered numbers ---
++library(jsonlite)
++write_json(list(t1_happy_1k_10k=mean(df$happy_1k_10k,na.rm=TRUE), t1_happy_1m_10m=mean(df$happy_1m_10m,na.rm=TRUE), t1_happy_1b_10b=mean(df$happy_1b_10b,na.rm=TRUE)), "/home/claude/AI-autonomous-research/runs/uj04-popethics/outputs/results.json", auto_unbox=TRUE, digits=NA)
++writeLines(capture.output(sessionInfo()), "/home/claude/AI-autonomous-research/runs/uj04-popethics/outputs/sessionInfo.txt")

@@ -1,0 +1,28 @@
+--- orig/analysis.R	2026-11-27 20:10:52.782168941 +0100
++++ analysis.R	2026-11-27 20:11:02.463482634 +0100
+@@ -44,11 +44,11 @@
+ ## Import Dataset
+ #-----------------------------------------------------------------------------------
+ 
+-setwd("C:/Users/stein/Dropbox/CGD - Cash meta-analysis/6. Draft/NHB/Revision/Replication Files") ##For replication need to change this to specific directory where dataset is saved
++setwd("/home/claude/work/uj03") ##For replication need to change this to specific directory where dataset is saved
+ 
+ Data_Meta <- read.dta("Analysis_v6_R_rep.dta")
+ 
+-View(Data_Meta)
++# View(Data_Meta)
+ 
+ #-----------------------------------------------------------------------------------
+ ## Preparing different datasets for analysis
+@@ -1453,3 +1453,11 @@
+ robust_reg3extml <- robust(reg3extml, study)
+ summary(robust_reg3extml) 
+ 
++
++## --- appended by reproduction audit: write preregistered numbers ---
++library(jsonlite)
++res <- list(t2_southasia_basic = unname(reg1bas1$reg_table$b.r[reg1bas1$reg_table$labels=="region_5"]),
++            t2_southasia_ext   = unname(reg1ext$reg_table$b.r[reg1ext$reg_table$labels=="region_5"]),
++            t2_lac_basic       = unname(reg1bas1$reg_table$b.r[reg1bas1$reg_table$labels=="region_3"]))
++write_json(lapply(res, function(x) x[1]), "/home/claude/AI-autonomous-research/runs/uj03-ssn-women/outputs/results.json", auto_unbox=TRUE, digits=NA)
++writeLines(capture.output(sessionInfo()), "/home/claude/AI-autonomous-research/runs/uj03-ssn-women/outputs/sessionInfo.txt")

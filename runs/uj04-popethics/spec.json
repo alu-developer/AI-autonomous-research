@@ -1,0 +1,40 @@
+{
+  "claims": [
+    {
+      "description": "Table 1 (page 12), Happy row, 1000 vs 10,000: mean rating. Code: mean of happy_1k_10k after the script's exclusions",
+      "id": "t1_happy_1k_10k",
+      "published": 5.12,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 1, Happy row, 1 million vs 10 million: mean. Code: mean of happy_1m_10m after exclusions",
+      "id": "t1_happy_1m_10m",
+      "published": 4.33,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 1, Happy row, 1 billion vs 10 billion: mean. Code: mean of happy_1b_10b after exclusions",
+      "id": "t1_happy_1b_10b",
+      "published": 3.71,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "id": "uj04-popethics",
+  "notes": "Table 1 is the paper's only table and reports results (means, SDs in brackets); claims are its first three point estimates read row by row (SDs are not point estimates). Values confirmed in the PDF text layer, page 12, near 'Happy'. Means are computed by appended code after the script's own exclusion step (the script prints them via describeBy; a printed number is never typed by me). Tolerance: 3 units of the last digit (0.03) or 1%.",
+  "pinned": {
+    "files_sha256": {
+      "PopEthics Study 3a.R": "89e22a66989f3035c6d696a3dd1337ab6e7207e574647471fb6c7edeb9e1bf78",
+      "PopEthics Study 3a.csv": "7b08e8b75dbd179761b514e63c28ed0ea263d0ee812d7e76c5dae660b88d0cbf",
+      "paper.pdf": "d8804deb8cbee2419578cb0355590f2ad39ff7acc1524f894a31eb44be22d0bb"
+    },
+    "software": "recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "package": "OSF osf.io/qt65w, folder 'Study 3a' (no licence stated; public; no terms forbidding automated or AI processing found)",
+    "paper": "Caviola et al. 2022, Population ethical intuitions, Cognition 218:104941 (author's PDF from luciuscaviola.com, as linked by The Unjournal's research_url host)",
+    "selection": "Unjournal pool rank 4 (seeded order)"
+  }
+}

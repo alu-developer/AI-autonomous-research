@@ -1,0 +1,40 @@
+{
+  "claims": [
+    {
+      "description": "Table 2 Panel A, South Asia, Basic controls Coef (page 21). Code: coef of region_5 in reg1bas1 (robu)",
+      "id": "t2_southasia_basic",
+      "published": 0.033,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 2 Panel A, South Asia, Extended controls Coef. Code: coef of region_5 in reg1ext (robu)",
+      "id": "t2_southasia_ext",
+      "published": 0.046,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 2 Panel A, Latin America & the Caribbean, Basic controls Coef. Code: coef of region_3 in reg1bas1",
+      "id": "t2_lac_basic",
+      "published": -0.063,
+      "tolerance_abs": 0.003,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "id": "uj03-ssn-women",
+  "notes": "Table 1 is sample characteristics (shares), so the first results table is Table 2; claims are its first three coefficients read row by row (I2 columns are not point estimates). Variable mapping from .dta labels: region_5 = South Asia, region_3 = Latin America & the Caribbean. Version note: package dated Oct 2025 (journal revision), paper version Jan 2025; data has 1,307 effects and 93 studies, as stated in the Table 2 note. All three published values confirmed in the PDF text layer by checks.py confirm-pdf (page 21). Planned code changes: setwd to the package folder, View() calls commented out, results-writing lines appended.",
+  "pinned": {
+    "files_sha256": {
+      "Analysis_v6_R_rep.dta": "4a4bcde9a5ed75029b4c8278cff58141758ea21bb285249db0f928a2104598ab",
+      "ReadMe.docx": "d63920628846a531df0eee8e97e6aca8153d4e11d77140ce79582fc4e8ba8345",
+      "Replication File_Analysis Social Safety Nets_Oct2025.R": "cb31bb78a26e52df3efa78a7bc02d1ec5048f068ea3e13afeccc2bace4948dca"
+    },
+    "software": "recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "package": "OSF osf.io/brvy2 (no licence stated; public; no terms forbidding automated or AI processing found)",
+    "paper": "A systematic review and meta-analysis of social safety nets, women's economic achievements and agency (manuscript 17 Jan 2025, version linked by The Unjournal)",
+    "selection": "Unjournal pool rank 3 (seeded order, studies/unjournal-reproduction/order.json); ranks 1-2 ineligible (see eligibility log)"
+  }
+}
