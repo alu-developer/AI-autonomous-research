@@ -12,7 +12,7 @@ Before doing anything, read in this order:
 Rules:
 - The author decides topics and money. Propose, never decide. Never edit `budget/config.json`.
 - Every research run goes through `python -m airesearch`: freeze the spec BEFORE running, log every attempt including failures, let `verify` compute verdicts from raw results.
-- NEVER run `approve`. Only the human author does. Never claim a result without a human-reviewed report.
+- NEVER run `approve`. Author's decision (2026-11-27): there is NO human review. Do not ask the author to review results; he decides only topics and money. Label every result "machine-checked, not human-reviewed" and keep claims narrow enough that a mechanical check settles them (see docs/audit-protocol-v2.md). Ask the author only for what needs him: topics, money, logins, or sending a message in his name.
 - Do not report numbers that were not preregistered as findings.
 - Choose studies/benchmarks by a rule recorded in the spec (not by what looks promising to you).
 - Pin software and data versions in the spec; record dataset hashes.

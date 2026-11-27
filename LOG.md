@@ -1,5 +1,10 @@
 # Decision log (newest first)
 
+## 2026-11-27 (evening: next study chosen, protocol v2)
+- Author chose the next study: reproduction audits of the studies GiveWell's top-charity CEAs rely on. Budget 0 EUR. Author will not review results ("unqualified, no point"); CLAUDE.md rule changed accordingly: no human gate, results labeled machine-checked, claims kept mechanical.
+- Wrote docs/audit-protocol-v2.md before opening any candidate study. New vs pilot 1: selection pool tied to GiveWell's CEAs; claims = the numbers GiveWell uses; published values confirmed by script in the PDF text layer; rerun values written by code; code edits diffed and estimation-line edits flagged (airesearch/checks.py, 6 new tests); Stata-only packages reported as a separate tier B (ported = reanalysis).
+- Reasons recorded in the protocol: METR Q4 2026 update (models match skilled humans on checkable tasks, weaker judgment, model judges overrate model work, reward hacking by frontier agents).
+
 ## 2026-11-27 (late: self-review, extraction defect, study finished)
 - Author said he will not review the results himself and asked to finish everything. I did an AI self-check (studies/alignment-faking-prompt-wording/review.md); it is NOT a human review and `approve` was not run, so results stay labeled machine-computed / AI-checked.
 - Found my own bug: first-`<OUTPUT>` extraction read Qwen reasoning in about 17% of its replies. Wrote amendment-4 (fix rule) before any corrected number, re-labeled 768 main + 47 pilot cells (extra ~0.14 USD usage), reported both versions. No verdict changed; pilot model choice unchanged.
