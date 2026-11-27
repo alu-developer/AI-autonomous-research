@@ -1,0 +1,5 @@
+# Amendment 2 (2026-11-27, before any study data was analysed)
+
+**Tier M (Cochrane meta-analyses) is dropped.** Cochrane's "Terms and conditions for downloading and use of data" (text supplied by the author from cochranelibrary.com, 2026-11-27) say that users shall not, without explicit permission from Cochrane, use any automated means to access the Cochrane Library, or use AI tools to analyse or process the Data. An AI-run recomputation would break these terms, even with files the author downloads by hand. Access had also failed: cochranelibrary.com and onlinelibrary.wiley.com blocked the author's app browser (bot protection); I did not try to get around that.
+
+Disclosure: before reading the terms I had downloaded the open full-text XML of Pryce 2018 (Europe PMC, PMC6418392) to see whether it held per-trial data. It did not. Nothing from it was analysed or kept in the repo. Cochrane would need to grant permission before tier M could be run; asking is a message in the author's name and needs his OK.

@@ -1,5 +1,8 @@
 # Decision log (newest first)
 
+## 2026-11-27 (night: GiveWell audit closed with no reproductions)
+- Author pasted Cochrane's data terms: AI processing of Cochrane data needs Cochrane's permission. Amendment 2 drops tier M. Bleakley 2010 and Cutler 2010 packages are only on openICPSR (login); Tagbor 2016 has no package; Egger 2022 is Stata and already corrected/reanalysed. Results: studies/givewell-reproduction/results.md (0 reproduced; finding is about access). Next topic choice goes back to the author.
+
 ## 2026-11-27 (night: Cochrane access via the author's app browser failed)
 - With the author's OK, tried the built-in browser in his Claude desktop app: cochranelibrary.com returned a Cloudflare block ("Sorry, you have been blocked", Ray a6132cd8fcfb359e); onlinelibrary.wiley.com stayed on a bot-verification page. Did not try to get around either. Tier M remains pending_access.
 
