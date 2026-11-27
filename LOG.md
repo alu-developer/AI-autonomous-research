@@ -1,5 +1,8 @@
 # Decision log (newest first)
 
+## 2026-11-27 (night: next study, Unjournal reproduction audits)
+- Author chose option 1: reproduce papers The Unjournal has evaluated. Protocol written before opening any paper: studies/unjournal-reproduction/protocol.md (adds a terms check and an I4R-overlap check to protocol v2). Pool: 58 papers with published evaluations.
+
 ## 2026-11-27 (night: GiveWell audit closed with no reproductions)
 - Author pasted Cochrane's data terms: AI processing of Cochrane data needs Cochrane's permission. Amendment 2 drops tier M. Bleakley 2010 and Cutler 2010 packages are only on openICPSR (login); Tagbor 2016 has no package; Egger 2022 is Stata and already corrected/reanalysed. Results: studies/givewell-reproduction/results.md (0 reproduced; finding is about access). Next topic choice goes back to the author.
 
