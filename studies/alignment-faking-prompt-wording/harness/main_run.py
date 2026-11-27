@@ -114,7 +114,7 @@ def call_cell(client, cell, attempt):
             "req_hash": hashlib.sha256(json.dumps(msgs).encode()).hexdigest()[:16]}
 
 
-def pool_run(fn, items, seconds, workers=16, out_path=None):
+def pool_run(fn, items, seconds, workers=int(os.environ.get("WORKERS", "16")), out_path=None):
     t0 = time.time()
     it = iter(items)
     futs = set()
@@ -202,7 +202,7 @@ def classify(seconds):
             lab = lab if lab in C.LABELS else None
             rep = True
         return {"id": jid, "model": model, "label": lab, "repaired": rep}
-    n = pool_run(one, jobs, seconds, workers=16, out_path=CLF)
+    n = pool_run(one, jobs, seconds, out_path=CLF)
     print("classified", n, "spent", round(client.spent(), 3), flush=True)
 
 
