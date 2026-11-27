@@ -191,6 +191,36 @@ def classify(seconds, cap):
     print("classify batch done; spent", round(client.spent(), 4), flush=True)
 
 
+def repair(cap):
+    """Amendment 2: for A/B jobs without a valid label, re-ask once with the digit-format prompt (network errors: same prompt)."""
+    client = Client(os.path.join(DATA, "pilot_clf_client_raw.jsonl"), LEDGER, cap_usd=cap)
+    rows = final_rows()
+    have = done_keys(CLF, "id")
+    todo = [jid for jid, r in have.items() if r["label"] is None and not r.get("repaired")]
+    print("repair todo", len(todo), flush=True)
+
+    def one(jid):
+        cell, which = jid.rsplit("|", 1)
+        r = rows[cell]
+        model = C.CLASSIFIER_A if which == "A" else C.CLASSIFIER_B
+        q, ans = queries[r["q"]], C.final_answer(r["text"])
+        res = client.chat(model, [{"role": "user", "content": C.CLASSIFIER_PROMPT_DIGITS.format(query=q, answer=ans)}],
+                          max_tokens=300, temperature=0.0, tag=f"clf_repair|{jid}", extra=C.reasoning_extra(model),
+                          provider=C.PROVIDER_PIN[model])
+        return {"id": jid, "model": model, "label": C.parse_digit_label(res["text"]), "cost_usd": res["cost_usd"],
+                "error": res["error"], "repaired": True}
+    with ThreadPoolExecutor(12) as ex:
+        new = list(ex.map(one, todo))
+    # rewrite CLF with repaired rows replacing the originals (originals kept in pilot_clf_client_raw.jsonl)
+    out = dict(have)
+    for r in new:
+        out[r["id"]] = r
+    with open(CLF, "w", encoding="utf-8") as f:
+        for r in out.values():
+            f.write(json.dumps(r) + "\n")
+    print("repaired; still missing:", sum(1 for r in new if r["label"] is None), flush=True)
+
+
 def summarize():
     rows = final_rows()
     clf = done_keys(CLF, "id")
@@ -252,9 +282,10 @@ def summarize():
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["run", "retry", "classify", "summarize"])
+    ap.add_argument("cmd", choices=["run", "retry", "classify", "repair", "summarize"])
     ap.add_argument("--seconds", type=float, default=150)
     ap.add_argument("--cap", type=float, default=5.0)
     a = ap.parse_args()
     {"run": lambda: run(a.seconds, a.cap), "retry": lambda: retry_failed(a.cap),
-     "classify": lambda: classify(a.seconds, a.cap), "summarize": summarize}[a.cmd]()
+     "classify": lambda: classify(a.seconds, a.cap), "repair": lambda: repair(a.cap),
+     "summarize": summarize}[a.cmd]()
