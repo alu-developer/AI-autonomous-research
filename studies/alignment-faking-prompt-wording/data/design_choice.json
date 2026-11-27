@@ -1,0 +1,129 @@
+{
+ "models": {
+  "google/gemini-3.1-flash-lite": {
+   "free": 0.9,
+   "paid": 0.02,
+   "gap": 0.88,
+   "qsd": 0.5,
+   "s_p": -2.7559782276730402,
+   "cost_pair": 0.00164
+  },
+  "qwen/qwen3.8-27b": {
+   "free": 0.5333333333333333,
+   "paid": 0.03389830508474576,
+   "gap": 0.49943502824858754,
+   "qsd": 0.5,
+   "s_p": -1.3902846147175296,
+   "cost_pair": 0.009136
+  }
+ },
+ "spent_before_main_usd": 3.592,
+ "grid": [
+  {
+   "design": "G1",
+   "Q": 12,
+   "P": 23,
+   "R": 4,
+   "C": 7,
+   "paired_calls_per_model": 540,
+   "projected_total_usd": 9.74,
+   "fits": true,
+   "power": {
+    "google/gemini-3.1-flash-lite": 1.0,
+    "qwen/qwen3.8-27b": 0.82
+   },
+   "min_power": 0.82
+  },
+  {
+   "design": "G2",
+   "Q": 20,
+   "P": 23,
+   "R": 4,
+   "C": 7,
+   "paired_calls_per_model": 900,
+   "projected_total_usd": 13.83,
+   "fits": true,
+   "power": {
+    "google/gemini-3.1-flash-lite": 1.0,
+    "qwen/qwen3.8-27b": 0.975
+   },
+   "min_power": 0.975
+  },
+  {
+   "design": "G3",
+   "Q": 40,
+   "P": 23,
+   "R": 4,
+   "C": 7,
+   "paired_calls_per_model": 1800,
+   "projected_total_usd": 24.07,
+   "fits": true,
+   "power": {
+    "google/gemini-3.1-flash-lite": 1.0,
+    "qwen/qwen3.8-27b": 1.0
+   },
+   "min_power": 1.0
+  },
+  {
+   "design": "G4",
+   "Q": 80,
+   "P": 23,
+   "R": 4,
+   "C": 7,
+   "paired_calls_per_model": 3600,
+   "projected_total_usd": 44.55,
+   "fits": false,
+   "power": {
+    "google/gemini-3.1-flash-lite": 1.0,
+    "qwen/qwen3.8-27b": 1.0
+   },
+   "min_power": 1.0
+  },
+  {
+   "design": "G5",
+   "Q": 40,
+   "P": 46,
+   "R": 8,
+   "C": 10,
+   "paired_calls_per_model": 3000,
+   "projected_total_usd": 37.72,
+   "fits": true,
+   "power": {
+    "google/gemini-3.1-flash-lite": 1.0,
+    "qwen/qwen3.8-27b": 1.0
+   },
+   "min_power": 1.0
+  },
+  {
+   "design": "G6",
+   "Q": 80,
+   "P": 46,
+   "R": 8,
+   "C": 10,
+   "paired_calls_per_model": 6000,
+   "projected_total_usd": 71.85,
+   "fits": false,
+   "power": {
+    "google/gemini-3.1-flash-lite": 1.0,
+    "qwen/qwen3.8-27b": 1.0
+   },
+   "min_power": 1.0
+  }
+ ],
+ "pick": {
+  "design": "G1",
+  "Q": 12,
+  "P": 23,
+  "R": 4,
+  "C": 7,
+  "paired_calls_per_model": 540,
+  "projected_total_usd": 9.74,
+  "fits": true,
+  "power": {
+   "google/gemini-3.1-flash-lite": 1.0,
+   "qwen/qwen3.8-27b": 0.82
+  },
+  "min_power": 0.82
+ },
+ "rule_result": "cheapest design with min power >= 0.80 that fits"
+}

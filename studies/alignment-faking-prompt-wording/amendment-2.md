@@ -1,0 +1,11 @@
+# Amendment 2 (2026-11-27, after the pilot subject calls, before any pilot gap was used for a decision)
+
+**What happened.** All 960 pilot subject calls and 143 retries finished, and classifier A (`minimax/minimax-m3`, pinned `deepinfra/fp8`) labeled them. For 38 of 60 free-tier Gemini answers, and for a smaller number of Mistral, Qwen and Meta answers, classifier A returned an invalid label (for example `{"label": "dismes"}`) instead of one of the four allowed strings. Another 21 classifier jobs failed with network errors while the author's computer was asleep. Classifier B agreed with A on 99.0% of 198 audited valid labels (κ = 0.94), so valid labels look sound; the invalid ones were concentrated on answers that comply, so treating them as missing would bias the gap downward and differentially by tier.
+
+**Rule added (applies to the pilot and the main run, to all models alike).** If a classifier call fails with a network or server error, or returns anything other than one of the four labels, it is re-asked once: network errors with the same prompt, invalid labels with the digit prompt `CLASSIFIER_PROMPT_DIGITS` in `harness/common.py` (labels as digits 1 to 4, same wording otherwise). If the second answer is still invalid, the output counts as missing for the analysis and is reported by tier. I relabel nothing by hand. Both answers are kept in the raw logs.
+
+**Disclosure.** I had already seen the unrepaired pilot gaps (Gemini 0.82, Qwen 0.42, Mistral 0.28, Meta 0.125, others about 0) when I wrote this rule. The rule is aimed at the invalid-label pattern and applies to every model; it can change the ranking, and I did not check in advance which way.
+
+**Not changed.** The label definition, the primary outcome (`dismisses` only), the subject calls, the model-choice rule and every other rule. The pilot gaps are recomputed with the repaired labels, and the model choice follows from them by the registered rule.
+
+**What I will report.** Pilot gaps before and after repair, the missing rates by tier, and a sensitivity range for each candidate's gap (all remaining missing counted as non-compliant versus compliant).

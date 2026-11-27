@@ -1,0 +1,4 @@
+time,run,amount_eur,note
+2026-11-27T13:06:26Z,afw-prepilot-and-pilot,3.12,"alignment-faking wording study: materials, pilot (960 calls + retries), classification; 3.59 USD billed via OpenRouter usage.cost at 1.15 USD/EUR; excludes 0.83 USD credit fee"
+2026-11-27T16:17:08Z,afw-main-run,15.14,"alignment-faking wording study: main run G3 (7,200 calls + retries) and classification; usage total 24.30 USD at 1.15 USD/EUR minus 3.12 EUR already recorded; excludes credit fees (about 1.65 USD)"
+2026-11-27T16:17:16Z,afw-main-run,2.87,"correction of the previous entry (arithmetic slip): usage 24.30 USD = 21.13 EUR total, 3.12 + 15.14 + 2.87 = 21.13"
