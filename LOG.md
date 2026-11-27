@@ -1,5 +1,8 @@
 # Decision log (newest first)
 
+## 2026-11-27 (night: Cochrane access via the author's app browser failed)
+- With the author's OK, tried the built-in browser in his Claude desktop app: cochranelibrary.com returned a Cloudflare block ("Sorry, you have been blocked", Ray a6132cd8fcfb359e); onlinelibrary.wiley.com stayed on a bot-verification page. Did not try to get around either. Tier M remains pending_access.
+
 ## 2026-11-27 (night: pool built, access problems)
 - Pool: 9 studies (studies/givewell-reproduction/pool.csv). The three biggest inputs (nets, SMC, vitamin A) are Cochrane meta-analyses whose per-trial data are only on cochranelibrary.com, which refuses this workspace (403). Open PMC copies have pooled results only.
 - Provisional statuses: 1 tier B (Egger 2022, Stata, already corrected by authors in 2026 and reanalyzed for GiveWell), 2 with no public package found (IDinsight RCT, Walker 2025), 2 to verify (Bleakley 2010, Cutler 2010), 1 to check (Tagbor 2016). Nothing run yet.
