@@ -1,5 +1,10 @@
 # Decision log (newest first)
 
+## 2026-11-27 (main run finished; results drafted, unreviewed)
+- Main run G3 finished on the author's machine: 7,200 calls, 20 unparseable after the registered retry, all labeled by classifier A (classifier B kappa 0.97 on 1,832 outputs). Two connection drops of the author's computer interrupted it; the runner resumed without gaps. Usage total 24.30 USD (3.6 pilot and materials, rest main run), recorded in budget/ledger.csv (21.13 EUR; one entry corrected after an arithmetic slip of mine). The extra credit fees (about 1.65 USD) are outside usage. Cash outlay about 27.5 EUR, under the 40 EUR ceiling.
+- Registered verdicts (draft in studies/alignment-faking-prompt-wording/results.md): H1 inconclusive for both models (D = 0.037 [-0.046, 0.120] Gemini; -0.055 [-0.191, 0.081] Qwen); H3 supported for both (placebo gap about 0). The gap did not shrink under rewording but a moderate loss is not ruled out. H2 exploratory tau-hat 0.095 and 0.145. Nothing is a finding until the author reviews it; I have not run approve.
+- Not done: scratchpad classifier (secondary, descriptive). Main-run raw data are in data/main_raw.jsonl.gz.
+
 ## 2026-11-27 (author chose G3; analysis and runner code committed before the main run)
 - Author chose design G3 (40 queries, 23 paraphrases, 4 anchor reps; 7,200 calls) over the rule's G1 pick (amendment 3). Needs about 21 USD of usage; OpenRouter shows 15.00 bought and 3.71 used, so the author tops up about 12 USD before the run. Ceiling 40 EUR unchanged.
 - Committed before any main-run call: harness/main_run.py (runner, classification with repair), harness/analysis.py (g0, mu, D, H1, H3, H2 exploratory; bootstrap B=10,000, seed 20261127, 97.5%, margin 0.05), harness/check_pipeline.py. Pipeline checks (200 simulated no-fragility studies per model, B=1,000): false "supported" H1 0.5% (Gemini) and 1.0% (Qwen), H3 0%; label-permuted pilot data: interval excludes 0 in 3.3% and 5.7% of 300 permutations (within noise of 5%; the pilot has only 12 queries). Results in results_pipeline_check.json.
