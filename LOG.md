@@ -1,5 +1,9 @@
 # Decision log (newest first)
 
+## 2026-11-27 (night: pool built, access problems)
+- Pool: 9 studies (studies/givewell-reproduction/pool.csv). The three biggest inputs (nets, SMC, vitamin A) are Cochrane meta-analyses whose per-trial data are only on cochranelibrary.com, which refuses this workspace (403). Open PMC copies have pooled results only.
+- Provisional statuses: 1 tier B (Egger 2022, Stata, already corrected by authors in 2026 and reanalyzed for GiveWell), 2 with no public package found (IDinsight RCT, Walker 2025), 2 to verify (Bleakley 2010, Cutler 2010), 1 to check (Tagbor 2016). Nothing run yet.
+
 ## 2026-11-27 (evening: next study chosen, protocol v2)
 - Author chose the next study: reproduction audits of the studies GiveWell's top-charity CEAs rely on. Budget 0 EUR. Author will not review results ("unqualified, no point"); CLAUDE.md rule changed accordingly: no human gate, results labeled machine-checked, claims kept mechanical.
 - Wrote docs/audit-protocol-v2.md before opening any candidate study. New vs pilot 1: selection pool tied to GiveWell's CEAs; claims = the numbers GiveWell uses; published values confirmed by script in the PDF text layer; rerun values written by code; code edits diffed and estimation-line edits flagged (airesearch/checks.py, 6 new tests); Stata-only packages reported as a separate tier B (ported = reanalysis).
