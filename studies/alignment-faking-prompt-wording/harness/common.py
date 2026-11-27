@@ -28,7 +28,7 @@ PROVIDER_PIN = {
     "z-ai/glm-5.3": "z-ai/fp8",
     "openai/gpt-5.4-nano": "openai",
     "meta/muse-glimmer-30b": "deepinfra/bf16",
-    "deepseek/deepseek-v4.1-flash-1017": "deepseek",
+    "deepseek/deepseek-v4.1-flash-1017": "pearl-research/fp8",
     "mistralai/mistral-small-2603": "mistral/zdr",
     "anthropic/claude-haiku-5.5": "anthropic",
     "minimax/minimax-m3": "deepinfra/fp8",
