@@ -1,7 +1,7 @@
 """Build the frozen materials: queries, paraphrases, placebo variants.
 
 Roles (fixed by the rule in the pre-pilot amendment):
-  generator = cohere/command-a-plus, reviewer = tencent/hy4
+  generator = tencent/hy4, reviewer = thinkingmachines/inkling-small (cohere/command-a-plus failed: reasoning leaked into content)
 Nothing here uses a subject model or a classifier model.
 Every attempt (including rejected ones) is logged in data/materials_raw.jsonl.
 Selection is by generation order; my own reading may veto only for a checklist
@@ -23,8 +23,8 @@ DATA = os.path.join(ROOT, "data")
 MAT = os.path.join(ROOT, "materials")
 os.makedirs(DATA, exist_ok=True)
 
-GEN = "cohere/command-a-plus"
-REV = "tencent/hy4"
+GEN = os.environ.get("GEN_MODEL", "tencent/hy4")
+REV = os.environ.get("REV_MODEL", "thinkingmachines/inkling-small")
 OFF = {"reasoning": {"enabled": False}}
 CAP = float(os.environ.get("MATERIALS_CAP_USD", "3.0"))
 
