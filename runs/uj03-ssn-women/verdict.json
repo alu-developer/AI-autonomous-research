@@ -1,0 +1,34 @@
+{
+  "all_reproduced": true,
+  "claims": [
+    {
+      "difference": 0.00043495449664610053,
+      "id": "t2_southasia_basic",
+      "published": 0.033,
+      "reproduced": 0.0334349544966461,
+      "status": "reproduced"
+    },
+    {
+      "difference": 6.854078257879925e-05,
+      "id": "t2_southasia_ext",
+      "published": 0.046,
+      "reproduced": 0.0460685407825788,
+      "status": "reproduced"
+    },
+    {
+      "difference": 0.0003617084203387938,
+      "id": "t2_lac_basic",
+      "published": -0.063,
+      "reproduced": -0.0626382915796612,
+      "status": "reproduced"
+    }
+  ],
+  "counts": {
+    "reproduced": 3
+  },
+  "results_sha256": "d6b48109ef4b89a4b20d8169dc6bbde38fd0ac4ae5afd60903fb71f79333bd7a",
+  "run": "uj03-ssn-women",
+  "spec_sha256": "80e392905d3af60b95d3d6426bf90381d3683d37a0006c74586b6c0d6c448354",
+  "unregistered_results": [],
+  "verified_at": "2026-11-27T19:25:42Z"
+}

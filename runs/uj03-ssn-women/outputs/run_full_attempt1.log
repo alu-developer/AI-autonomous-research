@@ -1,0 +1,1699 @@
+Version:  1.40
+Date:     2026-08-24
+Author:   Philip Leifeld (University of Manchester)
+
+Consider submitting praise using the praise or praise_interactive functions.
+Please cite the JSS article in your publications -- see citation("texreg").
+
+Attaching package: 'dplyr'
+
+The following object is masked from 'package:gridExtra':
+
+    combine
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: Matrix
+Loading required package: metadat
+Loading required package: numDeriv
+
+Loading the 'metafor' package (version 5.2-1). For an
+introduction to the package please type: help(metafor)
+
+Registered S3 method overwritten by 'netmeta':
+  method          from
+  subset.pairwise meta
+Extensive documentation for the dmetar package can be found at: 
+ doing-meta.guide/
+Loading required package: metabook
+Loading 'meta' package (version 9.0-0).
+Type 'help(meta)' for a brief overview.
+-- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+v forcats   1.0.0     v stringr   1.5.1
+v lubridate 1.9.3     v tibble    3.2.1
+v purrr     1.0.2     v tidyr     1.3.2
+v readr     2.1.5     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::combine() masks gridExtra::combine()
+x tidyr::expand()  masks Matrix::expand()
+x tidyr::extract() masks texreg::extract()
+x dplyr::filter()  masks stats::filter()
+x dplyr::lag()     masks stats::lag()
+x tidyr::pack()    masks Matrix::pack()
+x tidyr::unpack()  masks Matrix::unpack()
+i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: 'magrittr'
+
+The following object is masked from 'package:purrr':
+
+    set_names
+
+The following object is masked from 'package:tidyr':
+
+    extract
+
+The following object is masked from 'package:texreg':
+
+    extract
+
+
+Attaching package: 'scales'
+
+The following object is masked from 'package:purrr':
+
+    discard
+
+The following object is masked from 'package:readr':
+
+    col_factor
+
+Loading 'metasens' package (version 1.5-3).
+Type 'help(metasens)' for a brief overview.
+
+Loading the 'orchaRd' package (version 2.2.1). For an
+introduction and vignette to the package please see: https://daniel1noble.github.io/orchaRd/
+
+RVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.9221 
+Tau.sq = 0.02470032 
+
+               Estimate StdErr t-value  dfs             P(|t|>) 95% CI.L
+1 X.Intercept.    0.107 0.0112    9.55 89.6 0.00000000000000266   0.0846
+  95% CI.U Sig
+1    0.129 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 57 
+Number of outcomes = 817 (min = 1 , mean = 14.3 , median = 6 , max = 123 )
+Rho = 0.8 
+I.sq = 91.92553 
+Tau.sq = 0.03289181 
+
+               Estimate StdErr t-value  dfs        P(|t|>) 95% CI.L 95% CI.U
+1 X.Intercept.    0.128 0.0154    8.32 54.7 0.000000000027   0.0973    0.159
+  Sig
+1 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 20 
+Number of outcomes = 167 (min = 1 , mean = 8.35 , median = 6.5 , max = 20 )
+Rho = 0.8 
+I.sq = 89.43068 
+Tau.sq = 0.01109398 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0592 0.0231    2.56 18.6  0.0194   0.0107    0.108  **
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 16 
+Number of outcomes = 216 (min = 1 , mean = 13.5 , median = 9.5 , max = 72 )
+Rho = 0.8 
+I.sq = 90.01476 
+Tau.sq = 0.03183049 
+
+               Estimate StdErr t-value  dfs   P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.115 0.0209    5.51 14.7 0.0000648   0.0706     0.16 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 7 
+Number of outcomes = 112 (min = 2 , mean = 16 , median = 17 , max = 31 )
+Rho = 0.8 
+I.sq = 82.1497 
+Tau.sq = 0.01863762 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0714 0.0398    1.79 5.97   0.123  -0.0261    0.169    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 9 
+Number of outcomes = 106 (min = 1 , mean = 11.8 , median = 5 , max = 38 )
+Rho = 0.8 
+I.sq = 94.55923 
+Tau.sq = 0.06213297 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.127 0.0481    2.63 7.67  0.0311    0.015    0.239  **
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 10 
+Number of outcomes = 105 (min = 1 , mean = 10.5 , median = 7.5 , max = 31 )
+Rho = 0.8 
+I.sq = 93.15347 
+Tau.sq = 0.03424322 
+
+               Estimate StdErr t-value  dfs  P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.122 0.0228    5.37 8.98 0.000454   0.0707    0.174 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 75 
+Number of outcomes = 843 (min = 1 , mean = 11.2 , median = 6 , max = 99 )
+Rho = 0.8 
+I.sq = 92.52914 
+Tau.sq = 0.0245776 
+
+               Estimate StdErr t-value  dfs         P(|t|>) 95% CI.L 95% CI.U
+1 X.Intercept.    0.113 0.0143     7.9 72.3 0.0000000000226   0.0847    0.142
+  Sig
+1 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 57 
+Number of outcomes = 462 (min = 1 , mean = 8.11 , median = 4 , max = 61 )
+Rho = 0.8 
+I.sq = 93.54472 
+Tau.sq = 0.04241806 
+
+               Estimate StdErr t-value  dfs    P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.101 0.0189    5.34 55.3 0.00000182    0.063    0.139 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 44 
+Number of outcomes = 155 (min = 1 , mean = 3.52 , median = 2 , max = 20 )
+Rho = 0.8 
+I.sq = 92.95357 
+Tau.sq = 0.0194683 
+
+               Estimate StdErr t-value  dfs   P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.106 0.0238    4.45 42.6 0.0000613   0.0579    0.154 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 52 
+Number of outcomes = 370 (min = 1 , mean = 7.12 , median = 5 , max = 36 )
+Rho = 0.8 
+I.sq = 86.35218 
+Tau.sq = 0.01448109 
+
+               Estimate StdErr t-value  dfs   P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0749 0.0155    4.83 48.9 0.0000137   0.0438    0.106 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 5 
+Number of outcomes = 12 (min = 1 , mean = 2.4 , median = 2 , max = 4 )
+Rho = 0.8 
+I.sq = 98.40347 
+Tau.sq = 0.1593183 
+
+               Estimate StdErr t-value dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.     0.46  0.145    3.17   4   0.034   0.0565    0.863  **
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 16 
+Number of outcomes = 62 (min = 1 , mean = 3.88 , median = 2 , max = 12 )
+Rho = 0.8 
+I.sq = 80.00853 
+Tau.sq = 0.008633244 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.  -0.0151 0.0202  -0.748 14.2   0.467  -0.0584   0.0282    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 21 
+Number of outcomes = 75 (min = 1 , mean = 3.57 , median = 2 , max = 18 )
+Rho = 0.8 
+I.sq = 93.7849 
+Tau.sq = 0.03288816 
+
+               Estimate StdErr t-value  dfs   P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.229 0.0394    5.82 19.9 0.0000109    0.147    0.311 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 9 
+Number of outcomes = 21 (min = 1 , mean = 2.33 , median = 2 , max = 6 )
+Rho = 0.8 
+I.sq = 93.57202 
+Tau.sq = 0.04226948 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.105  0.081    1.29 7.98   0.233  -0.0822    0.291    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 16 
+Number of outcomes = 83 (min = 1 , mean = 5.19 , median = 2.5 , max = 18 )
+Rho = 0.8 
+I.sq = 93.73686 
+Tau.sq = 0.06135402 
+
+               Estimate StdErr t-value  dfs  P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.235 0.0517    4.54 14.9 0.000397    0.125    0.345 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 19 
+Number of outcomes = 55 (min = 1 , mean = 2.89 , median = 1 , max = 11 )
+Rho = 0.8 
+I.sq = 93.13618 
+Tau.sq = 0.0346642 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.177 0.0499    3.54 17.9 0.00234   0.0719    0.282 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 3 
+Number of outcomes = 10 (min = 2 , mean = 3.33 , median = 4 , max = 4 )
+Rho = 0.8 
+I.sq = 98.29305 
+Tau.sq = 0.261739 
+
+               Estimate StdErr t-value dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.324  0.272    1.19   2   0.355   -0.845     1.49    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 39 
+Number of outcomes = 238 (min = 1 , mean = 6.1 , median = 2 , max = 61 )
+Rho = 0.8 
+I.sq = 93.88553 
+Tau.sq = 0.04244021 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0867 0.0249    3.48 37.5 0.00128   0.0363    0.137 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 34 
+Number of outcomes = 152 (min = 1 , mean = 4.47 , median = 2 , max = 28 )
+Rho = 0.8 
+I.sq = 92.13452 
+Tau.sq = 0.03202527 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.105 0.0293    3.59 32.1 0.00108   0.0456    0.165 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 12 
+Number of outcomes = 49 (min = 1 , mean = 4.08 , median = 4 , max = 15 )
+Rho = 0.8 
+I.sq = 94.49476 
+Tau.sq = 0.0617015 
+
+               Estimate StdErr t-value dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.172 0.0567    3.04  11  0.0112   0.0475    0.297  **
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 4 
+Number of outcomes = 19 (min = 1 , mean = 4.75 , median = 3 , max = 12 )
+Rho = 0.8 
+I.sq = 92.86375 
+Tau.sq = 0.06961522 
+
+               Estimate StdErr t-value dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.145 0.0965     1.5   3   0.231   -0.163    0.452    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 42 
+Number of outcomes = 507 (min = 1 , mean = 12.1 , median = 7 , max = 99 )
+Rho = 0.8 
+I.sq = 89.75823 
+Tau.sq = 0.02384147 
+
+               Estimate StdErr t-value dfs       P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.122 0.0164    7.43  40 0.00000000482   0.0888    0.155 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 19 
+Number of outcomes = 114 (min = 1 , mean = 6 , median = 4 , max = 16 )
+Rho = 0.8 
+I.sq = 92.05415 
+Tau.sq = 0.01471216 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0561 0.0354    1.58 17.7   0.131  -0.0184    0.131    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 11 
+Number of outcomes = 115 (min = 2 , mean = 10.5 , median = 9 , max = 25 )
+Rho = 0.8 
+I.sq = 90.11766 
+Tau.sq = 0.03813753 
+
+               Estimate StdErr t-value  dfs  P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.127 0.0248    5.12 9.77 0.000484   0.0717    0.183 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 3 
+Number of outcomes = 28 (min = 3 , mean = 9.33 , median = 12 , max = 13 )
+Rho = 0.8 
+I.sq = 92.50696 
+Tau.sq = 0.05490678 
+
+               Estimate StdErr t-value dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.105  0.113   0.929   2   0.451   -0.383    0.594    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 8 
+Number of outcomes = 84 (min = 2 , mean = 10.5 , median = 3 , max = 32 )
+Rho = 0.8 
+I.sq = 95.53874 
+Tau.sq = 0.07645582 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.178 0.0567    3.13 6.74  0.0174   0.0424    0.313  **
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 10 
+Number of outcomes = 86 (min = 1 , mean = 8.6 , median = 7.5 , max = 28 )
+Rho = 0.8 
+I.sq = 93.29143 
+Tau.sq = 0.03511395 
+
+               Estimate StdErr t-value  dfs  P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.135 0.0264     5.1 8.98 0.000646   0.0749    0.194 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 39 
+Number of outcomes = 308 (min = 1 , mean = 7.9 , median = 4 , max = 47 )
+Rho = 0.8 
+I.sq = 95.12038 
+Tau.sq = 0.06237665 
+
+               Estimate StdErr t-value  dfs   P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.145 0.0256    5.67 37.5 0.0000017   0.0933    0.197 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 10 
+Number of outcomes = 53 (min = 1 , mean = 5.3 , median = 3.5 , max = 15 )
+Rho = 0.8 
+I.sq = 86.6409 
+Tau.sq = 0.01703558 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0719 0.0382    1.88 8.89   0.093  -0.0147    0.159   *
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 12 
+Number of outcomes = 101 (min = 1 , mean = 8.42 , median = 5 , max = 47 )
+Rho = 0.8 
+I.sq = 92.72349 
+Tau.sq = 0.03711505 
+
+               Estimate StdErr t-value dfs  P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.113 0.0228    4.96  11 0.000435   0.0628    0.163 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 7 
+Number of outcomes = 84 (min = 1 , mean = 12 , median = 16 , max = 28 )
+Rho = 0.8 
+I.sq = 58.37925 
+Tau.sq = 0.005629543 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.    0.046  0.012    3.83 5.82  0.0092   0.0164   0.0756 ***
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 7 
+Number of outcomes = 22 (min = 1 , mean = 3.14 , median = 3 , max = 6 )
+Rho = 0.8 
+I.sq = 80.48024 
+Tau.sq = 0.01849343 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0105 0.0348   0.302 5.75   0.773  -0.0756   0.0967    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ 1 
+
+Number of studies = 4 
+Number of outcomes = 19 (min = 1 , mean = 4.75 , median = 3 , max = 12 )
+Rho = 0.8 
+I.sq = 82.20653 
+Tau.sq = 0.01454824 
+
+               Estimate StdErr t-value  dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0359 0.0457   0.785 2.97    0.49    -0.11    0.182    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the results[1] TRUE
+RVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ region_1 + region_2 + region_3 + region_4 + region_5 + pubtype.f + year_09_14 + year_20_24 + ind_rct + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.77648 
+Tau.sq = 0.02904797 
+
+                                      Estimate StdErr t-value   dfs P(|t|>)
+1                        X.Intercept.  0.10910 0.0300   3.635 30.65 0.00101
+2                            region_1 -0.07008 0.0366  -1.916  5.24 0.11090
+3                            region_2  0.51905 0.0232  22.379 26.31 0.00000
+4                            region_3 -0.06264 0.0262  -2.386 24.21 0.02517
+5                            region_4 -0.00872 0.0405  -0.216  8.41 0.83450
+6                            region_5  0.03343 0.0285   1.175 26.14 0.25069
+7           pubtype.fTechnical.report  0.03502 0.0358   0.979 11.07 0.34858
+8  pubtype.fWorking.paper...pre.print -0.05554 0.0261  -2.131 34.03 0.04039
+9                          year_09_14  0.00918 0.0384   0.239 21.80 0.81312
+10                         year_20_24  0.03557 0.0248   1.433 55.52 0.15742
+11                            ind_rct  0.01504 0.0240   0.626 44.65 0.53420
+12                             qa_low -0.02544 0.0245  -1.040 46.13 0.30384
+   95% CI.L 95% CI.U Sig
+1    0.0479  0.17033 ***
+2   -0.1628  0.02267    
+3    0.4714  0.56669 ***
+4   -0.1168 -0.00849  **
+5   -0.1012  0.08378    
+6   -0.0251  0.09192    
+7   -0.0437  0.11370    
+8   -0.1085 -0.00258  **
+9   -0.0704  0.08880    
+10  -0.0142  0.08530    
+11  -0.0333  0.06342    
+12  -0.0747  0.02381    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ income_g_1 + income_g_3 + pubtype.f + year_09_14 + year_20_24 + ind_rct + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.63005 
+Tau.sq = 0.02631309 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.08621 0.0241   3.574 30.8 0.00118
+2                         income_g_1  0.03765 0.0287   1.312 51.4 0.19546
+3                         income_g_3 -0.02036 0.0248  -0.822 17.5 0.42242
+4          pubtype.fTechnical.report  0.04621 0.0341   1.354 10.7 0.20364
+5 pubtype.fWorking.paper...pre.print -0.05362 0.0263  -2.037 35.3 0.04922
+6                         year_09_14  0.00651 0.0357   0.182 21.7 0.85724
+7                         year_20_24  0.03707 0.0264   1.406 54.2 0.16530
+8                            ind_rct  0.03361 0.0248   1.357 52.0 0.18049
+9                             qa_low -0.03520 0.0252  -1.395 48.4 0.16939
+  95% CI.L  95% CI.U Sig
+1   0.0370  0.135433 ***
+2  -0.0200  0.095253    
+3  -0.0725  0.031815    
+4  -0.0291  0.121564    
+5  -0.1070 -0.000193  **
+6  -0.0677  0.080699    
+7  -0.0158  0.089903    
+8  -0.0161  0.083300    
+9  -0.0859  0.015524    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ fragile + pubtype.f + year_09_14 + year_20_24 + ind_rct + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.8876 
+Tau.sq = 0.02661423 
+
+                                     Estimate StdErr t-value  dfs  P(|t|>)
+1                       X.Intercept.  0.09623 0.0257   3.746 31.6 0.000719
+2                            fragile -0.00983 0.0373  -0.264 26.6 0.793937
+3          pubtype.fTechnical.report  0.03729 0.0345   1.081 10.2 0.304650
+4 pubtype.fWorking.paper...pre.print -0.05202 0.0271  -1.919 35.3 0.063039
+5                         year_09_14 -0.00608 0.0365  -0.167 20.6 0.869190
+6                         year_20_24  0.04497 0.0295   1.526 52.9 0.132993
+7                            ind_rct  0.03232 0.0253   1.275 50.5 0.208049
+8                             qa_low -0.03872 0.0258  -1.499 49.8 0.140172
+  95% CI.L 95% CI.U Sig
+1   0.0439  0.14858 ***
+2  -0.0863  0.06666    
+3  -0.0394  0.11394    
+4  -0.1070  0.00298   *
+5  -0.0820  0.06984    
+6  -0.0141  0.10408    
+7  -0.0186  0.08322    
+8  -0.0906  0.01317    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ context_2 + context_3 + context_4 + pubtype.f + year_09_14 + year_20_24 + ind_rct + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.9765 
+Tau.sq = 0.02681461 
+
+                                       Estimate StdErr t-value   dfs  P(|t|>)
+1                        X.Intercept.  0.093447 0.0247  3.7865 30.98 0.000659
+2                           context_2  0.027855 0.0642  0.4342  6.39 0.678425
+3                           context_3 -0.081598 0.0363 -2.2494  6.66 0.061154
+4                           context_4 -0.000972 0.0789 -0.0123  4.36 0.990716
+5           pubtype.fTechnical.report  0.040196 0.0359  1.1196 10.65 0.287490
+6  pubtype.fWorking.paper...pre.print -0.052470 0.0268 -1.9603 34.96 0.057966
+7                          year_09_14 -0.006694 0.0349 -0.1920 21.08 0.849561
+8                          year_20_24  0.051450 0.0278  1.8476 52.99 0.070242
+9                             ind_rct  0.035864 0.0241  1.4880 45.52 0.143651
+10                             qa_low -0.040940 0.0261 -1.5709 52.14 0.122250
+   95% CI.L 95% CI.U Sig
+1    0.0431  0.14378 ***
+2   -0.1268  0.18252    
+3   -0.1683  0.00507   *
+4   -0.2131  0.21114    
+5   -0.0391  0.11953    
+6   -0.1068  0.00187   *
+7   -0.0792  0.06578    
+8   -0.0044  0.10730   *
+9   -0.0127  0.08439    
+10  -0.0932  0.01135    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ urban + pubtype.f + year_09_14 + year_20_24 + ind_rct + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.8884 
+Tau.sq = 0.0274882 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.10033 0.0259   3.875 31.8  0.0005
+2                              urban -0.03333 0.0272  -1.227 40.6  0.2270
+3          pubtype.fTechnical.report  0.03110 0.0335   0.929 10.4  0.3742
+4 pubtype.fWorking.paper...pre.print -0.05109 0.0275  -1.855 35.1  0.0720
+5                         year_09_14  0.00743 0.0383   0.194 21.4  0.8480
+6                         year_20_24  0.04614 0.0264   1.746 55.0  0.0864
+7                            ind_rct  0.03920 0.0253   1.549 46.6  0.1281
+8                             qa_low -0.03622 0.0257  -1.412 48.6  0.1642
+  95% CI.L 95% CI.U Sig
+1  0.04758  0.15308 ***
+2 -0.08823  0.02156    
+3 -0.04317  0.10536    
+4 -0.10700  0.00482   *
+5 -0.07217  0.08704    
+6 -0.00682  0.09911   *
+7 -0.01172  0.09013    
+8 -0.08778  0.01533    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsWarning message:
+In sqrt(eigenval) : NaNs produced
+RVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ region_1 + region_2 + region_3 + region_4 + region_5 + income_g_1 + income_g_3 + fragile + urban + pubtype.f + year_09_14 + year_20_24 + ind_rct + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.94641 
+Tau.sq = 0.03054063 
+
+                                      Estimate StdErr t-value   dfs
+1                        X.Intercept.  0.09008 0.0281   3.209 27.45
+2                            region_1 -0.04532 0.0442  -1.026  6.57
+3                            region_2  0.52646 0.0432  12.184 16.38
+4                            region_3 -0.04258 0.0458  -0.930 14.45
+5                            region_4  0.01736 0.0466   0.373 10.50
+6                            region_5  0.04607 0.0285   1.616 28.46
+7                          income_g_1  0.04400 0.0340   1.294 37.82
+8                          income_g_3  0.00829 0.0406   0.204 12.45
+9                             fragile -0.01941 0.0412  -0.471 26.20
+10                              urban -0.01376 0.0304  -0.452 36.90
+11          pubtype.fTechnical.report  0.04489 0.0363   1.237 12.52
+12 pubtype.fWorking.paper...pre.print -0.06035 0.0272  -2.221 33.94
+13                         year_09_14  0.01684 0.0419   0.402 22.82
+14                         year_20_24  0.03715 0.0280   1.325 49.05
+15                            ind_rct  0.02159 0.0271   0.797 37.88
+16                             qa_low -0.02625 0.0256  -1.026 44.04
+         P(|t|>) 95% CI.L 95% CI.U Sig
+1  0.00338007537   0.0325  0.14763 ***
+2  0.34125089220  -0.1512  0.06055    
+3  0.00000000125   0.4350  0.61788 ***
+4  0.36780405875  -0.1405  0.05536    
+5  0.71670190654  -0.0857  0.12046    
+6  0.11709194686  -0.0123  0.10442    
+7  0.20337648828  -0.0248  0.11282    
+8  0.84151683995  -0.0798  0.09642    
+9  0.64172962046  -0.1041  0.06532    
+10 0.65362328804  -0.0754  0.04787    
+11 0.23890594623  -0.0338  0.12360    
+12 0.03313442737  -0.1156 -0.00512  **
+13 0.69160612942  -0.0699  0.10362    
+14 0.19147269504  -0.0192  0.09351    
+15 0.43023336093  -0.0332  0.07641    
+16 0.31050492442  -0.0778  0.02531    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ p_type_int_2 + p_type_int_3 + p_type_int_4 + p_type_int_5 + p_type_int_6 + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.7901 
+Tau.sq = 0.02736346 
+
+                                      Estimate StdErr t-value   dfs P(|t|>)
+1                        X.Intercept.  0.11057 0.0317  3.4843 26.61 0.00173
+2                        p_type_int_2 -0.05471 0.0316 -1.7317 31.93 0.09298
+3                        p_type_int_3 -0.04593 0.0492 -0.9335  5.09 0.39270
+4                        p_type_int_4  0.00174 0.0314  0.0554 22.56 0.95631
+5                        p_type_int_5  0.01127 0.0486  0.2318 13.32 0.82020
+6                        p_type_int_6 -0.00866 0.0298 -0.2909 11.38 0.77633
+7                             ind_rct  0.02596 0.0240  1.0814 48.84 0.28483
+8           pubtype.fTechnical.report  0.04220 0.0398  1.0609 11.04 0.31140
+9  pubtype.fWorking.paper...pre.print -0.06092 0.0243 -2.5092 28.94 0.01795
+10                         year_09_14  0.00523 0.0403  0.1296 23.50 0.89795
+11                         year_20_24  0.03649 0.0273  1.3353 43.59 0.18873
+12                             qa_low -0.02780 0.0282 -0.9861 44.76 0.32939
+   95% CI.L 95% CI.U Sig
+1    0.0454  0.17573 ***
+2   -0.1191  0.00965   *
+3   -0.1717  0.07988    
+4   -0.0632  0.06670    
+5   -0.0935  0.11604    
+6   -0.0739  0.05660    
+7   -0.0223  0.07421    
+8   -0.0453  0.12970    
+9   -0.1106 -0.01126  **
+10  -0.0781  0.08856    
+11  -0.0186  0.09157    
+12  -0.0846  0.02899    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ imp_gov + imp_research + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.87679 
+Tau.sq = 0.02705768 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.09878 0.0292  3.3780 26.0 0.00231
+2                            imp_gov -0.00774 0.0266 -0.2912 63.1 0.77183
+3                       imp_research -0.00176 0.0352 -0.0501 28.4 0.96041
+4                            ind_rct  0.03101 0.0275  1.1293 39.4 0.26562
+5          pubtype.fTechnical.report  0.03738 0.0361  1.0342 10.5 0.32429
+6 pubtype.fWorking.paper...pre.print -0.05165 0.0277 -1.8664 35.9 0.07018
+7                         year_09_14 -0.00403 0.0366 -0.1101 22.8 0.91330
+8                         year_20_24  0.04294 0.0264  1.6281 56.4 0.10909
+9                             qa_low -0.03691 0.0258 -1.4294 47.9 0.15937
+  95% CI.L 95% CI.U Sig
+1  0.03867  0.15890 ***
+2 -0.06083  0.04536    
+3 -0.07391  0.07038    
+4 -0.02451  0.08653    
+5 -0.04264  0.11739    
+6 -0.10779  0.00448   *
+7 -0.07981  0.07175    
+8 -0.00989  0.09578    
+9 -0.08884  0.01501    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ scale_pilot + scale_large + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.78628 
+Tau.sq = 0.02700093 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.11361 0.0319  3.5616 28.7 0.00131
+2                        scale_pilot -0.05813 0.0263 -2.2067 44.9 0.03249
+3                        scale_large -0.02775 0.0276 -1.0055 49.7 0.31952
+4                            ind_rct  0.03249 0.0241  1.3456 51.9 0.18429
+5          pubtype.fTechnical.report  0.05405 0.0321  1.6819 11.2 0.12019
+6 pubtype.fWorking.paper...pre.print -0.05244 0.0278 -1.8835 34.9 0.06799
+7                         year_09_14  0.00328 0.0375  0.0874 21.0 0.93119
+8                         year_20_24  0.04874 0.0251  1.9410 52.7 0.05761
+9                             qa_low -0.03646 0.0253 -1.4409 47.6 0.15615
+  95% CI.L 95% CI.U Sig
+1  0.04835  0.17888 ***
+2 -0.11118 -0.00507  **
+3 -0.08318  0.02769    
+4 -0.01596  0.08093    
+5 -0.01652  0.12461    
+6 -0.10897  0.00409   *
+7 -0.07470  0.08126    
+8 -0.00163  0.09911   *
+9 -0.08734  0.01443    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ value_tot_med + value_tot_high + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.87868 
+Tau.sq = 0.02719514 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.10558 0.0353   2.992 49.3 0.00432
+2                      value_tot_med -0.01782 0.0251  -0.710 54.9 0.48089
+3                     value_tot_high -0.00819 0.0305  -0.269 53.3 0.78921
+4                            ind_rct  0.02990 0.0240   1.244 53.2 0.21886
+5          pubtype.fTechnical.report  0.03661 0.0354   1.034 10.3 0.32495
+6 pubtype.fWorking.paper...pre.print -0.05129 0.0265  -1.934 35.4 0.06107
+7                         year_09_14 -0.00722 0.0372  -0.194 20.7 0.84806
+8                         year_20_24  0.04021 0.0282   1.428 51.6 0.15936
+9                             qa_low -0.03668 0.0269  -1.363 46.6 0.17935
+  95% CI.L 95% CI.U Sig
+1   0.0347  0.17649 ***
+2  -0.0681  0.03251    
+3  -0.0693  0.05294    
+4  -0.0183  0.07810    
+5  -0.0420  0.11521    
+6  -0.1051  0.00251   *
+7  -0.0847  0.07028    
+8  -0.0163  0.09672    
+9  -0.0908  0.01746    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ gender_t + poverty_t + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.93195 
+Tau.sq = 0.02749981 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.09041 0.0347   2.609 35.7  0.0132
+2                           gender_t  0.01227 0.0242   0.508 40.9  0.6144
+3                          poverty_t -0.00507 0.0260  -0.195 42.1  0.8466
+4                            ind_rct  0.03148 0.0245   1.283 51.8  0.2051
+5          pubtype.fTechnical.report  0.04023 0.0357   1.127 10.1  0.2857
+6 pubtype.fWorking.paper...pre.print -0.05151 0.0276  -1.866 35.4  0.0703
+7                         year_09_14 -0.00676 0.0353  -0.192 20.6  0.8500
+8                         year_20_24  0.04174 0.0269   1.551 55.1  0.1266
+9                             qa_low -0.03769 0.0255  -1.479 46.7  0.1458
+  95% CI.L 95% CI.U Sig
+1   0.0201   0.1607  **
+2  -0.0365   0.0611    
+3  -0.0576   0.0475    
+4  -0.0177   0.0807    
+5  -0.0392   0.1196    
+6  -0.1075   0.0045   *
+7  -0.0803   0.0668    
+8  -0.0122   0.0957    
+9  -0.0890   0.0136    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ plus_gneutral + plus_gsensitive + plus_econ + plus_health + plus_training + plus_other + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 92.11856 
+Tau.sq = 0.02901215 
+
+                                      Estimate StdErr t-value   dfs P(|t|>)
+1                        X.Intercept.  0.08417 0.0301   2.792 25.63 0.00977
+2                       plus_gneutral  0.02179 0.0498   0.438 25.69 0.66527
+3                     plus_gsensitive  0.02623 0.0425   0.617 28.35 0.54223
+4                           plus_econ  0.05134 0.0321   1.600 17.35 0.12772
+5                         plus_health  0.00469 0.0454   0.103 10.66 0.91965
+6                       plus_training -0.00835 0.0373  -0.224 20.28 0.82511
+7                          plus_other -0.01105 0.0406  -0.272 20.93 0.78800
+8                             ind_rct  0.03356 0.0240   1.401 49.79 0.16735
+9           pubtype.fTechnical.report  0.01626 0.0382   0.425  9.58 0.68018
+10 pubtype.fWorking.paper...pre.print -0.05109 0.0275  -1.857 35.89 0.07148
+11                         year_09_14 -0.00734 0.0380  -0.193 23.73 0.84844
+12                         year_20_24  0.03595 0.0284   1.268 48.11 0.21092
+13                             qa_low -0.03823 0.0272  -1.406 46.34 0.16635
+   95% CI.L 95% CI.U Sig
+1    0.0222   0.1462 ***
+2   -0.0806   0.1242    
+3   -0.0608   0.1133    
+4   -0.0163   0.1189    
+5   -0.0957   0.1051    
+6   -0.0861   0.0694    
+7   -0.0955   0.0734    
+8   -0.0146   0.0817    
+9   -0.0695   0.1020    
+10  -0.1069   0.0047   *
+11  -0.0858   0.0711    
+12  -0.0211   0.0930    
+13  -0.0930   0.0165    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ plus + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.86629 
+Tau.sq = 0.02697398 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.07723 0.0280   2.754 28.4  0.0102
+2                               plus  0.02899 0.0224   1.296 69.8  0.1994
+3                            ind_rct  0.03070 0.0239   1.286 53.4  0.2038
+4          pubtype.fTechnical.report  0.03709 0.0362   1.024 10.2  0.3296
+5 pubtype.fWorking.paper...pre.print -0.04439 0.0267  -1.662 35.4  0.1054
+6                         year_09_14 -0.00561 0.0349  -0.161 20.6  0.8739
+7                         year_20_24  0.04236 0.0260   1.629 56.4  0.1088
+8                             qa_low -0.03690 0.0255  -1.449 49.1  0.1537
+  95% CI.L 95% CI.U Sig
+1  0.01982  0.13464  **
+2 -0.01564  0.07363    
+3 -0.01716  0.07857    
+4 -0.04343  0.11760    
+5 -0.09860  0.00982    
+6 -0.07826  0.06704    
+7 -0.00972  0.09443    
+8 -0.08807  0.01427    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ woman_age_mid + woman_age_old + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.95506 
+Tau.sq = 0.02705238 
+
+                                     Estimate StdErr t-value  dfs P(|t|>)
+1                       X.Intercept.  0.09155 0.0354  2.5844 28.6  0.0151
+2                      woman_age_mid  0.00228 0.0307  0.0742 26.2  0.9414
+3                      woman_age_old  0.04185 0.0415  1.0074 24.5  0.3236
+4                            ind_rct  0.03491 0.0248  1.4072 50.4  0.1655
+5          pubtype.fTechnical.report  0.02465 0.0336  0.7336 10.3  0.4795
+6 pubtype.fWorking.paper...pre.print -0.05326 0.0270 -1.9761 34.9  0.0561
+7                         year_09_14 -0.01205 0.0341 -0.3537 21.0  0.7271
+8                         year_20_24  0.03703 0.0266  1.3943 58.0  0.1685
+9                             qa_low -0.03549 0.0257 -1.3789 49.1  0.1742
+  95% CI.L 95% CI.U Sig
+1   0.0191  0.16405  **
+2  -0.0608  0.06531    
+3  -0.0438  0.12748    
+4  -0.0149  0.08472    
+5  -0.0499  0.09924    
+6  -0.1080  0.00146   *
+7  -0.0829  0.05878    
+8  -0.0161  0.09020    
+9  -0.0872  0.01623    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ p_type_int_2 + p_type_int_3 + p_type_int_4 + p_type_int_5 + p_type_int_6 + imp_gov + imp_research + scale_pilot + scale_large + value_tot_med + value_tot_high + gender_t + poverty_t + plus_gneutral + plus_gsensitive + plus_econ + plus_health + plus_training + plus_other + woman_age_mid + woman_age_old + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 92.63565 
+Tau.sq = 0.03584167 
+
+                                      Estimate StdErr t-value   dfs P(|t|>)
+1                        X.Intercept.  0.13750 0.0672   2.047 27.81  0.0502
+2                        p_type_int_2 -0.07469 0.0306  -2.442 31.79  0.0204
+3                        p_type_int_3 -0.04519 0.0549  -0.823  6.07  0.4417
+4                        p_type_int_4 -0.01354 0.0394  -0.344 16.28  0.7352
+5                        p_type_int_5  0.05565 0.0499   1.116 16.18  0.2808
+6                        p_type_int_6 -0.00860 0.0422  -0.204 16.12  0.8410
+7                             imp_gov -0.02605 0.0332  -0.785 29.17  0.4387
+8                        imp_research -0.02486 0.0417  -0.597 28.54  0.5554
+9                         scale_pilot -0.07929 0.0303  -2.614 34.13  0.0132
+10                        scale_large -0.02778 0.0344  -0.808 28.35  0.4256
+11                      value_tot_med -0.00362 0.0280  -0.129 34.71  0.8979
+12                     value_tot_high -0.00477 0.0345  -0.138 33.68  0.8908
+13                           gender_t  0.03604 0.0395   0.913 29.65  0.3687
+14                          poverty_t -0.01034 0.0337  -0.307 26.39  0.7611
+15                      plus_gneutral  0.04851 0.0527   0.921 23.35  0.3667
+16                    plus_gsensitive  0.03658 0.0533   0.687 29.33  0.4976
+17                          plus_econ  0.05946 0.0440   1.352 17.27  0.1937
+18                        plus_health  0.00669 0.0478   0.140 12.70  0.8910
+19                      plus_training -0.01021 0.0432  -0.236 21.29  0.8154
+20                         plus_other -0.02068 0.0410  -0.504 17.67  0.6207
+21                      woman_age_mid -0.01865 0.0389  -0.479 28.07  0.6357
+22                      woman_age_old  0.05335 0.0505   1.056 25.20  0.3010
+23                            ind_rct  0.03801 0.0286   1.331 34.52  0.1918
+24          pubtype.fTechnical.report  0.01049 0.0440   0.238 11.23  0.8160
+25 pubtype.fWorking.paper...pre.print -0.08114 0.0296  -2.740 29.21  0.0104
+26                         year_09_14  0.00608 0.0398   0.153 26.29  0.8795
+27                         year_20_24  0.01652 0.0327   0.505 35.95  0.6168
+28                             qa_low -0.02584 0.0303  -0.852 38.16  0.3993
+    95% CI.L 95% CI.U Sig
+1  -0.000145   0.2751   *
+2  -0.137001  -0.0124  **
+3  -0.179203   0.0888    
+4  -0.096865   0.0698    
+5  -0.049990   0.1613    
+6  -0.097952   0.0808    
+7  -0.093898   0.0418    
+8  -0.110102   0.0604    
+9  -0.140925  -0.0177  **
+10 -0.098139   0.0426    
+11 -0.060490   0.0532    
+12 -0.074886   0.0653    
+13 -0.044637   0.1167    
+14 -0.079488   0.0588    
+15 -0.060408   0.1574    
+16 -0.072300   0.1455    
+17 -0.033188   0.1521    
+18 -0.096875   0.1102    
+19 -0.099936   0.0795    
+20 -0.107025   0.0657    
+21 -0.098409   0.0611    
+22 -0.050654   0.1574    
+23 -0.019984   0.0960    
+24 -0.086193   0.1072    
+25 -0.141686  -0.0206  **
+26 -0.075583   0.0878    
+27 -0.049850   0.0829    
+28 -0.087187   0.0355    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ graduation + ind_rct + qa_low 
+
+Number of studies = 57 
+Number of outcomes = 817 (min = 1 , mean = 14.3 , median = 6 , max = 123 )
+Rho = 0.8 
+I.sq = 92.20486 
+Tau.sq = 0.03572133 
+
+               Estimate StdErr t-value  dfs    P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.1244 0.0228   5.466 28.1 0.00000766   0.0778   0.1710 ***
+2   graduation   0.0472 0.0308   1.531 19.6 0.14165713  -0.0172   0.1115    
+3      ind_rct   0.0131 0.0321   0.407 32.7 0.68635726  -0.0522   0.0784    
+4       qa_low  -0.0398 0.0344  -1.159 26.6 0.25668674  -0.1104   0.0307    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ graduation + ind_rct + qa_low 
+
+Number of studies = 16 
+Number of outcomes = 216 (min = 1 , mean = 13.5 , median = 9.5 , max = 72 )
+Rho = 0.8 
+I.sq = 91.59821 
+Tau.sq = 0.04147714 
+
+               Estimate StdErr t-value   dfs P(|t|>) 95% CI.L 95% CI.U Sig
+1 X.Intercept.   0.0982 0.0343   2.863  4.83  0.0367  0.00908   0.1874  **
+2   graduation   0.0110 0.0478   0.229  9.31  0.8236 -0.09655   0.1185    
+3      ind_rct   0.0272 0.0493   0.552 11.37  0.5917 -0.08086   0.1353    
+4       qa_low  -0.0142 0.0343  -0.414  4.83  0.6966 -0.10335   0.0749    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ p_type_int_2 + p_type_int_3 + p_type_int_4 + p_type_int_5 + p_type_int_6 + imp_gov + imp_research + scale_pilot + scale_large + value_tot_med + value_tot_high + gender_t + poverty_t + plus_gneutral + plus + woman_age_mid + woman_age_old + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 92.43882 
+Tau.sq = 0.03380083 
+
+                                       Estimate StdErr t-value   dfs P(|t|>)
+1                        X.Intercept.  0.119529 0.0635  1.8822 27.79  0.0703
+2                        p_type_int_2 -0.070948 0.0295 -2.4082 31.48  0.0221
+3                        p_type_int_3 -0.045704 0.0555 -0.8238  5.75  0.4429
+4                        p_type_int_4 -0.000638 0.0384 -0.0166 19.03  0.9869
+5                        p_type_int_5  0.041692 0.0517  0.8068 15.77  0.4318
+6                        p_type_int_6 -0.011403 0.0396 -0.2880 15.64  0.7772
+7                             imp_gov -0.018162 0.0319 -0.5700 30.63  0.5728
+8                        imp_research -0.018963 0.0404 -0.4691 29.03  0.6425
+9                         scale_pilot -0.079711 0.0301 -2.6516 33.69  0.0121
+10                        scale_large -0.032509 0.0346 -0.9385 30.95  0.3553
+11                      value_tot_med -0.003368 0.0281 -0.1199 35.76  0.9052
+12                     value_tot_high -0.015396 0.0339 -0.4539 32.89  0.6529
+13                           gender_t  0.041396 0.0382  1.0825 26.77  0.2887
+14                          poverty_t -0.005136 0.0340 -0.1512 25.85  0.8810
+15                      plus_gneutral  0.012631 0.0468  0.2698 27.68  0.7893
+16                               plus  0.037228 0.0293  1.2709 41.48  0.2108
+17                      woman_age_mid -0.019575 0.0380 -0.5149 25.29  0.6111
+18                      woman_age_old  0.062044 0.0495  1.2534 25.44  0.2215
+19                            ind_rct  0.037279 0.0283  1.3154 34.84  0.1970
+20          pubtype.fTechnical.report  0.034210 0.0404  0.8460 11.40  0.4149
+21 pubtype.fWorking.paper...pre.print -0.070055 0.0280 -2.5015 30.16  0.0180
+22                         year_09_14  0.007300 0.0368  0.1986 25.06  0.8442
+23                         year_20_24  0.024364 0.0319  0.7633 37.37  0.4501
+24                             qa_low -0.022419 0.0296 -0.7572 38.64  0.4535
+   95% CI.L 95% CI.U Sig
+1   -0.0106   0.2497   *
+2   -0.1310  -0.0109  **
+3   -0.1829   0.0915    
+4   -0.0810   0.0797    
+5   -0.0680   0.1514    
+6   -0.0955   0.0727    
+7   -0.0832   0.0468    
+8   -0.1016   0.0637    
+9   -0.1408  -0.0186  **
+10  -0.1032   0.0381    
+11  -0.0603   0.0536    
+12  -0.0844   0.0536    
+13  -0.0371   0.1199    
+14  -0.0750   0.0647    
+15  -0.0833   0.1086    
+16  -0.0219   0.0964    
+17  -0.0978   0.0587    
+18  -0.0398   0.1639    
+19  -0.0203   0.0948    
+20  -0.0544   0.1228    
+21  -0.1272  -0.0129  **
+22  -0.0684   0.0830    
+23  -0.0403   0.0890    
+24  -0.0823   0.0375    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ type_ind_1 + type_ind_3 + type_ind_4 + type_ind_5 + type_ind_6 + type_ind_7 + type_ind_8 + type_ind_10 + type_ind_11 + type_ind_13 + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.26103 
+Tau.sq = 0.02575414 
+
+                                      Estimate StdErr t-value   dfs P(|t|>)
+1                        X.Intercept.  0.05194 0.0294  1.7650 31.90  0.0871
+2                          type_ind_1  0.04467 0.0248  1.8012 44.27  0.0785
+3                          type_ind_3  0.22665 0.1616  1.4027  3.79  0.2371
+4                          type_ind_4 -0.04945 0.0285 -1.7370 15.45  0.1023
+5                          type_ind_5  0.13771 0.0371  3.7155 17.85  0.0016
+6                          type_ind_6  0.02073 0.0520  0.3985  5.26  0.7060
+7                          type_ind_7  0.12524 0.0411  3.0456 11.38  0.0107
+8                          type_ind_8  0.10977 0.0538  2.0409 14.61  0.0598
+9                         type_ind_10  0.03069 0.0336  0.9141 47.82  0.3653
+10                        type_ind_11  0.02795 0.0338  0.8281 33.71  0.4134
+11                        type_ind_13  0.11263 0.0456  2.4701  5.95  0.0488
+12                            ind_rct  0.02997 0.0240  1.2492 52.38  0.2171
+13          pubtype.fTechnical.report  0.00312 0.0475  0.0658 10.31  0.9488
+14 pubtype.fWorking.paper...pre.print -0.04098 0.0253 -1.6180 36.46  0.1143
+15                         year_09_14  0.01062 0.0356  0.2983 23.60  0.7681
+16                         year_20_24  0.04001 0.0240  1.6692 50.22  0.1013
+17                             qa_low -0.04080 0.0230 -1.7716 47.19  0.0829
+    95% CI.L 95% CI.U Sig
+1  -0.008009  0.11189   *
+2  -0.005303  0.09464   *
+3  -0.232010  0.68531    
+4  -0.109981  0.01108    
+5   0.059794  0.21562 ***
+6  -0.111045  0.15250    
+7   0.035098  0.21538  **
+8  -0.005138  0.22468   *
+9  -0.036819  0.09819    
+10 -0.040669  0.09658    
+11  0.000852  0.22441  **
+12 -0.018162  0.07810    
+13 -0.102255  0.10850    
+14 -0.092318  0.01036    
+15 -0.062918  0.08415    
+16 -0.008130  0.08815    
+17 -0.087122  0.00552   *
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ duration_12_over + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.88426 
+Tau.sq = 0.02673095 
+
+                                      Estimate StdErr  t-value  dfs P(|t|>)
+1                       X.Intercept.  0.081415 0.0372  2.18679 29.5  0.0368
+2                   duration_12_over  0.016410 0.0279  0.58854 45.8  0.5591
+3                            ind_rct  0.035022 0.0257  1.36342 48.1  0.1791
+4          pubtype.fTechnical.report  0.038130 0.0339  1.12401 10.2  0.2869
+5 pubtype.fWorking.paper...pre.print -0.047232 0.0278 -1.70021 36.0  0.0977
+6                         year_09_14 -0.000217 0.0387 -0.00561 21.3  0.9956
+7                         year_20_24  0.045513 0.0275  1.65420 53.2  0.1040
+8                             qa_low -0.039528 0.0263 -1.50430 47.6  0.1391
+  95% CI.L 95% CI.U Sig
+1  0.00533  0.15750  **
+2 -0.03972  0.07254    
+3 -0.01662  0.08667    
+4 -0.03729  0.11355    
+5 -0.10357  0.00911   *
+6 -0.08067  0.08024    
+7 -0.00967  0.10069    
+8 -0.09237  0.01332    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ post_12_over + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.88364 
+Tau.sq = 0.0268377 
+
+                                     Estimate StdErr t-value  dfs  P(|t|>)
+1                       X.Intercept.  0.09766 0.0264   3.703 33.4 0.000765
+2                       post_12_over -0.01101 0.0230  -0.478 57.7 0.634303
+3                            ind_rct  0.03167 0.0243   1.302 53.1 0.198492
+4          pubtype.fTechnical.report  0.03787 0.0347   1.093 10.1 0.299711
+5 pubtype.fWorking.paper...pre.print -0.04834 0.0271  -1.786 34.5 0.082963
+6                         year_09_14 -0.00534 0.0357  -0.149 20.5 0.882626
+7                         year_20_24  0.04437 0.0269   1.647 55.8 0.105137
+8                             qa_low -0.03781 0.0257  -1.471 49.0 0.147676
+  95% CI.L 95% CI.U Sig
+1  0.04403  0.15129 ***
+2 -0.05708  0.03507    
+3 -0.01711  0.08046    
+4 -0.03919  0.11493    
+5 -0.10332  0.00665   *
+6 -0.07974  0.06906    
+7 -0.00959  0.09833    
+8 -0.08947  0.01384    
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the resultsRVE: Correlated Effects Model with Small-Sample Corrections 
+
+Model: hedge_g ~ type_ind_1 + type_ind_3 + type_ind_4 + type_ind_5 + type_ind_6 + type_ind_7 + type_ind_8 + type_ind_10 + type_ind_11 + type_ind_13 + duration_12_over + post_12_over + ind_rct + pubtype.f + year_09_14 + year_20_24 + qa_low 
+
+Number of studies = 93 
+Number of outcomes = 1307 (min = 1 , mean = 14.1 , median = 7 , max = 123 )
+Rho = 0.8 
+I.sq = 91.40239 
+Tau.sq = 0.02651346 
+
+                                      Estimate StdErr t-value   dfs P(|t|>)
+1                        X.Intercept.  0.03919 0.0381  1.0287 34.99 0.31067
+2                          type_ind_1  0.04427 0.0248  1.7839 44.06 0.08132
+3                          type_ind_3  0.22877 0.1583  1.4453  4.02 0.22151
+4                          type_ind_4 -0.05000 0.0289 -1.7273 15.64 0.10382
+5                          type_ind_5  0.13412 0.0368  3.6475 18.97 0.00172
+6                          type_ind_6  0.02678 0.0538  0.4980  5.43 0.63803
+7                          type_ind_7  0.12680 0.0413  3.0718 11.38 0.01025
+8                          type_ind_8  0.10679 0.0548  1.9484 15.06 0.07025
+9                         type_ind_10  0.02502 0.0339  0.7384 47.46 0.46388
+10                        type_ind_11  0.02462 0.0323  0.7616 35.04 0.45138
+11                        type_ind_13  0.11512 0.0483  2.3832  6.21 0.05314
+12                   duration_12_over  0.01861 0.0262  0.7101 33.56 0.48257
+13                       post_12_over -0.00104 0.0218 -0.0477 50.60 0.96216
+14                            ind_rct  0.03452 0.0255  1.3545 46.45 0.18214
+15          pubtype.fTechnical.report  0.00345 0.0467  0.0738 10.24 0.94258
+16 pubtype.fWorking.paper...pre.print -0.03644 0.0267 -1.3661 36.39 0.18028
+17                         year_09_14  0.01488 0.0384  0.3875 23.06 0.70197
+18                         year_20_24  0.04265 0.0261  1.6356 48.39 0.10841
+19                             qa_low -0.04402 0.0236 -1.8637 44.51 0.06897
+   95% CI.L 95% CI.U Sig
+1  -0.03815  0.11652    
+2  -0.00574  0.09428   *
+3  -0.20973  0.66726    
+4  -0.11147  0.01148    
+5   0.05715  0.21110 ***
+6  -0.10825  0.16181    
+7   0.03631  0.21729  **
+8  -0.00999  0.22358   *
+9  -0.04312  0.09315    
+10 -0.04101  0.09026    
+11 -0.00212  0.23236   *
+12 -0.03467  0.07189    
+13 -0.04489  0.04281    
+14 -0.01677  0.08580    
+15 -0.10035  0.10725    
+16 -0.09052  0.01764    
+17 -0.06456  0.09433    
+18 -0.00977  0.09506    
+19 -0.09162  0.00357   *
+---
+Signif. codes: < .01 *** < .05 ** < .10 *
+---
+Note: If df < 4, do not trust the results
+Multivariate Meta-Analysis Model (k = 817; method: REML)
+
+    logLik    Deviance         AIC         BIC        AICc   
+-4542.3401   9084.6803   9088.6803   9098.0891   9088.6950   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0126  0.1123     57     no   study 
+
+Test for Heterogeneity:
+Q(df = 816) = 14119.5040, p-val < .0001
+
+Number of estimates:   817
+Number of clusters:    57
+Estimates per cluster: 1-123 (mean: 14.33, median: 6)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>      
+  0.1290  0.0155   8.3057   56   <.0001   0.0979   0.1601   *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name  estimate   lowerCL   upperCL     lowerPR   upperPR
+1 Intrcpt 0.1290054 0.0978908 0.1601199 -0.09803354 0.3560442
+
+Multivariate Meta-Analysis Model (k = 167; method: REML)
+
+   logLik   Deviance        AIC        BIC       AICc   
+-122.5704   245.1409   249.1409   255.3648   249.2145   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0145  0.1205     20     no   study 
+
+Test for Heterogeneity:
+Q(df = 166) = 1852.0647, p-val < .0001
+
+Number of estimates:   167
+Number of clusters:    20
+Estimates per cluster: 1-20 (mean: 8.35, median: 6.5)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>    
+  0.0691  0.0274   2.5255   19   0.0206   0.0118   0.1264   * 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name   estimate    lowerCL   upperCL   lowerPR   upperPR
+1 Intrcpt 0.06909706 0.01183138 0.1263627 -0.189631 0.3278251
+
+Multivariate Meta-Analysis Model (k = 112; method: REML)
+
+  logLik  Deviance       AIC       BIC      AICc   
+  0.0297   -0.0595    3.9405    9.3596    4.0517   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0111  0.1053      7     no   study 
+
+Test for Heterogeneity:
+Q(df = 111) = 546.1720, p-val < .0001
+
+Number of estimates:   112
+Number of clusters:    7
+Estimates per cluster: 2-31 (mean: 16.00, median: 17)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>    
+  0.0733  0.0408   1.7971    6   0.1224   -0.0265   0.1731     
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name   estimate     lowerCL   upperCL    lowerPR  upperPR
+1 Intrcpt 0.07329904 -0.02650299 0.1731011 -0.2030529 0.349651
+
+Multivariate Meta-Analysis Model (k = 216; method: REML)
+
+    logLik    Deviance         AIC         BIC        AICc   
+-2649.2781   5298.5562   5302.5562   5309.2975   5302.6128   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0053  0.0726     16     no   study 
+
+Test for Heterogeneity:
+Q(df = 215) = 6293.4984, p-val < .0001
+
+Number of estimates:   216
+Number of clusters:    16
+Estimates per cluster: 1-72 (mean: 13.50, median: 9.5)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>      
+  0.1152  0.0202   5.7124   15   <.0001   0.0722   0.1582   *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name  estimate    lowerCL   upperCL     lowerPR   upperPR
+1 Intrcpt 0.1152423 0.07224213 0.1582425 -0.04533811 0.2758228
+
+Multivariate Meta-Analysis Model (k = 106; method: REML)
+
+   logLik   Deviance        AIC        BIC       AICc   
+-827.9897  1655.9793  1659.9793  1665.2872  1660.0970   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0094  0.0972      9     no   study 
+
+Test for Heterogeneity:
+Q(df = 105) = 2060.4870, p-val < .0001
+
+Number of estimates:   106
+Number of clusters:    9
+Estimates per cluster: 1-38 (mean: 11.78, median: 5)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>    
+  0.1153  0.0357   3.2254    8   0.0121   0.0329   0.1977   * 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name estimate    lowerCL   upperCL    lowerPR   upperPR
+1 Intrcpt  0.11526 0.03285509 0.1976649 -0.1235735 0.3540935
+
+Multivariate Meta-Analysis Model (k = 105; method: REML)
+
+   logLik   Deviance        AIC        BIC       AICc   
+-326.8171   653.6341   657.6341   662.9229   657.7529   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0044  0.0662     10     no   study 
+
+Test for Heterogeneity:
+Q(df = 104) = 1184.7705, p-val < .0001
+
+Number of estimates:   105
+Number of clusters:    10
+Estimates per cluster: 1-31 (mean: 10.50, median: 7.5)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>      
+  0.1183  0.0222   5.3224    9   0.0005   0.0680   0.1686   *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name  estimate    lowerCL   upperCL     lowerPR   upperPR
+1 Intrcpt 0.1183178 0.06802941 0.1686062 -0.03976079 0.2763964
+
+Multivariate Meta-Analysis Model (k = 843; method: REML)
+
+    logLik    Deviance         AIC         BIC        AICc   
+-2718.7563   5437.5125   5441.5125   5450.9841   5441.5268   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0144  0.1198     75     no   study 
+
+Test for Heterogeneity:
+Q(df = 842) = 11597.3825, p-val < .0001
+
+Number of estimates:   843
+Number of clusters:    75
+Estimates per cluster: 1-99 (mean: 11.24, median: 6)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>      
+  0.1151  0.0143   8.0575   74   <.0001   0.0867   0.1436   *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name estimate    lowerCL   upperCL    lowerPR   upperPR
+1 Intrcpt 0.115141 0.08666787 0.1436141 -0.1253132 0.3555952
+
+Multivariate Meta-Analysis Model (k = 462; method: REML)
+
+    logLik    Deviance         AIC         BIC        AICc   
+-2662.3587   5324.7173   5328.7173   5336.9841   5328.7435   
+
+Variance Components:
+
+            estim    sqrt  nlvls  fixed  factor 
+sigma^2    0.0179  0.1339     57     no   study 
+
+Test for Heterogeneity:
+Q(df = 461) = 8547.7174, p-val < .0001
+
+Number of estimates:   462
+Number of clusters:    57
+Estimates per cluster: 1-61 (mean: 8.11, median: 4)
+
+Model Results:
+
+estimate  se<U+00B9>  tval<U+00B9>  df<U+00B9>  pval<U+00B9>  ci.lb<U+00B9>  ci.ub<U+00B9>      
+  0.1024  0.0185   5.5421   56   <.0001   0.0654   0.1394   *** 
+
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+1) results based on cluster-robust inference (var-cov estimator: CR1,
+   approx t-test and confidence interval, df: residual method)
+
+     name  estimate    lowerCL   upperCL    lowerPR  upperPR
+1 Intrcpt 0.1023983 0.06538533 0.1394112 -0.1683364 0.373133
+Warning messages:
+1: Use argument 'common' instead of 'fixed' (deprecated). 
+2: Use argument 'method.random.ci' instead of 'hakn' (deprecated). 
+Number of studies: k = 1307
+
+                             SMD           95% CI     t  p-value
+Random effects model (HK) 0.1206 [0.1090; 0.1322] 20.40 < 0.0001
+
+Quantifying heterogeneity (with 95% CIs):
+ tau^2 = 0.0400 [0.0375; 0.0447]; tau = 0.1999 [0.1936; 0.2114]
+ I^2 = 93.5% [93.3%; 93.8%]; H = 3.93 [3.86; 4.00]
+
+Test of heterogeneity:
+        Q d.f. p-value
+ 20199.55 1306       0
+
+Details of meta-analysis methods:
+- Meta-analysis using the generic inverse variance method
+- Inverse variance method
+- Restricted maximum-likelihood estimator for tau^2
+- Q-Profile method for confidence interval of tau^2 and tau
+- Calculation of I^2 based on Q
+- Hartung-Knapp adjustment for random effects model (df = 1306)
+- Null hypothesis: SMD = 0
