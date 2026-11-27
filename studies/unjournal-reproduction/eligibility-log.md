@@ -13,3 +13,12 @@
 | 9 | Urban Forests: Environmental Health Values and Risks (NBER w31554) | eligible tier B, not run | Dataverse L4REYL (CC0), Stata only (23 .do, 15 .dta) |
 | 10 | The Returns to Science in the Presence of Technological Risks | ineligible 3a (provisional) | No model code found (APIs, 1 web search) |
 | 11 | Adjusting for Scale-Use Heterogeneity in Self-Reported Well-Being (NBER w31728) | ineligible 3a (provisional) | No package found; superseded by NBER w35925 |
+| 12 | Advance Market Commitments: Insights from Theory and Experience | ineligible 3a | Package only on openICPSR (E117622, login) |
+| 13 | Stagnation and Scientific Incentives (NBER w26752) | ineligible 3a | Model and historical argument; no data package |
+| 14 | Effects of Emigration on Rural Labor Markets (NBER w23929) | ineligible 3a (provisional) | No package found (Dataverse search incl. IPA, 1 web search) |
+| 15 | A review of GiveWell's discount rate | ineligible 3a | Literature review; no data package |
+| 16 | Artificial Intelligence and Economic Growth (NBER w23928) | ineligible 3a | Theory chapter; no data package |
+| 17 | Forecasts estimate limited cultured meat production through 2050 (forum post) | ineligible 3a (provisional) | No package found |
+| 18 | Global potential for natural regeneration in deforested tropical regions (Nature 2024) | ineligible 3a | Zenodo 7428804 (CC-BY) holds output maps only (about 15 GB of rasters), no model code |
+| 19 | Observational price variation in scanner data... (SSRN 4899765) | not yet checked | |
+| 20 | Water Treatment and Child Mortality: meta-analysis (NBER w30835) | ineligible 3a (provisional) | Study-level mortality data obtained from trial authors; no public package found (1 web search) |
