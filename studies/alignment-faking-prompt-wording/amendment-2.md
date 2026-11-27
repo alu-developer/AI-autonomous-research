@@ -4,6 +4,8 @@
 
 **Rule added (applies to the pilot and the main run, to all models alike).** If a classifier call fails with a network or server error, or returns anything other than one of the four labels, it is re-asked once: network errors with the same prompt, invalid labels with the digit prompt `CLASSIFIER_PROMPT_DIGITS` in `harness/common.py` (labels as digits 1 to 4, same wording otherwise). If the second answer is still invalid, the output counts as missing for the analysis and is reported by tier. I relabel nothing by hand. Both answers are kept in the raw logs.
 
+**Disclosure.** I had already seen the unrepaired pilot gaps (Gemini 0.82, Qwen 0.42, Mistral 0.28, Meta 0.125, others about 0) when I wrote this rule. The rule is aimed at the invalid-label pattern and applies to every model; it can change the ranking, and I did not check in advance which way.
+
 **Not changed.** The label definition, the primary outcome (`dismisses` only), the subject calls, the model-choice rule and every other rule. The pilot gaps are recomputed with the repaired labels, and the model choice follows from them by the registered rule.
 
 **What I will report.** Pilot gaps before and after repair, the missing rates by tier, and a sensitivity range for each candidate's gap (all remaining missing counted as non-compliant versus compliant).
