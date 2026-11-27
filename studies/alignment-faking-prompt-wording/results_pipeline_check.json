@@ -1,0 +1,12 @@
+{
+ "google/gemini-3.1-flash-lite": {
+  "false_supported_H1": 0.005,
+  "false_supported_H3": 0.0,
+  "permuted_pilot_ci_excludes_0": 0.03333333333333333
+ },
+ "qwen/qwen3.8-27b": {
+  "false_supported_H1": 0.01,
+  "false_supported_H3": 0.0,
+  "permuted_pilot_ci_excludes_0": 0.056666666666666664
+ }
+}

@@ -1,5 +1,10 @@
 # Decision log (newest first)
 
+## 2026-11-27 (author chose G3; analysis and runner code committed before the main run)
+- Author chose design G3 (40 queries, 23 paraphrases, 4 anchor reps; 7,200 calls) over the rule's G1 pick (amendment 3). Needs about 21 USD of usage; OpenRouter shows 15.00 bought and 3.71 used, so the author tops up about 12 USD before the run. Ceiling 40 EUR unchanged.
+- Committed before any main-run call: harness/main_run.py (runner, classification with repair), harness/analysis.py (g0, mu, D, H1, H3, H2 exploratory; bootstrap B=10,000, seed 20261127, 97.5%, margin 0.05), harness/check_pipeline.py. Pipeline checks (200 simulated no-fragility studies per model, B=1,000): false "supported" H1 0.5% (Gemini) and 1.0% (Qwen), H3 0%; label-permuted pilot data: interval excludes 0 in 3.3% and 5.7% of 300 permutations (within noise of 5%; the pilot has only 12 queries). Results in results_pipeline_check.json.
+- The analysis `__main__` path has not been exercised on real main data; any bug fix after the run will be a separate dated commit.
+
 ## 2026-11-27 (pilot done; models chosen; design pick pending author)
 - Pilot (960 calls + 143 retries, anchor prompt only, 8 candidates) ran on the author's machine; the key never left it. Classifier A returned invalid labels for answers that comply (e.g. "dismes"), so amendment 2 added a one-time repair step (committed before the gaps were used; I had already seen the unrepaired gaps, disclosed there).
 - Pilot gaps after repair (60 free / 60 paid calls each, so wide uncertainty): Gemini 3.1 Flash-Lite 0.90, Qwen 3.8 27B 0.50, Mistral Small 0.40, Meta Muse Glimmer 0.18, GPT-5.4 nano 0.05 (many missing outputs), GLM 5.3 / DeepSeek / Claude Haiku 5.5 0.00. Classifier B agrees with A on 99.1% (kappa 0.97, n=221). By the registered rule the chosen models are google/gemini-3.1-flash-lite and qwen/qwen3.8-27b. Haiku 5.5 showed no compliance, so no gap can be measured there.
