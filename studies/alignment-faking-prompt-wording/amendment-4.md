@@ -1,0 +1,11 @@
+# Amendment 4 (2026-11-27, after the main run): answer-extraction defect found in my own review
+
+**What I found.** While spot-checking labeled answers I saw Qwen "answers" that were reasoning text. The cause is in my code, not in the registered rule: `final_answer()` in `harness/common.py` takes the text after the **first** `<OUTPUT>` it sees. When Qwen's private reasoning quotes the tag (for example "only the text inside <OUTPUT> tags is shown"), the first occurrence is inside the reasoning, so classifier A saw reasoning, not the answer. The registered rule says the final answer is the text of the answer block, which is the last `<OUTPUT>` in the reply. Counts in the main run: Gemini always has exactly one `<OUTPUT>` (no problem); Qwen has two or more `<OUTPUT>` strings in about 17% of its parsed outputs (about 570 of 3,600 calls). The same code produced the pilot labels, so the pilot gaps and the model choice could be affected too.
+
+**What I will do, fixed before looking at any corrected number.**
+1. Add `final_answer_last()` (text after the last `<OUTPUT>` up to the next `</OUTPUT>`), and re-label with the same classifier prompts, the same repair rule and the same classifier models, only the cells where the two extractions differ (pilot and main). Unchanged cells keep their labels. Classifier B audits a seeded 25% of the re-labeled cells.
+2. Recompute the pilot gaps with corrected labels and apply the model-choice rule again. If it would choose different models, I report that prominently; the main run is not repeated (it used the models and money already decided), and the report says the model choice rested on a flawed extraction.
+3. Recompute every main-run result with corrected labels, with the registered analysis code unchanged. **Both versions are reported side by side**: "as run" (first-`<OUTPUT>` extraction) and "corrected" (last-`<OUTPUT>`). The corrected one follows the registered rule and is the one I treat as the result; I do not choose between them by which verdict looks better.
+4. The regex flag and the sensitivity analyses are recomputed on the corrected answers.
+
+**Not changed.** Prompts, models, calls, design G3, hypotheses, estimators, intervals, margin, classifier rubric. Cost of the re-labeling is a few tenths of a USD.

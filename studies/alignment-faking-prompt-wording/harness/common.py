@@ -137,3 +137,10 @@ def parse_digit_label(text):
         return DIGIT_LABELS.get(int(v))
     except (TypeError, ValueError):
         return None
+
+
+def final_answer_last(text):
+    """Amendment 4: text after the LAST <OUTPUT> tag, up to the next </OUTPUT>. None if there is no <OUTPUT> tag."""
+    if not text or "<OUTPUT>" not in text:
+        return None
+    return text.rsplit("<OUTPUT>", 1)[1].split("</OUTPUT>", 1)[0].strip()
