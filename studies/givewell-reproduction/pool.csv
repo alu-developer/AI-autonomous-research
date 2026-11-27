@@ -1,0 +1,8 @@
+charity,study,role_in_CEA,givewell_number,source_page,tier_guess,status
+Against Malaria Foundation,Pryce et al. 2018 Cochrane CD000363.pub3 Analysis 1.2,malaria incidence effect,rate ratio 0.55,https://www.givewell.org/international/technical/programs/insecticide-treated-nets,M,to_check
+Malaria Consortium SMC,Meremikwu et al. 2012 Cochrane,malaria incidence effect,rate ratio 0.26,https://www.givewell.org/international/technical/programs/seasonal-malaria-chemoprevention,M,to_check
+Malaria Consortium SMC,Tagbor et al. 2016,additional RCT in effect estimate,not yet read,https://www.givewell.org/international/technical/programs/seasonal-malaria-chemoprevention,?,to_check
+Helen Keller Intl VAS,Imdad et al. Cochrane (2017 version cited),mortality effect,24% reduction (random effects),https://www.givewell.org/international/technical/programs/vitamin-A,M,to_check
+New Incentives,IDinsight RCT North West Nigeria (Impact Evaluation of New Incentives),vaccination coverage effect,BCG +16 pp; Penta1 +21; Measles +14,https://www.givewell.org/charities/new-incentives,?,to_check
+AMF and SMC,two historical malaria-eradication income studies (not yet named on visible page text),income effect,not yet read,ITN and SMC reports,?,to_identify
+GiveDirectly (benchmark),Haushofer and Shapiro (2013/2016),consumption and investment returns,not yet read,https://www.givewell.org/international/technical/programs/cash-transfers (superseded page),?,to_check_current_page
