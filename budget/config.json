@@ -1,5 +1,5 @@
 {
   "monthly_cap_eur": 50,
-  "per_run_cap_eur": 10,
+  "per_run_cap_eur": 40,
   "note": "monthly cap: stated by the author (about 50 EUR/month). per_run_cap is a provisional value chosen by Claude; only the author may change either number."
 }
