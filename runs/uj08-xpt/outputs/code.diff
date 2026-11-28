@@ -1,0 +1,22 @@
+--- orig/main.R	2026-11-28 20:15:18.078132383 +0100
++++ main.R	2026-11-28 20:19:58.317541304 +0100
+@@ -1,7 +1,7 @@
+ rm(list = ls())
+ 
+ # Change this to the dir that houses the git repo (xpt-lib) # nolint
+-yourHome <<- "/path/to/xpt/"
++yourHome <<- "/home/claude/work/uj08/"
+ 
+ # Set-up
+ options(scipen = 999)
+@@ -433,3 +433,10 @@
+ 
+ # Write to csv with no row names
+ write.csv(all_tables_next, "agg_methods_tables_with_ci.csv", row.names = FALSE)
++
++## --- appended by reproduction audit: write preregistered numbers ---
++library(jsonlite)
++g <- function(q, grp) { r <- all_tables_next[all_tables_next$question == q & all_tables_next$group == grp, ]; stopifnot(nrow(r) == 1); r$median }
++write_json(list(t1_cat_supers = g("Total Catastrophic", "super"), t1_cat_experts = g("Total Catastrophic", "all experts"), t1_ext_supers = g("Total Extinction", "super")), "/home/claude/AI-autonomous-research/runs/uj08-xpt/outputs/results.json", auto_unbox = TRUE, digits = NA)
++writeLines(capture.output(print(all_tables_next[all_tables_next$question %in% c("Total Catastrophic","Total Extinction"), c("question","group","n_ids","median")])), "/home/claude/AI-autonomous-research/runs/uj08-xpt/outputs/table1_rows.txt")
++writeLines(capture.output(sessionInfo()), "/home/claude/AI-autonomous-research/runs/uj08-xpt/outputs/sessionInfo.txt")

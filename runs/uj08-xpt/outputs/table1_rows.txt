@@ -1,0 +1,13 @@
+# A tibble: 10 x 4
+   question           group                     n_ids median
+   <chr>              <chr>                     <dbl>  <dbl>
+ 1 Total Catastrophic experts (w/o generalists)    53  18.5 
+ 2 Total Catastrophic generalist                   14  29.0 
+ 3 Total Catastrophic public survey               476  11.6 
+ 4 Total Catastrophic super                        86   9.04
+ 5 Total Catastrophic all experts                  67  20   
+ 6 Total Extinction   experts (w/o generalists)    54   6   
+ 7 Total Extinction   generalist                   13   6.6 
+ 8 Total Extinction   public survey               477   5   
+ 9 Total Extinction   super                        87   1   
+10 Total Extinction   all experts                  67   6   

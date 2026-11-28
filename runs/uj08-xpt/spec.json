@@ -1,0 +1,39 @@
+{
+  "claims": [
+    {
+      "description": "Table 1 (page 6), Total Catastrophic Risk by 2100, Superforecasters median, in %. Code: column 'median' of all_tables_next for question 'Total Catastrophic', group 'super'",
+      "id": "t1_cat_supers",
+      "published": 9.05,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 1, Total Catastrophic Risk by 2100, Experts median, in %. Code: same, group 'expertG1'",
+      "id": "t1_cat_experts",
+      "published": 20.0,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    },
+    {
+      "description": "Table 1, Total Extinction Risk by 2100, Superforecasters median, in %. Code: question 'Total Extinction', group 'super'",
+      "id": "t1_ext_supers",
+      "published": 1.0,
+      "tolerance_abs": 0.03,
+      "tolerance_rel": 0.01
+    }
+  ],
+  "id": "uj08-xpt",
+  "notes": "Claims are Table 1's first three point estimates read row by row; bracketed bootstrap CIs are not point estimates. Values confirmed in the PDF text layer, page 6. Tolerance: the protocol rule (1% or 3 units of the last printed digit, whichever is larger) would give +-3 percentage points for '20%' and '1%', which is too loose to mean anything; I tighten it to 0.03 percentage points for all three before running (stricter than the protocol, never looser). Group labels from functions.R: 'super' (N=89) and 'expertG1' (all experts, N=80), matching the Table 1 note. README warns of 'minor discrepancies' from number storage; reported as is.",
+  "pinned": {
+    "files_sha256": {
+      "XPT.pdf": "6dcb14eb85da2c207cfb49380ce485f013e51a184f799ab15176a9e4c7abb0c0"
+    },
+    "git_commit": "251acb5254448c9bdb4caa4b5011481c2c149aef",
+    "software": "recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "package": "github.com/forecastingresearch/xpt-lib, commit 251acb5254448c9bdb4caa4b5011481c2c149aef (MIT licence)",
+    "paper": "Karger et al., Forecasting Existential Risks: Evidence from a Long-Run Forecasting Tournament, FRI Working Paper #1, version of 8 Aug 2023 (754 pp.; PDF from forecastingresearch.org/pdf/existential-risk-persuasion-tournament.pdf, sha256 6dcb14eb...)",
+    "selection": "Unjournal pool rank 8 (seeded order); earlier deferred because the PDF link was dead"
+  }
+}
