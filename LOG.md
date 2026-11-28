@@ -1,5 +1,8 @@
 # Decision log (newest first)
 
+## 2026-11-28 (Unjournal reproduction audits finished)
+- Pool of 58 checked in seeded order; 4 audited (ranks 3, 4, 8, 48), 12/12 numbers reproduced. 54 not auditable (44 no public package/no data, 8 login/bot protection/proprietary, 1 Matlab, 1 Stata only). Report: studies/unjournal-reproduction/results.md. My errors (line endings, runner, one spec label) are logged per run.
+
 ## 2026-11-27 (night: next study, Unjournal reproduction audits)
 - Author chose option 1: reproduce papers The Unjournal has evaluated. Protocol written before opening any paper: studies/unjournal-reproduction/protocol.md (adds a terms check and an I4R-overlap check to protocol v2). Pool: 58 papers with published evaluations.
 

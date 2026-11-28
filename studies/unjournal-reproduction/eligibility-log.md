@@ -50,3 +50,13 @@
 | 46 | Does online fundraising increase charitable giving? A nationwide field experiment on Faceb | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
 | 47 | Willful Ignorance and Moral Behavior | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
 | 48 | Meaningfully reducing consumption of meat and animal products is an unsolved problem: A meta-analysis (OSF q6xyr v4) | attempted: uj48-meat-meta | github.com/hsflabstanford/vegan-meta (MIT), R; data linked from the preprint |
+| 49 | Money (Not) to Burn: Payments for Ecosystem Services (crop residue burning) | ineligible 3a | Package only on openICPSR (E195486, login) |
+| 50 | How Effective Is (More) Money? Randomizing UCT Amounts | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF, GitHub API searches) |
+| 51 | Intergenerational Child Mortality Impacts of Deworming (KLPS) | ineligible 3a (provisional) | No public package; the DOI in the paper resolves to the paper itself |
+| 52 | Replicability & Generalisability: A Guide to CEA discounts | ineligible 3a | Guidance document; no data |
+| 53 | How Much Would Reducing Lead Exposure Improve Children's Learning (CGD WP 650) | ineligible 3a (provisional) | No package found (APIs, 1 web search) |
+| 54 | The Environmental Effects of Economic Production (SSRN) | ineligible 3a (provisional) | No package found (APIs) |
+| 55 | Misperceptions and Demand for Democracy under Authoritarianism (NBER w33018) | ineligible 3a (provisional) | No package found (APIs) |
+| 56 | Banning wildlife trade can boost demand for unregulated threatened species | ineligible 3a | OSF preprint lists no data links |
+| 57 | Asymmetry in Civic Information: Tax Participation among Informal Firms | ineligible 3a (provisional) | Unpublished draft on Dropbox; no package found |
+| 58 | Towards best practices in AGI safety and governance (survey) | ineligible 3a | Aggregate results in the paper; no respondent-level data package found |
