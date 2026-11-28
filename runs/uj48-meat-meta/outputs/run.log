@@ -1,0 +1,25 @@
+Loading required package: Matrix
+Loading required package: metadat
+Loading required package: numDeriv
+
+Loading the 'metafor' package (version 5.2-1). For an
+introduction to the package please type: help(metafor)
+
+
+Attaching package: 'purrr'
+
+The following object is masked from 'package:flextable':
+
+    compose
+
+# A tibble: 8 x 6
+  Approach                    N_Studies N_Estimates Delta CI            p_val
+  <chr>                           <int>       <int> <dbl> <chr>         <chr>
+1 "Overall"                          41         112  0.07 [0.02, 0.12]  .007 
+2 "Choice Architecture"               2           3  0.21 [-0.99, 1.42] .267 
+3 "Psychology"                       19          32  0.1  [0, 0.2]      .054 
+4 "Persuasion"                       25          77  0.07 [0.01, 0.13]  .023 
+5 "Persuasion \\& Psychology"        11          20  0.11 [-0.06, 0.28] .189 
+6 "Animal Welfare"                   16          65  0.03 [-0.02, 0.07] .189 
+7 "Environment"                      16          29  0.09 [-0.02, 0.19] .095 
+8 "Health"                           18          29  0.08 [-0.01, 0.17] .064 

@@ -1,0 +1,39 @@
+{
+  "claims": [
+    {
+      "description": "Table 1 (page 27), Overall, SMD. Code: Delta of row 'Overall' in meta_table from scripts/table-one-meta.R",
+      "id": "t1_overall",
+      "published": 0.07,
+      "tolerance_abs": 0.005,
+      "tolerance_rel": 0.0
+    },
+    {
+      "description": "Table 1, Theory: Choice Architecture, SMD. Code: Delta of row 'Choice Architecture'",
+      "id": "t1_choice_arch",
+      "published": 0.21,
+      "tolerance_abs": 0.005,
+      "tolerance_rel": 0.0
+    },
+    {
+      "description": "Table 1, Theory: Psychology, SMD. Code: Delta of row 'Psychology'",
+      "id": "t1_psychology",
+      "published": 0.1,
+      "tolerance_abs": 0.005,
+      "tolerance_rel": 0.0
+    }
+  ],
+  "id": "uj48-meat-meta",
+  "notes": "Claims are Table 1's first three point estimates (SMD column) read row by row; study and estimate counts are not point estimates. Values confirmed in the PDF text layer, page 27. Tolerance tightened before running: the rerun must round to the printed two-decimal value (+-0.005); the protocol rule would allow +-0.03 on 0.07, which says nothing. Run: a driver sources libraries.R, functions.R, load-data.R and models-and-constants.R in the order of PDF-MAP-reduction-meta.Rmd, sets word=FALSE as that file does, then evaluates the first expression of table-one-meta.R (which builds meta_table) and writes the three Delta values. No author file is edited.",
+  "pinned": {
+    "files_sha256": {
+      "paper_v4.pdf": "cb72357214f59a19ce9e4d00026083c50dde2171ae8cc0b6e15af27ce67ec8a2"
+    },
+    "git_commit": "dc3d7b20adce396a4e6c7daa1ac542f5d16056ed",
+    "software": "recorded in outputs/sessionInfo.txt"
+  },
+  "target": {
+    "package": "github.com/hsflabstanford/vegan-meta (MIT), commit dc3d7b20adce396a4e6c7daa1ac542f5d16056ed, the last commit before the v4 preprint date (rule fixed before running)",
+    "paper": "Green et al., Meaningfully reducing consumption of meat and animal products is an unsolved problem: A meta-analysis, OSF preprint q6xyr version 4 (2025-02-24), as linked by The Unjournal",
+    "selection": "Unjournal pool rank 48 (seeded order); ranks 31-47 ineligible"
+  }
+}

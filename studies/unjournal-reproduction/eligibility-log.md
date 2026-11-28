@@ -32,3 +32,21 @@
 | 28 | Accelerating Vaccine Innovation via Parallel Discovery (NBER w30126) | ineligible 3a (provisional) | Simulation; no code found (1 web search) |
 | 29 | Governance of Non-Profits and Their Social Impact (Management Science 2024) | ineligible 3a (access) | Data files on pubsonline.informs.org, which serves a bot-verification page (403) to this workspace; not circumvented |
 | 30 | The Pivot Penalty in Research (Nature 2025) | ineligible 3b | Built on Dimensions, a proprietary database; no package found |
+| 31 | Ends versus Means: Kantians, Utilitarians, and Moral Decisions | ineligible 3a | OSF gqs8w holds only experiment instructions and videos, no data |
+| 32 | Cognitive Behavioral Therapy among Ghana's Rural Poor (AER: Insights) | ineligible 3a | Package only on openICPSR (E164481, login) |
+| 33 | When do Nudges Increase Welfare? (NBER w30740) | ineligible 3a | Package only on openICPSR (E208345, login) |
+| 34 | Building Resilient Education Systems: Evidence from Large-Scale Randomized Trials in Five  | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 35 | Does the Squeaky Wheel Get More Grease? The Direct and Indirect Effects of Citizen Partici | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 36 | Selecting the Most Effective Nudge: Evidence from a Large-Scale Experiment on Immunization | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 37 | Cash Transfers for Child Development: Experimental Evidence from India | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 38 | Existential risk and growth | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 39 | Pharmaceutical Pricing and R&D as a Global Public Good | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 40 | The Comparative Impact of Cash Transfers and a Psychotherapy Program on Psychological and  | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 41 | The Long-Run Effects of Psychotherapy on Depression, Beliefs, and Economic Outcomes | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 42 | Economic vs. Epidemiological Approaches to Measuring the Human Capital Impacts of Infectio | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 43 | Irrigation Strengthens Climate Resilience: Long-term Evidence from Mali using Satellites a | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 44 | When Celebrities Speak: A Nationwide Twitter Experiment Promoting Vaccination In Indonesia | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 45 | The Effect of Public Science on Corporate R&D | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 46 | Does online fundraising increase charitable giving? A nationwide field experiment on Faceb | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 47 | Willful Ignorance and Moral Behavior | ineligible 3a (provisional) | No package found (Dataverse, Zenodo, OSF and GitHub API searches) |
+| 48 | Meaningfully reducing consumption of meat and animal products is an unsolved problem: A meta-analysis (OSF q6xyr v4) | attempted: uj48-meat-meta | github.com/hsflabstanford/vegan-meta (MIT), R; data linked from the preprint |
