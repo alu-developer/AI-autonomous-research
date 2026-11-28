@@ -24,3 +24,11 @@
 | 20 | Water Treatment and Child Mortality: meta-analysis (NBER w30835) | ineligible 3a (provisional) | Study-level mortality data obtained from trial authors; no public package found (1 web search) |
 | 21 | The Macroeconomic Impact of Climate Change: Global vs. Local Temperature (QJE 2026) | ineligible 3c | Dataverse O4AUDQ (CC0): Matlab (50 .m) and Stata (13 .do); Matlab is not covered by rule 3c |
 | 22 | Choose Your Moments: Peer Review and Scientific Risk Taking (NBER w31409) | ineligible 3a | NBER data appendix holds only a PDF appendix and a readme |
+| 23 | Legalizing Entrepreneurship (NBER w30624) | ineligible 3a (provisional) | No package found (Dataverse search) |
+| 24 | Biodiversity Risk (Review of Finance 2026) | ineligible 3b | Exposure measures public (biodiversityrisk.org), but return tests need proprietary equity data; no package found |
+| 25 | Universal Basic Income: Short-Term Results from a Long-Term Experiment in Kenya | ineligible 3a (provisional) | No package found; Dataverse CMRTZU belongs to a different UBI paper |
+| 26 | Zero-Sum Thinking, Effort-Suppressing Beliefs, and Economic Development (NBER w31663) | ineligible 3a (provisional) | No package found (Dataverse search) |
+| 27 | Guest Worker Programs: India-UAE experiment (NBER w31354) | ineligible 3a (provisional) | No package found (Dataverse search) |
+| 28 | Accelerating Vaccine Innovation via Parallel Discovery (NBER w30126) | ineligible 3a (provisional) | Simulation; no code found (1 web search) |
+| 29 | Governance of Non-Profits and Their Social Impact (Management Science 2024) | ineligible 3a (access) | Data files on pubsonline.informs.org, which serves a bot-verification page (403) to this workspace; not circumvented |
+| 30 | The Pivot Penalty in Research (Nature 2025) | ineligible 3b | Built on Dimensions, a proprietary database; no package found |
